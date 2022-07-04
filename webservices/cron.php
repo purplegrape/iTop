@@ -193,12 +193,12 @@ function CronExec($oP, $bVerbose, $bDebug = false)
 		$oSearch->AddCondition('next_run_date', $sNow, '<=');
 		$oSearch->AddCondition('status', 'active');
 		$oTasks = new DBObjectSet($oSearch, ['next_run_date' => true]);
-		$bWorkDone = false;
 
-		if ($oTasks->CountExceeds(0)) {
-			$bWorkDone = true;
-			$aTasks = [];
-			if ($bVerbose) {
+		$aTasks = [];
+		if ($oTasks->CountExceeds(0))
+		{
+			if ($bVerbose)
+			{
 				$sCount = $oTasks->Count();
 				$oP->p("$sCount Tasks planned to run now ($sNow):");
 				$oP->p('+---------------------------+---------+---------------------+---------------------+');
@@ -206,9 +206,15 @@ function CronExec($oP, $bVerbose, $bDebug = false)
 				$oP->p('+---------------------------+---------+---------------------+---------------------+');
 			}
 			while ($oTask = $oTasks->Fetch()) {
-				$aTasks[$oTask->Get('class_name')] = $oTask;
-				if ($bVerbose) {
-					$sTaskName = $oTask->Get('class_name');
+				$sTaskName = $oTask->Get('class_name');
+				$oTaskMutex = new iTopMutex("cron_$sTaskName");
+				if ($oTaskMutex->IsLocked()) {
+					// Already running, ignore
+					continue;
+				}
+				$aTasks[] = $oTask;
+				if ($bVerbose)
+				{
 					$sStatus = $oTask->Get('status');
 					$sLastRunDate = $oTask->Get('latest_run_date');
 					$sNextRunDate = $oTask->Get('next_run_date');
@@ -219,7 +225,8 @@ function CronExec($oP, $bVerbose, $bDebug = false)
 				$oP->p('+---------------------------+---------+---------------------+---------------------+');
 			}
 			$aRunTasks = [];
-			foreach ($aTasks as $oTask) {
+			while ($aTasks != []) {
+				$oTask = array_shift($aTasks);
 				$sTaskClass = $oTask->Get('class_name');
 
 				// Check if the current task is running
@@ -228,11 +235,6 @@ function CronExec($oP, $bVerbose, $bDebug = false)
 					// Task is already running, try next one
 					continue;
 				}
-
-				// Just to indicate to Itop that the cron is running for setup
-				// The mutex will be released when the process dies
-				$oCronMutex = new iTopMutex('cron');
-				$oCronMutex->TryLock();
 
 				$aRunTasks[] = $sTaskClass;
 
@@ -246,7 +248,7 @@ function CronExec($oP, $bVerbose, $bDebug = false)
 					$oP->p(">> === ".$oNow->format('Y-m-d H:i:s').sprintf(" Starting:%-'=49s", ' '.$sTaskClass.' '));
 				}
 				try {
-					$sMessage = RunTask($aTasks[$sTaskClass], $iTimeLimit);
+					$sMessage = RunTask($oTask, $iTimeLimit);
 				} catch (MySQLHasGoneAwayException $e) {
 					$oP->p("ERROR : 'MySQL has gone away' thrown when processing $sTaskClass  (error_code=".$e->getCode().")");
 					exit(EXIT_CODE_FATAL);
@@ -276,7 +278,7 @@ function CronExec($oP, $bVerbose, $bDebug = false)
 			}
 
 			// Tasks to run later
-			if ($bVerbose) {
+			if ($bVerbose && $aTasks == []) {
 				$oP->p('--');
 				$oSearch = new DBObjectSearch('BackgroundTask');
 				$oSearch->AddCondition('next_run_date', $sNow, '>');
@@ -289,11 +291,12 @@ function CronExec($oP, $bVerbose, $bDebug = false)
 				}
 			}
 		}
-
-		if ($bVerbose && $bWorkDone) {
-			$oP->p("Sleeping...\n");
+		if ($aTasks == []) {
+			if ($bVerbose) {
+				$oP->p("Sleeping...\n");
+			}
+			sleep($iCronSleep);
 		}
-		sleep($iCronSleep);
 	}
 	if ($bVerbose) {
 		$oP->p('');
