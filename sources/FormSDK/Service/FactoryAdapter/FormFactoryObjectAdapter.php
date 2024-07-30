@@ -92,7 +92,7 @@ final class FormFactoryObjectAdapter implements FormFactoryAdapterInterface
 		// compute label
 		$sLabel = $oAttributeDefinition->GetLabel();
 		if(!$this->bGroup){
-			$sLabel = $this->GetLabel() . ' ••• ' . $sLabel;
+			$sLabel = $this->GetAdapterIdentifier() . ' - ' . $sLabel;
 		}
 
 		// attribute options

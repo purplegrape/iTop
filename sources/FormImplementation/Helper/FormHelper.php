@@ -9,6 +9,7 @@ use Combodo\iTop\FormSDK\Service\FormFactory;
 use Combodo\iTop\FormSDK\Service\FormManager;
 use DateTime;
 use MetaModel;
+use Symfony\Bundle\FrameworkBundle\Routing\Router;
 use Symfony\Component\PropertyAccess\PropertyAccess;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\Validator\Constraints\Length;
@@ -40,7 +41,7 @@ class FormHelper
 			'group' => true,
 			'layout' => false,
 			'object_only' => true,
-			'object_count' => 1
+			'object_count' => 10
 		]
 	];
 
@@ -64,7 +65,7 @@ class FormHelper
 		// form data
 		$aData = [
 			'city' => 'Autun',
-			'tel' => '+33(6) 35 57 48 77',
+			'tel' => '+33(0)6 35 57 48 77',
 			'birthday' => new DateTime('1979/06/27'),
 			'count' => 10,
 			'counts' =>  ['count1' => 10, 'count2' => 20, 'count3' => 30],
@@ -119,7 +120,7 @@ class FormHelper
 			// tel - text with pattern
 			$oFormFactory->AddTextField('tel', [
 				'label'       => 'Tel',
-				'constraints' => new Regex(['pattern' => '/\+33\(\d\) \d\d \d\d \d\d \d\d/'], null, '+{33}(0) 00 00 00 00'),
+				'constraints' => new Regex(['pattern' => '/\+33\(\d\)\d \d\d \d\d \d\d \d\d/'], null, '+{33}(0)0 00 00 00 00'),
 				'required'    => false
 			]);
 
@@ -203,7 +204,7 @@ class FormHelper
 				'required'    => false,
 
 			], [
-				'url'             => 'http://localhost'.$oRouter->generate('formSDK_ajax_select'),
+				'url'             => $oRouter->generate('formSDK_ajax_select', [], Router::NETWORK_PATH),
 				'query_parameter' => 'query',
 				'value_field'     => 'breed',
 				'label_field'     => 'breed',

@@ -48,7 +48,7 @@ class TestController extends AbstractAppController
 				$oAdapter->UpdateFieldsData($data);
 			}
 
-			return $this->redirectToRoute('app_success');
+			return $this->redirectToRoute('app_success', ['data' => $data]);
 		}
 
 		// render view
@@ -90,7 +90,7 @@ class TestController extends AbstractAppController
 				$oAdapter->UpdateFieldsData($data);
 			}
 
-			return $this->redirectToRoute('app_success');
+			return $this->redirectToRoute('app_success', ['data' => $data]);
 		}
 
 		$oPage->add_linked_stylesheet(\utils::GetAbsoluteUrlAppRoot() . 'css/form-sdk/form.css');
@@ -202,8 +202,8 @@ class TestController extends AbstractAppController
 	}
 
 	#[Route('/success', name: 'app_success')]
-	public function Success(): Response
+	public function Success(Request $oRequest): Response
 	{
-		return $this->render('formSDK/success.html.twig');
+		return $this->render('formSDK/success.html.twig', ['data' => $oRequest->get('data')]);
 	}
 }

@@ -21,6 +21,8 @@ namespace Combodo\iTop\FormSDK\Service;
 
 use Combodo\iTop\FormSDK\Field\FormFieldDescription;
 use Combodo\iTop\FormSDK\Field\FormFieldTypeEnumeration;
+use Symfony\Bundle\FrameworkBundle\Routing\Router;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Validator\Constraints\Regex;
 
 /**
@@ -222,7 +224,7 @@ trait FormFactoryBuilderTrait
 			'oql' => $sOql,
 			'fields' => '{'.implode($aAttributesToLoad).'}',
 		];
-		$sUrl = 'http://localhost' . $this->oRouter->generate('formSDK_object_search') . '?' . http_build_query($aAjaxData);
+		$sUrl = $this->oRouter->generate('formSDK_object_search', [], UrlGeneratorInterface::ABSOLUTE_URL) . '?' . http_build_query($aAjaxData);
 		$aAjaxOptions = [
 			'url' => $sUrl,
 			'query_parameter' => 'search',
@@ -232,6 +234,7 @@ trait FormFactoryBuilderTrait
 			'threshold' => $iAjaxThreshold,
 			'configuration' => 'OQL'
 		];
+
 		return $this->AddSelectAjaxField($sKey, $aOptions, $aAjaxOptions, $aAjaxData);
 	}
 
