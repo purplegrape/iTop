@@ -1,0 +1,154 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container p-5">
+
+        <div class="d-flex" style=column-gap:12px;align-items:start;" >
+
+            <div>
+
+                <div class="border rounded p-3 flex-grow-1">
+
+                    <h2 class="h2 mb-4 ">🚀 Form With Dependencies</h2>
+
+                    <div class="alert alert-light" role="alert">
+                        Ce formulaire doit être soumis pour chaque dépendance !
+                    </div>
+
+
+                    {{ form_start(form) }}
+
+                    {{ form_widget(form) }}
+
+                    <div class="mt-5">
+                        <input type="submit" class="btn btn-primary">
+                        <input type="reset" class="btn btn-light">
+                    </div>
+
+                    {{ form_end(form) }}
+
+                    {% if form2 is defined %}
+
+                        {{ form_start(form2) }}
+
+                        {{ form_widget(form2) }}
+
+                        <div class="mt-5">
+                            <input type="submit" class="btn btn-primary">
+                            <input type="reset" class="btn btn-light">
+                        </div>
+
+                        {{ form_end(form2) }}
+                    {% endif
+
+                    %}
+                </div>
+
+                <pre class="rounded mt-3" style="font-size:0.9rem;"><code class="language-php">$builder->add('organization', ChoiceType::class, [
+				'choices' => FakeDataProvider::getFakeData('organization'),
+				'required' => false,
+				'placeholder' => 'Select an organization...',
+				'help' => '⚡ Will mutate person, location, location.office, country',
+				'bindings' => [
+					'person' => FakeChoiceTypeSlot::FILTER,
+					'location' => OfficeTypeSlot::ORGANIZATION,
+					'location.office' => FakeChoiceTypeSlot::FILTER,
+					'country' => FakeChoiceTypeSlot::FILTER
+				],
+			])</code></pre>
+
+            </div>
+
+            <div style="width: 600px">
+
+                <div class="border rounded p-3 flex-grow-1">
+
+                    <h2 class="h2 mb-4 ">⚡ Events</h2>
+
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Type</th>
+                            <th>Event</th>
+                            <th class="text-center">Data</th>
+                            <th class="text-center">Actions</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        {% for element in events %}
+                            <tr>
+                                <td>{{ loop.index }}</td>
+                                <td>{{ element.type }}</td>
+                                <td>{{ element.event.form.name }}</td>
+                                <td class="text-center">{% if element.event.data is null %}<span class="text-warning-emphasis">null</span>{% elseif element.event.data is empty %}<span class="text-body-tertiary">empty</span>{% else %}{{ element.event.data }}{% endif %}</td>
+                                <td class="text-center">
+                                    <span class="badge text-bg-secondary" style="cursor: pointer;" title="{{ element.actions|json_encode(constant('JSON_PRETTY_PRINT')) }}">{{ element.actions|length }}</span>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="border rounded p-3 flex-grow-1 mt-3">
+
+                    <h2 class="h2 mb-4 ">🧳 Data</h2>
+
+                    <ul class="nav nav-tabs" id="data_tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="form-tab" data-bs-toggle="tab" data-bs-target="#data_form" type="button" role="tab" aria-controls="form" aria-selected="true">Form</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="post-set-data-tab" data-bs-toggle="tab" data-bs-target="#data_post_set_data" type="button" role="tab" aria-controls="post_set_data" aria-selected="false">PostSetData</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="post-submit-tab" data-bs-toggle="tab" data-bs-target="#data_post_submit" type="button" role="tab" aria-controls="post_submit" aria-selected="false">PostSubmit</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="declarations" data-bs-toggle="tab" data-bs-target="#data_declarations" type="button" role="tab" aria-controls="declarations" aria-selected="false">Map</button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane active" id="data_form" role="tabpanel" aria-labelledby="form-tab" tabindex="0">
+                            <code class="text-secondary-emphasis" >
+                                {{ data.form|raw  }}
+                            </code>
+                        </div>
+                        <div class="tab-pane" id="data_post_set_data" role="tabpanel" aria-labelledby="post-set-data-tab" tabindex="2">
+                            <code class="text-secondary-emphasis">
+                                {{ data.post_set_data|raw  }}
+                            </code>
+                        </div>
+                        <div class="tab-pane" id="data_post_submit" role="tabpanel" aria-labelledby="post-submit-tab" tabindex="3">
+                            <code class="text-secondary-emphasis">
+                                {{ data.post_submit|raw  }}
+                            </code>
+                        </div>
+                        <div class="tab-pane" id="data_declarations" role="tabpanel" aria-labelledby="declarations" tabindex="4">
+                            <code class="text-secondary-emphasis">
+                                {{ data.declarations|raw  }}
+                            </code>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+{% endblock %}
