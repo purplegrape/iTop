@@ -33,10 +33,13 @@ class OfficeType extends AbstractMutableDependentType
 		$builder->add('office', FakeChoiceType::class,[
 			'fake_collection' => 'office',
 			'help' => '⚡ Will mutate place',
+			// on office post submit
 			'post_submit_callback' => function (FormEvent $event) {
+				// add place field to parent form
 				$event->getForm()->getParent()->add('place', IntegerType::class,[
 					'required' => false,
 					'disabled' => empty($event->getData()),
+					// preset place default value
 					'pre_set_data_callback' => function (FormEvent $event) {
 						if($event->getData() === null){
 							$event->setData(1); // prefer set this by model layer (not a form responsibility)

@@ -2,6 +2,8 @@
 
 namespace Combodo\iTop\Controller\Form;
 
+use Combodo\iTop\Controller\Form\Type\Dependency\AttributeChoiceType;
+use Combodo\iTop\Controller\Form\Type\Dependency\AttributeChoiceTypeData;
 use Combodo\iTop\Controller\Form\Type\Dependency\ContactTypeData;
 use Combodo\iTop\Controller\Form\Type\Dependency\FakeChoiceTypeData;
 use Combodo\iTop\Controller\Form\Dependency\FormDependencyManager;
@@ -9,6 +11,7 @@ use Combodo\iTop\Controller\Form\Type\Dependency\OfficeTypeData;
 use Combodo\iTop\Controller\Form\Type\Dependency\ContactType;
 use Combodo\iTop\Controller\Form\Type\Dependency\FakeChoiceType;
 use Combodo\iTop\Controller\Form\Type\Dependency\OfficeType;
+use Combodo\iTop\Controller\Form\Type\Dependency\OQLType;
 use Combodo\iTop\Controller\Form\Type\Form\Form2;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -71,6 +74,14 @@ class FormController extends AbstractController
 				],
 			])
 			->add('contact', ContactType::class)
+			->add('oql', OQLType::class, [
+				'bindings' => [
+					'object_class' => AttributeChoiceTypeData::OBJECT_CLASS
+				],
+			])
+			->add('object_class', AttributeChoiceType::class, [
+				'required' => false,
+			])
 			->getForm();
 
 		$form->handleRequest($request);
