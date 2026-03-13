@@ -8,9 +8,11 @@ $baseDir = dirname($vendorDir);
 return array(
     'Combodo\\iTop\\DataFeatureRemoval\\Controller\\DataFeatureRemovalController' => $baseDir . '/src/Controller/DataFeatureRemovalController.php',
     'Combodo\\iTop\\DataFeatureRemoval\\Entity\\DeletionPlanSummaryEntity' => $baseDir . '/src/Entity/DeletionPlanSummaryEntity.php',
+    'Combodo\\iTop\\DataFeatureRemoval\\Helper\\DataFeatureRemovalConfig' => $baseDir . '/src/Helper/DataFeatureRemovalConfig.php',
     'Combodo\\iTop\\DataFeatureRemoval\\Helper\\DataFeatureRemovalException' => $baseDir . '/src/Helper/DataFeatureRemovalException.php',
     'Combodo\\iTop\\DataFeatureRemoval\\Helper\\DataFeatureRemovalHelper' => $baseDir . '/src/Helper/DataFeatureRemovalHelper.php',
     'Combodo\\iTop\\DataFeatureRemoval\\Helper\\DataFeatureRemovalLog' => $baseDir . '/src/Helper/DataFeatureRemovalLog.php',
+    'Combodo\\iTop\\DataFeatureRemoval\\Service\\BackgroundOperationService' => $baseDir . '/src/Service/BackgroundOperationService.php',
     'Combodo\\iTop\\DataFeatureRemoval\\Service\\DataFeatureRemoverExtensionService' => $baseDir . '/src/Service/DataFeatureRemoverExtensionService.php',
     'Combodo\\iTop\\DataFeatureRemoval\\Service\\DeletionPlanService' => $baseDir . '/src/Service/DeletionPlanService.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
