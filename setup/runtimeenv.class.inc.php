@@ -24,7 +24,6 @@
  * @license     http://opensource.org/licenses/AGPL-3.0
  */
 
-use Combodo\iTop\Application\Helper\Session;
 use Combodo\iTop\PhpParser\Evaluation\PhpExpressionEvaluator;
 use Combodo\iTop\Setup\FeatureRemoval\SetupAudit;
 use Combodo\iTop\Setup\ModuleDependency\Module;
@@ -1598,10 +1597,13 @@ class RunTimeEnvironment
 		return substr_compare($sHaystack, $sNeedle, 0, strlen($sNeedle)) === 0;
 	}
 
-	protected function GetModulesToLoad(string $sSourceEnv, $aSearchDirs): array
+	protected function GetModulesToLoad(string $sSourceEnv, $aSearchDirs): ?array
 	{
 		$oSourceConfig = new Config(utils::GetConfigFilePath($sSourceEnv));
 		$aChoices = iTopExtensionsMap::GetChoicesFromDatabase($oSourceConfig);
+		if (false === $aChoices) {
+			return null;
+		}
 		$sSourceDir = $oSourceConfig->Get('source_dir');
 
 		$sInstallFilePath = APPROOT.$sSourceDir.'/installation.xml';
