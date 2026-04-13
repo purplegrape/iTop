@@ -1620,7 +1620,7 @@ class RunTimeEnvironment
 		$aExtensionDirs = [];
 		foreach ($this->GetExtensionMap()->GetAllExtensions() as $oExtension) {
 			if ($oExtension->bMarkedAsChosen && is_dir($oExtension->sSourceDir)) {
-				$aExtensionDirs [] = $oExtension->sSourceDir;
+				$aExtensionDirs []= $oExtension->sSourceDir;
 			}
 		}
 
