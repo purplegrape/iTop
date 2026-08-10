@@ -53,7 +53,7 @@
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:KnownError' => '已知错误',
-	'Class:KnownError+' => '记录一个已知错误',
+	'Class:KnownError+' => '在问题管理过程中, 记录重复出现的错误，用于辅助故障排查.',
 	'Class:KnownError/Attribute:name' => '名称',
 	'Class:KnownError/Attribute:name+' => '该名称将作为此组织内的已知问题的唯一标识符',
 	'Class:KnownError/Attribute:org_id' => '客户',
