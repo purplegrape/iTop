@@ -9,11 +9,11 @@
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
-	'Relation:dataflows/Description'    => 'DataFlows between CIs~~',
-	'Relation:dataflows/DownStream'     => 'Outbound flows...',
-	'Relation:dataflows/DownStream+'    => 'Outbound flows map from',
-	'Relation:dataflows/UpStream'       => 'Inbound flows...',
-	'Relation:dataflows/UpStream+'      => 'Inbound flows map to',
+	'Relation:dataflows/Description'    => '配置项之间的数据流',
+	'Relation:dataflows/DownStream'     => '出站数据流...',
+	'Relation:dataflows/DownStream+'    => 'Outbound flows map from~~',
+	'Relation:dataflows/UpStream'       => '进站数据流...',
+	'Relation:dataflows/UpStream+'      => 'Inbound flows map to~~',
 
 	'Class:FunctionalCI/Attribute:dataflows' => '数据流',
 	'Class:FunctionalCI/Attribute:dataflows+' => '该对象作为源或目标的数据流',
@@ -25,7 +25,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'Class:DataFlow' => '数据流',
 	'Class:DataFlow+' => 'For application flow for example~~',
-	'Class:DataFlow/Name' => '%1$s',
+	'Class:DataFlow/ComplementaryName' => '%1$s - %2$s',
 	'Class:DataFlow/Attribute:name' => '名称',
 	'Class:DataFlow/Attribute:name+' => '已传输的数据',
 	'Class:DataFlow/Attribute:source_id' => '数据源',
@@ -68,8 +68,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DataFlow/Attribute:execution_frequency/Value:yearly+' => '',
 	'Class:DataFlow/Attribute:documents_list+' => '例如: 技术规范, 操作手册等.',
 	'Class:DataFlow/Attribute:contacts_list+' => '例如: 数据流所有者, 技术支持等.',
-	'Class:DataFlow/Error:CheckSource' => 'The source of a data flow cannot be a data flow itself. Choose another source CI than %1$s~~',
-	'Class:DataFlow/Error:CheckDestination' => 'The destination of a data flow cannot be a data flow itself. Choose another destination CI than %1$s~~',
+	'Class:DataFlow/Error:CheckSource' => '无法指定自己为数据源. 请选择其它配置项作为数据源,而不是选择 %1$s',
+	'Class:DataFlow/Error:CheckDestination' => '无法指定自己为数据目标. 请选择其它配置项作为数据目标,而不是选择 %1$s',
 
 	'Class:DataFlowType' => '数据流类型',
 	'Class:DataFlowType+' => '数据流的分类',
