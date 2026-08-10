@@ -95,7 +95,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Core:AttributeObsolescenceDate/Label+' => '该对象被废弃的大概日期',
 
 	'Core:AttributeString' => '字符串',
-	'Core:AttributeString+' => '字符串',
+	'Core:AttributeString+' => '字母数字组合的字符串',
 
 	'Core:AttributeClass' => '类',
 	'Core:AttributeClass+' => '',
@@ -104,7 +104,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Core:AttributeApplicationLanguage+' => '语言和国家/地区(EN US)',
 
 	'Core:AttributeFinalClass' => '类型 (自动)',
-	'Core:AttributeFinalClass+' => '对象真实的类型 (内核自动创建)',
+	'Core:AttributeFinalClass+' => '对象的真实类型 (由核心自动创建)',
 
 	'Core:AttributePassword' => '密码',
 	'Core:AttributePassword+' => '外部设备的密码',
@@ -118,7 +118,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Core:AttributeText+' => '多行字符串',
 
 	'Core:AttributeHTML' => 'HTML',
-	'Core:AttributeHTML+' => 'HTML字符串',
+	'Core:AttributeHTML+' => 'HTML 字符串',
 
 	'Core:AttributeEmailAddress' => '邮箱地址',
 	'Core:AttributeEmailAddress+' => 'Email 地址',
@@ -138,8 +138,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Core:AttributeTemplateText' => '文本模板',
 	'Core:AttributeTemplateText+' => '包含占位符的文本',
 
-	'Core:AttributeTemplateHTML' => 'HTML模板',
-	'Core:AttributeTemplateHTML+' => '含有占位符的HTML',
+	'Core:AttributeTemplateHTML' => 'HTML 模板',
+	'Core:AttributeTemplateHTML+' => '含有占位符的 HTML',
 
 	'Core:AttributeDateTime' => '日期/时间',
 	'Core:AttributeDateTime+' => '日期和时间 (年-月-日 时:分:秒)',
@@ -168,7 +168,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
     例如: %2$s
 </p>
 <p>
-Operators:<br/>
+运算符:<br/>
     <b>&gt;</b><em>日期</em><br/>
     <b>&lt;</b><em>日期</em><br/>
     <b>[</b><em>日期</em>,<em>日期</em><b>]</b>
@@ -180,7 +180,7 @@ Operators:<br/>
 	'Core:AttributeExternalKey' => '外键',
 	'Core:AttributeExternalKey+' => '外面(或外部)的键',
 
-	'Core:AttributeHierarchicalKey' => 'Hierarchical Key~~',
+	'Core:AttributeHierarchicalKey' => '层级键',
 	'Core:AttributeHierarchicalKey+' => 'External (or foreign) key to the parent~~',
 
 	'Core:AttributeExternalField' => '外部字段',
@@ -388,19 +388,19 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:EventNotificationEmail' => '邮件发送',
-	'Class:EventNotificationEmail+' => '跟踪每封已发送的邮件',
+	'Class:EventNotificationEmail+' => '跟踪已发送的邮件',
 	'Class:EventNotificationEmail/Attribute:to' => '收件人',
-	'Class:EventNotificationEmail/Attribute:to+' => '收件人',
+	'Class:EventNotificationEmail/Attribute:to+' => '',
 	'Class:EventNotificationEmail/Attribute:cc' => '抄送',
-	'Class:EventNotificationEmail/Attribute:cc+' => '抄送',
+	'Class:EventNotificationEmail/Attribute:cc+' => '',
 	'Class:EventNotificationEmail/Attribute:bcc' => '密抄',
-	'Class:EventNotificationEmail/Attribute:bcc+' => '密抄',
+	'Class:EventNotificationEmail/Attribute:bcc+' => '',
 	'Class:EventNotificationEmail/Attribute:from' => '发件人',
 	'Class:EventNotificationEmail/Attribute:from+' => '消息发送者',
 	'Class:EventNotificationEmail/Attribute:subject' => '主题',
-	'Class:EventNotificationEmail/Attribute:subject+' => '主题',
+	'Class:EventNotificationEmail/Attribute:subject+' => '',
 	'Class:EventNotificationEmail/Attribute:body' => '正文',
-	'Class:EventNotificationEmail/Attribute:body+' => '内容',
+	'Class:EventNotificationEmail/Attribute:body+' => '',
 	'Class:EventNotificationEmail/Attribute:attachments' => '附件',
 	'Class:EventNotificationEmail/Attribute:attachments+' => '',
 ]);
@@ -423,7 +423,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:EventIssue/Attribute:arguments_get' => 'URL 参数',
 	'Class:EventIssue/Attribute:arguments_get+' => 'HTTP GET 参数',
 	'Class:EventIssue/Attribute:callstack' => '调用栈',
-	'Class:EventIssue/Attribute:callstack+' => '调用栈',
+	'Class:EventIssue/Attribute:callstack+' => '',
 	'Class:EventIssue/Attribute:data' => '数据',
 	'Class:EventIssue/Attribute:data+' => '更多信息',
 ]);
@@ -433,8 +433,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:EventWebService' => 'WebService调用',
-	'Class:EventWebService+' => '跟踪WebService调用',
+	'Class:EventWebService' => 'Web Service 事件',
+	'Class:EventWebService+' => '跟踪 Web Service 调用',
 	'Class:EventWebService/Attribute:verb' => '命令',
 	'Class:EventWebService/Attribute:verb+' => '操作名称',
 	'Class:EventWebService/Attribute:result' => '结果',
@@ -451,7 +451,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:EventRestService' => 'REST/JSON 调用',
-	'Class:EventRestService+' => '跟踪REST/JSON服务调用',
+	'Class:EventRestService+' => '跟踪 REST/JSON 服务调用',
 	'Class:EventRestService/Attribute:operation' => '操作',
 	'Class:EventRestService/Attribute:operation+' => '参数 \'操作\'',
 	'Class:EventRestService/Attribute:version' => '版本',
@@ -474,11 +474,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:EventLoginUsage' => '登录频率',
 	'Class:EventLoginUsage+' => '连接至应用',
 	'Class:EventLoginUsage/Attribute:user_id' => '登录',
-	'Class:EventLoginUsage/Attribute:user_id+' => '登录',
+	'Class:EventLoginUsage/Attribute:user_id+' => '',
 	'Class:EventLoginUsage/Attribute:contact_name' => '用户名',
-	'Class:EventLoginUsage/Attribute:contact_name+' => '用户名',
+	'Class:EventLoginUsage/Attribute:contact_name+' => '',
 	'Class:EventLoginUsage/Attribute:contact_email' => '用户邮箱',
-	'Class:EventLoginUsage/Attribute:contact_email+' => '用户的邮箱地址',
+	'Class:EventLoginUsage/Attribute:contact_email+' => '用户的 Email 地址',
 ]);
 
 //
@@ -493,7 +493,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:EventNotificationNewsroom/Attribute:icon' => '图标',
 	'Class:EventNotificationNewsroom/Attribute:icon+' => '',
 	'Class:EventNotificationNewsroom/Attribute:priority' => '优先级',
-	'Class:EventNotificationNewsroom/Attribute:priority+' => '优先级',
+	'Class:EventNotificationNewsroom/Attribute:priority+' => '',
 	'Class:EventNotificationNewsroom/Attribute:priority/Value:1' => '关键',
 	'Class:EventNotificationNewsroom/Attribute:priority/Value:1+' => '关键',
 	'Class:EventNotificationNewsroom/Attribute:priority/Value:2' => '紧急',
@@ -523,13 +523,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:Action'                                  => '自定义操作',
+	'Class:Action'                                  => '操作',
 	'Class:Action+'                                 => '用户定义的操作',
 	'Class:Action/ComplementaryName'                => '%1$s: %2$s',
 	'Class:Action/Attribute:name'                   => '名称',
-	'Class:Action/Attribute:name+'                  => 'Any value that is meaningful to distinguish this action from the others',
+	'Class:Action/Attribute:name+'                  => 'Any value that is meaningful to distinguish this action from the others~~',
 	'Class:Action/Attribute:description'            => '描述',
-	'Class:Action/Attribute:description+'           => 'A longer explanation about the purpose of this action. For information only.',
+	'Class:Action/Attribute:description+'           => 'A longer explanation about the purpose of this action. For information only.~~',
 	'Class:Action/Attribute:status'                 => '状态',
 	'Class:Action/Attribute:status+'                => '是否正式环境?',
 	'Class:Action/Attribute:status/Value:test'      => '正在测试',
