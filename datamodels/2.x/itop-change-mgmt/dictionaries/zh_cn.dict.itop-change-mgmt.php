@@ -4,7 +4,7 @@
  * Localized data
  *
  * @copyright Copyright (C) 2010-2024 Combodo SAS
- * @license    http://opensource.org/licenses/AGPL-3.0
+ * @license    https://opensource.org/licenses/AGPL-3.0
  *
  * This file is part of iTop.
  *
@@ -25,7 +25,7 @@
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ChangeManagement' => '变更管理',
 	'Menu:Change:Overview' => '概况',
-	'Menu:Change:Overview+' => '~~',
+	'Menu:Change:Overview+' => '',
 	'Menu:NewChange' => '新建变更',
 	'Menu:NewChange+' => '新建变更工单',
 	'Menu:SearchChanges' => '搜索变更',
@@ -33,7 +33,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:Change:Shortcuts' => '变更',
 	'Menu:Change:Shortcuts+' => '快速访问预定义的变更数据',
 	'Menu:WaitingAcceptance' => '等待审核的变更',
-	'Menu:WaitingAcceptance+' => '~~',
+	'Menu:WaitingAcceptance+' => '',
 	'Menu:WaitingApproval' => '等待批准的变更',
 	'Menu:WaitingApproval+' => '处于计划状态的变更',
 	'Menu:Changes' => '待处理的变更',
@@ -64,7 +64,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Change' => '变更',
-	'Class:Change+' => '一种用于处理会对已交付服务产生影响的工单.',
+	'Class:Change+' => 'A type of Ticket to handle Change which has an effect on delivered Services.~~',
 	'Class:Change/Attribute:status' => '状态',
 	'Class:Change/Attribute:status+' => '',
 	'Class:Change/Attribute:status/Value:new' => '新建',
