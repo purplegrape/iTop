@@ -49,7 +49,7 @@
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ProblemManagement' => '问题管理',
-	'Menu:ProblemManagement+' => '一种 ITIL 流程, 用于定位事故根本原因、记录已知错误与常见问题, 以此减轻服务台的工作量',
+	'Menu:ProblemManagement+' => '一种 ITIL 流程, 用于定位事故根因、记录已知错误与常见问题, 以此减轻服务台的工作量',
 	'Menu:Problem:Overview' => '概况',
 	'Menu:Problem:Overview+' => '概况',
 	'Menu:NewProblem' => '新建问题',
