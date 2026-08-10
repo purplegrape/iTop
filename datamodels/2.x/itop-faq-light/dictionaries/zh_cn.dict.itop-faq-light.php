@@ -85,7 +85,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 ]);
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ProblemManagement' => '问题管理',
-	'Menu:ProblemManagement+' => 'An ITIL process that identifies root causes of incidents, documents Known Errors and FAQs, in order to reduce helpdesk workload~~',
+	'Menu:ProblemManagement+' => '一种 ITIL 流程, 用于识别事件的根因, 记录已知错误与常见问题, 从而减轻服务台的工作负担',
 	'Menu:Problem:Shortcuts' => '快捷方式',
 	'Menu:FAQCategory' => 'FAQ 类别',
 	'Menu:FAQCategory+' => '所有 FAQ 类别',
