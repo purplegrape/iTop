@@ -21,6 +21,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with iTop. If not, see <http://www.gnu.org/licenses/>
  */
+
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ChangeManagement' => '变更管理',
 	'Menu:Change:Overview' => '概况',
@@ -35,8 +36,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:WaitingAcceptance+' => '',
 	'Menu:WaitingApproval' => '等待批准的变更',
 	'Menu:WaitingApproval+' => '处于计划状态的变更',
-	'Menu:Changes' => '所有打开的变更',
-	'Menu:Changes+' => '所有打开的变更',
+	'Menu:Changes' => '待处理的变更',
+	'Menu:Changes+' => '所有待处理的变更',
 	'Menu:MyChanges' => '分配给我的变更',
 	'Menu:MyChanges+' => '分配给我的变更 (作为办理人)',
 	'UI-ChangeManagementOverview-ChangeByCategory-last-7-days' => '最近一周的变更 (按类型)',
@@ -63,7 +64,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Change' => '变更',
-	'Class:Change+' => '',
+	'Class:Change+' => 'A type of Ticket to handle Change which has an effect on delivered Services.~~',
 	'Class:Change/Attribute:status' => '状态',
 	'Class:Change/Attribute:status+' => '',
 	'Class:Change/Attribute:status/Value:new' => '新建',
