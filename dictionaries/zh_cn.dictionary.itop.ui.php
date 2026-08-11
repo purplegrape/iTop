@@ -1684,7 +1684,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ProfilesMenu+'            => '查看已有的角色',
 	'Menu:ProfilesMenu:Title'       => '角色',
 	'Menu:UserAccountsMenu'         => '账号',
-	'Menu:UserAccountsMenu+'        => '处理 '.ITOP_APPLICATION_SHORT.' 用户及权限',
+	'Menu:UserAccountsMenu+'        => '处理 '.ITOP_APPLICATION_SHORT.' 用户和权限',
 	'Menu:UserAccountsMenu:Title'   => '账号',
 	'Menu:UserManagement'           => '用户管理',
 	'Menu:Queries'                  => '查询',
