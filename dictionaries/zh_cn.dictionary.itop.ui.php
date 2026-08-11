@@ -632,7 +632,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:CSVImport:Column'                     => '列 %1$s',
 	'UI:CSVImport:SelectFile'                 => '请选择要导入的文件:',
 	'UI:CSVImport:Tab:LoadFromFile'           => '从文件导入',
-	'UI:CSVImport:Tab:CopyPaste'              => '复制和粘贴的数据',
+	'UI:CSVImport:Tab:CopyPaste'              => '复制粘贴的数据',
 	'UI:CSVImport:Tab:Templates'              => '模板',
 	'UI:CSVImport:PasteData'                  => '粘贴数据以导入:',
 	'UI:CSVImport:PickClassForTemplate'       => '请选择模板: ',
