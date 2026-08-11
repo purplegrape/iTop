@@ -59,7 +59,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:Problem:Shortcuts' => '快捷方式',
 	'Menu:Problem:MyProblems' => '分配给我的问题',
 	'Menu:Problem:MyProblems+' => '分配给我且既未解决也未关闭的问题',
-	'Menu:Problem:OpenProblems' => '所有打开的问题',
+	'Menu:Problem:OpenProblems' => '所有待处理的问题',
 	'Menu:Problem:OpenProblems+' => '所有尚未关闭的问题工单',
 	'UI-ProblemManagementOverview-ProblemByService' => '按服务划分的问题',
 	'UI-ProblemManagementOverview-ProblemByService+' => '按服务划分的问题',
