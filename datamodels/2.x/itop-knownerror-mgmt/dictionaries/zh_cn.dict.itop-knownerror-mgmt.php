@@ -53,7 +53,7 @@
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:KnownError' => '已知错误',
-	'Class:KnownError+' => '记录一个已知错误',
+	'Class:KnownError+' => '在问题管理过程中, 记录重复出现的错误，用于辅助故障排查.',
 	'Class:KnownError/Attribute:name' => '名称',
 	'Class:KnownError/Attribute:name+' => '该名称将作为此组织内的已知问题的唯一标识符',
 	'Class:KnownError/Attribute:org_id' => '客户',
@@ -138,7 +138,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ProblemManagement' => '问题管理',
-	'Menu:ProblemManagement+' => 'An ITIL process that identifies root causes of incidents, documents Known Errors and FAQs, in order to reduce helpdesk workload~~',
+	'Menu:ProblemManagement+' => '一种 ITIL 流程, 用于定位事故根因、记录已知错误与常见问题, 以此减轻服务台的工作量',
 	'Menu:Problem:Shortcuts' => '快捷方式',
 	'Menu:NewError' => '新建已知问题',
 	'Menu:NewError+' => '新建已知问题',

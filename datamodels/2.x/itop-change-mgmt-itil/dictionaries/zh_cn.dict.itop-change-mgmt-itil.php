@@ -64,7 +64,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Change' => '变更',
-	'Class:Change+' => '',
+	'Class:Change+' => '抽象类. 一种用于处理会对已交付服务产生影响的工单.',
 	'Class:Change/Attribute:status' => '状态',
 	'Class:Change/Attribute:status+' => '',
 	'Class:Change/Attribute:status/Value:new' => '新建',
