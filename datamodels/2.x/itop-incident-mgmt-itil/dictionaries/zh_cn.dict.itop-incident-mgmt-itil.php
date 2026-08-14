@@ -66,7 +66,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Incident' => '事件',
-	'Class:Incident+' => '',
+	'Class:Incident+' => '一种用于管理服务或配置项故障的工单类型',
 	'Class:Incident/Attribute:status' => '状态',
 	'Class:Incident/Attribute:status+' => '',
 	'Class:Incident/Attribute:status/Value:new' => '新建',

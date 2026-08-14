@@ -96,7 +96,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkContactToTicket' => '链接 联系人/工单',
-	'Class:lnkContactToTicket+' => 'Allows linking several Contacts to notify them about the progress of Tickets, in addition to the requester and the agent.~~',
+	'Class:lnkContactToTicket+' => '允许将多个联系人链接到工单, 以便通知他们关于工单进展的信息, 除了发起人和办理人之外.',
 	'Class:lnkContactToTicket/Name' => '%1$s / %2$s',
 	'Class:lnkContactToTicket/Attribute:ticket_id' => '工单',
 	'Class:lnkContactToTicket/Attribute:ticket_id+' => '',
@@ -122,12 +122,12 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:WorkOrder' => '工作任务',
-	'Class:WorkOrder+' => 'A task required for the resolution of a Ticket, assigned to a Team or even an agent.~~',
+	'Class:WorkOrder+' => '用于解决工单所需的任务, 分配给团队甚至办理人.',
 	'Class:WorkOrder/Attribute:name' => '名称',
 	'Class:WorkOrder/Attribute:name+' => '',
 	'Class:WorkOrder/Attribute:status' => '状态',
 	'Class:WorkOrder/Attribute:status+' => '',
-	'Class:WorkOrder/Attribute:status/Value:open' => '打开',
+	'Class:WorkOrder/Attribute:status/Value:open' => '待处理',
 	'Class:WorkOrder/Attribute:status/Value:open+' => '',
 	'Class:WorkOrder/Attribute:status/Value:closed' => '已关闭',
 	'Class:WorkOrder/Attribute:status/Value:closed+' => '',
