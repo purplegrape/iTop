@@ -22,7 +22,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:UserRequest:Shortcuts+' => '',
 	'Menu:UserRequest:MyRequests' => '分配给我的需求',
 	'Menu:UserRequest:MyRequests+' => '分配给我的需求 (作为办理人)',
-	'Menu:UserRequest:MySupportRequests' => '我办理的需求',
+	'Menu:UserRequest:MySupportRequests' => '由我发起的需求',
 	'Menu:UserRequest:MySupportRequests+' => '由我发起且未关闭的需求',
 	'Menu:UserRequest:EscalatedRequests' => '待升级的需求',
 	'Menu:UserRequest:EscalatedRequests+' => '按状态或热门标识分类的待升级的需求',
