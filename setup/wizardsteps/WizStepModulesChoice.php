@@ -229,14 +229,14 @@ class WizStepModulesChoice extends AbstractWizStepInstall
 			$sExtensionCode = $aAlternativeInfo["extension_code"] ?? null;
 
 			if (in_array($sExtensionCode, $aExtensions)) {
-				$aStepRes = $this->ProcessSelectedOption($sCurrentIndex, $i, $aStepRes, $aAlternativeInfo, $aExtensions);
+				$aStepRes = $this->ProcessSelectedOption($sCurrentIndex, $i, $aStepRes, $aAlternativeInfo, $aExtensions, true);
 				break;
 			}
 		}
 	}
 
 	/**
-	 * @param string $sCurrentIndex
+	 * @param string $sCurrentId
 	 * @param int|string $i
 	 * @param array $aStepRes
 	 * @param mixed $aOptionsInfo
@@ -244,18 +244,19 @@ class WizStepModulesChoice extends AbstractWizStepInstall
 	 *
 	 * @return array
 	 */
-	public function ProcessSelectedOption(string $sCurrentIndex, int|string $i, array $aStepRes, mixed $aOptionsInfo, array $aExtensions): array
+	public function ProcessSelectedOption(string $sCurrentId, int|string $i, array $aStepRes, mixed $aOptionsInfo, array $aExtensions, bool $bIsAlternative = false): array
 	{
-		$sNextIndex = "{$sCurrentIndex}_{$i}";
-		$aStepRes[$sNextIndex] = $sNextIndex;
+		$sNextId = "{$sCurrentId}_{$i}";
+		$sNextName = $bIsAlternative ? "{$sCurrentId}_0" : $sNextId;
+		$aStepRes[$sNextName] = $sNextId;
 
 		$aSubOptions = $aOptionsInfo['sub_options'] ?? null;
 		if (!is_null($aSubOptions) && is_array($aSubOptions)) {
-			$this->ProcessOptions($sNextIndex, $aSubOptions, $aExtensions, $aStepRes);
-			$this->ProcessAlternatives($sNextIndex, $aSubOptions, $aExtensions, $aStepRes);
+			$this->ProcessOptions($sNextId, $aSubOptions, $aExtensions, $aStepRes);
+			$this->ProcessAlternatives($sNextId, $aSubOptions, $aExtensions, $aStepRes);
 		}
 
-		$this->ProcessAlternatives($sNextIndex, $aOptionsInfo, $aExtensions, $aStepRes);
+		$this->ProcessAlternatives($sNextId, $aOptionsInfo, $aExtensions, $aStepRes);
 
 		return $aStepRes;
 	}
@@ -796,6 +797,10 @@ EOF
 				$bDisabled = !$bDisableUninstallCheck;
 			}
 
+			if ($bDisabled) {
+				$bChecked = $bInstalled;
+			}
+
 			if (isset($aChoice['sub_options'])) {
 				$aOptions = $aChoice['sub_options']['options'] ?? [];
 				foreach ($aOptions as $index => $aSubChoice) {
@@ -821,12 +826,13 @@ EOF
 			'dependency_issue' => $bDependencyIssue,
 			'mandatory' => $bMandatory,
 			'missing' => $bMissingFromDisk,
+			'remote' => $bIsRemoteExtension,
 			'installed' => $bInstalled,
 			'disabled' => $bDisabled,
 			'checked' => $bChecked,
 		];
 
-		$this->bCanMoveForward = $this->bCanMoveForward && $this->CanMoveForwardFromChoiceFlags($aFlags, $bDisableUninstallCheck);
+		$this->bCanMoveForward = $this->bCanMoveForward && static::CanMoveForwardFromChoiceFlags($aFlags, $bDisableUninstallCheck);
 		$this->aFlagsByChoiceId[$sChoiceId] = $aFlags;
 
 		return $aFlags;
@@ -888,7 +894,7 @@ EOF
 		}
 	}
 
-	protected function CanMoveForwardFromChoiceFlags(array $aFlags, bool $bDisableUninstallCheck = false): bool
+	public static function CanMoveForwardFromChoiceFlags(array $aFlags, bool $bDisableUninstallCheck = false): bool
 	{
 		// The user can force to move forward with the "force-uninstall" option
 		if ($bDisableUninstallCheck) {
@@ -902,7 +908,7 @@ EOF
 			}
 		} elseif ($aFlags['installed']) {
 			// An extension cannot be uninstalled if it is not uninstallable
-			if (!$aFlags['uninstallable']) {
+			if (!$aFlags['uninstallable'] || $aFlags['remote']) {
 				return false;
 			}
 		}
