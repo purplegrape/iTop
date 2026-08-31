@@ -186,7 +186,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:UserRequest/Attribute:resolution_code+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:assistance' => '外部支持',
 	'Class:UserRequest/Attribute:resolution_code/Value:assistance+' => '',
-	'Class:UserRequest/Attribute:resolution_code/Value:bug fixed' => 'bug修复',
+	'Class:UserRequest/Attribute:resolution_code/Value:bug fixed' => 'bug 修复',
 	'Class:UserRequest/Attribute:resolution_code/Value:bug fixed+' => '',
 	'Class:UserRequest/Attribute:resolution_code/Value:hardware repair' => '硬件维修',
 	'Class:UserRequest/Attribute:resolution_code/Value:hardware repair+' => '',
