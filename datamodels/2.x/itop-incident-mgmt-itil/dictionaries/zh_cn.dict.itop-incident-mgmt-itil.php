@@ -4,7 +4,7 @@
  * Localized data
  *
  * @copyright Copyright (C) 2010-2024 Combodo SAS
- * @license    http://opensource.org/licenses/AGPL-3.0
+ * @license    https://opensource.org/licenses/AGPL-3.0
  *
  * This file is part of iTop.
  *
@@ -38,7 +38,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:Incident:MySupportIncidents' => '由我报告的事件',
 	'Menu:Incident:MySupportIncidents+' => '由我发起且尚未关闭的的事件',
 	'Menu:Incident:EscalatedIncidents' => '待升级的事件',
-	'Menu:Incident:EscalatedIncidents+' => '按状态或热门标识划分的待升级的事件',
+	'Menu:Incident:EscalatedIncidents+' => '按状态或热门标记划分的待升级事件',
 	'Menu:Incident:OpenIncidents' => '待处理的事件',
 	'Menu:Incident:OpenIncidents+' => '所有尚未关闭的事件',
 	'UI-IncidentManagementOverview-IncidentByPriority-last-14-days' => '最近两周的事件 (按优先级)',
@@ -136,7 +136,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Incident/Attribute:servicesubcategory_name' => '子服务名称',
 	'Class:Incident/Attribute:servicesubcategory_name+' => '',
 	'Class:Incident/Attribute:escalation_flag' => '升级标识',
-	'Class:Incident/Attribute:escalation_flag+' => '如果设置，工单将被添加到"待升级"菜单',
+	'Class:Incident/Attribute:escalation_flag+' => '',
 	'Class:Incident/Attribute:escalation_flag/Value:no' => '否',
 	'Class:Incident/Attribute:escalation_flag/Value:no+' => '',
 	'Class:Incident/Attribute:escalation_flag/Value:yes' => '是',
@@ -177,7 +177,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Incident/Attribute:resolution_code+' => '为解决这个事件而做了什么?',
 	'Class:Incident/Attribute:resolution_code/Value:assistance' => '外部支持',
 	'Class:Incident/Attribute:resolution_code/Value:assistance+' => '',
-	'Class:Incident/Attribute:resolution_code/Value:bug fixed' => 'bug 修复',
+	'Class:Incident/Attribute:resolution_code/Value:bug fixed' => 'bug修复',
 	'Class:Incident/Attribute:resolution_code/Value:bug fixed+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:hardware repair' => '硬件维修',
 	'Class:Incident/Attribute:resolution_code/Value:hardware repair+' => '',
