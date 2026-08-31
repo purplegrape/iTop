@@ -399,9 +399,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:WelcomeMenu' => '欢迎',
-	'Menu:WelcomeMenu+' => '欢迎使用'.ITOP_APPLICATION_SHORT,
+	'Menu:WelcomeMenu+' => '欢迎使用 '.ITOP_APPLICATION_SHORT,
 	'Menu:WelcomeMenuPage' => '欢迎',
-	'Menu:WelcomeMenuPage+' => '欢迎使用'.ITOP_APPLICATION_SHORT,
+	'Menu:WelcomeMenuPage+' => '欢迎使用 '.ITOP_APPLICATION_SHORT,
 	'Menu:AdminTools' => '管理',
 	'Menu:AdminTools+' => '管理工具',
 	'Menu:AdminTools?' => '具有管理员角色的用户才能使用的工具',
@@ -425,7 +425,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'BooleanLabel:yes' => '是',
 	'BooleanLabel:no' => '否',
-	'UI:WelcomeMenu:Title' => '欢迎使用'.ITOP_APPLICATION_SHORT,
+	'UI:WelcomeMenu:Title' => '欢迎使用 '.ITOP_APPLICATION_SHORT,
 	'UI:WelcomeMenu:AllOpenRequests' => '所有待处理的需求: %1$d',
 	'UI:WelcomeMenu:MyCalls'         => '我办理的需求',
 	'UI:WelcomeMenu:OpenIncidents'   => '所有待处理的事件: %1$d',
