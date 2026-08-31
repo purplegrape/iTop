@@ -177,7 +177,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Incident/Attribute:resolution_code+' => '为解决这个事件而做了什么?',
 	'Class:Incident/Attribute:resolution_code/Value:assistance' => '外部支持',
 	'Class:Incident/Attribute:resolution_code/Value:assistance+' => '',
-	'Class:Incident/Attribute:resolution_code/Value:bug fixed' => 'bug修复',
+	'Class:Incident/Attribute:resolution_code/Value:bug fixed' => 'bug 修复',
 	'Class:Incident/Attribute:resolution_code/Value:bug fixed+' => '',
 	'Class:Incident/Attribute:resolution_code/Value:hardware repair' => '硬件维修',
 	'Class:Incident/Attribute:resolution_code/Value:hardware repair+' => '',
