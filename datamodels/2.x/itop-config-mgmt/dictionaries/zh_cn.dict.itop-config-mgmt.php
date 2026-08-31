@@ -273,7 +273,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DatacenterDevice/Attribute:fiberinterfacelist_list' => '光口',
 	'Class:DatacenterDevice/Attribute:fiberinterfacelist_list+' => '此设备的所有光纤接口',
 	'Class:DatacenterDevice/Attribute:san_list' => 'SAN',
-	'Class:DatacenterDevice/Attribute:san_list+' => '连接到这台设备的所有SAN交换机',
+	'Class:DatacenterDevice/Attribute:san_list+' => '连接到这台设备的所有光纤交换机',
 	'Class:DatacenterDevice/Attribute:redundancy' => '冗余',
 	'Class:DatacenterDevice/Attribute:redundancy/count' => '此设备运行正常至少需要一路电源 (主或备)',
 	// Unused yet
@@ -352,11 +352,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:SANSwitch' => 'SAN 交换机',
-	'Class:SANSwitch+' => 'SAN 交换机是指兼容光纤通道协议的网络交换机, 通常用于存储网络. 它是一种数据中心设备.',
+	'Class:SANSwitch' => '光纤交换机',
+	'Class:SANSwitch+' => '光纤交换机是指兼容光纤通道协议的网络交换机, 通常用于存储网络. 它是一种数据中心设备.',
 	'Class:SANSwitch/ComplementaryName' => '%1$s - %2$s',
 	'Class:SANSwitch/Attribute:datacenterdevice_list' => '设备',
-	'Class:SANSwitch/Attribute:datacenterdevice_list+' => '连接到此 SAN 交换机的所有设备',
+	'Class:SANSwitch/Attribute:datacenterdevice_list+' => '连接到此光纤交换机的所有设备',
 ]);
 
 //
@@ -732,10 +732,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:VirtualHost' => '虚拟化主机',
+	'Class:VirtualHost' => '虚拟化宿主机',
 	'Class:VirtualHost+' => '对虚拟设备(虚拟机监视器, 集群,...)的抽象, 用于托管虚拟机.',
 	'Class:VirtualHost/Attribute:virtualmachine_list' => '虚拟机',
-	'Class:VirtualHost/Attribute:virtualmachine_list+' => '此虚拟化主机托管的所有虚拟机',
+	'Class:VirtualHost/Attribute:virtualmachine_list+' => '此虚拟化宿主机托管的所有虚拟机',
 ]);
 
 //
@@ -743,8 +743,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:Hypervisor' => 'Hypervisor',
-	'Class:Hypervisor+' => '虚拟化主机. 运行虚拟化软件(MS Hyper-V, VMWare ESX, Xen, 等.), 运行在物理服务器上并支持创建虚拟机.',
+	'Class:Hypervisor' => '虚拟机管理器',
+	'Class:Hypervisor+' => '即虚拟化宿主机. 运行虚拟化软件(MS Hyper-V, VMWare ESX, Xen, 等.), 运行在物理服务器上并支持创建虚拟机.',
 	'Class:Hypervisor/Attribute:farm_id' => '集群',
 	'Class:Hypervisor/Attribute:farm_id+' => '',
 	'Class:Hypervisor/Attribute:farm_name' => '名称',
@@ -761,13 +761,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Farm' => '集群',
-	'Class:Farm+' => '虚拟化的主机. 集群通常由一组 Hypervisor 构成, 并通过共享存储资源为托管的虚拟机提供容错能力.',
-	'Class:Farm/Attribute:hypervisor_list' => 'Hypervisor',
-	'Class:Farm/Attribute:hypervisor_list+' => '集群由哪些 Hypervisor 组成',
+	'Class:Farm+' => '虚拟化的主机. 集群通常由一组虚拟化宿主机构成, 并通过共享存储资源为托管的虚拟机提供容错能力.',
+	'Class:Farm/Attribute:hypervisor_list' => '虚拟化管理器',
+	'Class:Farm/Attribute:hypervisor_list+' => '集群由哪些虚拟化管理器组成',
 	'Class:Farm/Attribute:redundancy' => '高可用性',
-	'Class:Farm/Attribute:redundancy/disabled' => '所有 Hypervisor 正常, 集群才正常',
-	'Class:Farm/Attribute:redundancy/count' => '至少 %1$s 个 Hypervisor 是正常的, 集群才正常',
-	'Class:Farm/Attribute:redundancy/percent' => '至少 %1$s %% 的 Hypervisor 是正常的, 集群才正常',
+	'Class:Farm/Attribute:redundancy/disabled' => '所有虚拟化管理器正常, 集群才正常',
+	'Class:Farm/Attribute:redundancy/count' => '至少 %1$s 个虚拟化管理器是正常的, 集群才正常',
+	'Class:Farm/Attribute:redundancy/percent' => '至少 %1$s %% 的虚拟化管理器是正常的, 集群才正常',
 ]);
 
 //
@@ -776,9 +776,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualMachine' => '虚拟机',
-	'Class:VirtualMachine+' => '与物理机类似的虚拟设备，它既可以托管在 Hypervisor 上，也可以托管在集群上.',
+	'Class:VirtualMachine+' => '与物理机类似的虚拟设备，它既可以直接托管在虚拟化管理器上，也可以托管在集群上.',
 	'Class:VirtualMachine/ComplementaryName' => '%1$s - %2$s',
-	'Class:VirtualMachine/Attribute:virtualhost_id' => '虚拟化主机',
+	'Class:VirtualMachine/Attribute:virtualhost_id' => '虚拟化宿主机',
 	'Class:VirtualMachine/Attribute:virtualhost_id+' => '',
 	'Class:VirtualMachine/Attribute:virtualhost_name' => '名称',
 	'Class:VirtualMachine/Attribute:virtualhost_name+' => '',
@@ -878,10 +878,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:lnkSanToDatacenterDevice' => '链接 SAN 交换机/数据中心设备',
-	'Class:lnkSanToDatacenterDevice+' => '这是多对多的关系, SAN 交换机与数据中心设备(服务器、网络设备等)之间存在的网络连接.',
+	'Class:lnkSanToDatacenterDevice' => '链接 光纤交换机/数据中心设备',
+	'Class:lnkSanToDatacenterDevice+' => '这是多对多的关系, 光纤交换机与数据中心设备(服务器、网络设备等)之间存在的网络连接.',
 	'Class:lnkSanToDatacenterDevice/Name' => '%1$s / %2$s',
-	'Class:lnkSanToDatacenterDevice/Attribute:san_id' => 'SAN 交换机',
+	'Class:lnkSanToDatacenterDevice/Attribute:san_id' => '光纤交换机',
 	'Class:lnkSanToDatacenterDevice/Attribute:san_id+' => '',
 	'Class:lnkSanToDatacenterDevice/Attribute:san_name' => '名称',
 	'Class:lnkSanToDatacenterDevice/Attribute:san_name+' => '',
@@ -889,7 +889,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_id+' => '',
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_name' => '名称',
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_name+' => '',
-	'Class:lnkSanToDatacenterDevice/Attribute:san_port' => 'SAN 光口',
+	'Class:lnkSanToDatacenterDevice/Attribute:san_port' => '光口',
 	'Class:lnkSanToDatacenterDevice/Attribute:san_port+' => '',
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_port' => '设备光口',
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_port+' => '',
@@ -1166,7 +1166,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Model/Attribute:type/Value:Printer+' => '打印机',
 	'Class:Model/Attribute:type/Value:Rack' => '机架',
 	'Class:Model/Attribute:type/Value:Rack+' => '机架',
-	'Class:Model/Attribute:type/Value:SANSwitch' => 'SAN 交换机',
+	'Class:Model/Attribute:type/Value:SANSwitch' => '光纤交换机',
 	'Class:Model/Attribute:type/Value:SANSwitch+' => '光纤交换机',
 	'Class:Model/Attribute:type/Value:Server' => '物理机',
 	'Class:Model/Attribute:type/Value:Server+' => '物理机',
