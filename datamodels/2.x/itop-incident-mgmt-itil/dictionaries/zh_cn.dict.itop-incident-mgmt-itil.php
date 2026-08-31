@@ -38,7 +38,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:Incident:MySupportIncidents' => '由我报告的事件',
 	'Menu:Incident:MySupportIncidents+' => '由我发起且尚未关闭的的事件',
 	'Menu:Incident:EscalatedIncidents' => '待升级的事件',
-	'Menu:Incident:EscalatedIncidents+' => '按状态或热门标记划分的待升级事件',
+	'Menu:Incident:EscalatedIncidents+' => '按状态或热门标识划分的待升级的事件',
 	'Menu:Incident:OpenIncidents' => '待处理的事件',
 	'Menu:Incident:OpenIncidents+' => '所有尚未关闭的事件',
 	'UI-IncidentManagementOverview-IncidentByPriority-last-14-days' => '最近两周的事件 (按优先级)',
