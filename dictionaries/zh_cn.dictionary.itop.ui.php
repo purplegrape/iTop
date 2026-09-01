@@ -131,8 +131,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Query/Attribute:export_last_user_contact+' => '最近一次执行导出的联系人',
 	'Class:Query/Attribute:usages' => '用法',
 	'Class:Query/Attribute:usages+' => '说明该查询可能的用法.
- - "参考 AI" 标签, 假定描述非常明确且符合 OQL 标准。它可以作为通过 AI 构建 OQL 查询的范例。
- - "通知" 标签, 表示返回的对象，有且仅有一个类型为 email 的字段。
+ - "参考 AI" 标签, 假定描述非常明确且符合 OQL 标准. 它可以作为通过 AI 构建 OQL 查询的范例.
+ - "通知" 标签, 表示返回的对象，有且仅有一个类型为 email 的字段.
  - "仪表" 标签, 假定 OQL 返回一个单一类型的对象.',
 	'Class:Query/Attribute:usages/Value:export' => '导出',
 	'Class:Query/Attribute:usages/Value:reference' => '参考 AI',
@@ -521,7 +521,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Error:InvalidDashboard'                           => '错误: 无效的仪表盘',
 	'UI:Error:MaintenanceMode'                            => '应用正处于维护中',
 	'UI:Error:MaintenanceTitle'                           => '维护',
-	'UI:Error:InvalidToken'                               => '当前会话无效。请刷新页面后重试。如果问题仍然存在，请先退出登录再重新登录。',
+	'UI:Error:InvalidToken'                               => '当前会话无效, 请刷新页面后重试. 如果问题仍然存在, 请先退出登录再重新登录.',
 	'UI:Error:TwigController'                             => '表单控制器内部错误',
 
 	'UI:Error:SMTP:UnknownVendor' => 'OAuth SMTP提供者%1$s不存在 (email_transport_smtp.oauth.provider)',
