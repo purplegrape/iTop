@@ -54,9 +54,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ContainerApplication' => '容器化应用程序',
 	'Class:ContainerApplication+' => '部署在容器平台上的应用程序',
 	'Class:ContainerApplication/Attribute:descriptor' => 'Deployment file~~',
-	'Class:ContainerApplication/Attribute:descriptor+' => 'File describing how to deploy the application on the container platform (e.g., Docker Compose, Helm Chart, etc.)~~',
-	'Class:ContainerApplication/Attribute:containervirtualhost_id' => '容器化主机',
-	'Class:ContainerApplication/Attribute:containervirtualhost_id+' => 'Container Platform on which the application is running~~',
+	'Class:ContainerApplication/Attribute:descriptor+' => '用于描述如何在容器平台部署应用程序的文件 (例如, Docker Compose, Helm Chart, 等.)',
+	'Class:ContainerApplication/Attribute:containervirtualhost_id' => '容器宿主机',
+	'Class:ContainerApplication/Attribute:containervirtualhost_id+' => '应用程序所运行的容器平台',
 	'Class:ContainerApplication/Attribute:logo' => 'Logo',
 	'Class:ContainerApplication/Attribute:logo+' => 'Used as object icon when this ContainerApplication is displayed within impact analysis graphs~~',
 	'Class:ContainerApplication/Attribute:containertype_id' => '容器类型',
@@ -105,7 +105,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ContainerHost/Name' => '%1$s',
 	'Class:ContainerHost/ComplementaryName' => '%1$s-%2$s',
-	'Class:ContainerHost' => '容器化主机',
+	'Class:ContainerHost' => '容器宿主机',
 	'Class:ContainerHost+' => '托管容器的宿主机. 它是容器平台的基本元素',
 	'Class:ContainerHost/Attribute:containercluster_id' => '容器集群',
 	'Class:ContainerHost/Attribute:containercluster_id+' => '',
@@ -126,13 +126,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ContainerCluster/Name' => '%1$s',
 	'Class:ContainerCluster/ComplementaryName' => '',
 	'Class:ContainerCluster' => '容器集群',
-	'Class:ContainerCluster+' => '由一组容器化主机组成的容器平台',
+	'Class:ContainerCluster+' => '由一组容器宿主机组成的容器平台',
 	'Class:ContainerCluster/Attribute:redundancy' => '冗余配置',
 	'Class:ContainerCluster/Attribute:redundancy/disabled' => '当所有主机都在运行时, 集群才是正常的',
 	'Class:ContainerCluster/Attribute:redundancy/count' => '当至少 %1$s 个主机在运行时, 集群才是正常的',
 	'Class:ContainerCluster/Attribute:redundancy/percent' => '当至少 %1$s %% 的在主机运行时，集群才是正常的',
-	'Class:ContainerCluster/Attribute:containerhosts_list' => '容器化主机',
-	'Class:ContainerCluster/Attribute:containerhosts_list+' => '此集群的主机',
+	'Class:ContainerCluster/Attribute:containerhosts_list' => '容器宿主机',
+	'Class:ContainerCluster/Attribute:containerhosts_list+' => '此集群上的主机',
 ]);
 
 //
@@ -162,12 +162,12 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:Cloud/Attribute:containerhosts_list' => '容器化主机',
-	'Class:Cloud/Attribute:containerhosts_list+' => '运行在此云平台上的容器化主机列表',
-	'Class:Server/Attribute:containerhosts_list' => '容器化主机',
-	'Class:Server/Attribute:containerhosts_list+' => '运行在此物理机上的容器化主机列表',
-	'Class:VirtualMachine/Attribute:containerhosts_list' => '容器化主机',
-	'Class:VirtualMachine/Attribute:containerhosts_list+' => '运行在此虚拟机上的容器化主机列表',
+	'Class:Cloud/Attribute:containerhosts_list' => '容器宿主机',
+	'Class:Cloud/Attribute:containerhosts_list+' => '运行在此云平台上的容器宿主机列表',
+	'Class:Server/Attribute:containerhosts_list' => '容器宿主机',
+	'Class:Server/Attribute:containerhosts_list+' => '运行在此物理机上的容器宿主机列表',
+	'Class:VirtualMachine/Attribute:containerhosts_list' => '容器宿主机',
+	'Class:VirtualMachine/Attribute:containerhosts_list+' => '运行在此虚拟机上的容器宿主机列表',
 	'Class:Software/Attribute:containerimages_list' => '容器镜像',
 	'Class:Software/Attribute:containerimages_list+' => '运行此软件的容器镜像列表',
 ]);
