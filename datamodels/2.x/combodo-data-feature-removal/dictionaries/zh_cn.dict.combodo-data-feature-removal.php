@@ -16,10 +16,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'DataFeatureRemoval:Main:Title' => '扩展管理',
 	'DataFeatureRemoval:Main:SubTitle' => '切换安装在您的 iTop 上的扩展',
 	'DataFeatureRemoval:Failure:Title' => '扩展预删除错误',
-	'DataFeatureRemoval:Helper:Title' => '分析是否有任何数据或依赖关系阻止您添加/删除扩展。',
+	'DataFeatureRemoval:Helper:Title' => '分析是否有任何数据或依赖关系阻止您添加/删除扩展.',
 
 	'DataFeatureRemoval:Features:Title' => '扩展',
 	'DataFeatureRemoval:Result:Title' => '请求的修改',
+	'DataFeatureRemoval:NoResult:Title' => '无需修改',
 	'DataFeatureRemoval:Execution:Title' => '删除执行',
 	'DataFeatureRemoval:Analysis:Title' => '分析结果',
 	'DataFeatureRemoval:Analysis:Subtitle' => '审查所有需要关注的元素',
@@ -38,6 +39,14 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'DataFeatureRemoval:CleanupComplete:Title' => '全部清除.',
 	'DataFeatureRemoval:CompilComplete' => '编译成功. 无需清理. 您可以继续进行设置.',
+
+	'DataFeatureRemoval:Compile:InProgress' => '正在编译...',
+	'DataFeatureRemoval:Compile:Success' => '编译成功',
+	'DataFeatureRemoval:Compile:Error' => '编译过程中出错',
+
+	'DataFeatureRemoval:RunAudit:InProgress' => '正在分析...',
+	'DataFeatureRemoval:RunAudit:Success' => '分析完成',
+	'DataFeatureRemoval:RunAudit:Error' => '分析过程中出错',
 
 	'UI:Button:Analyze' => '分析',
 	'UI:Button:ModifyChoices' => '改变我的选择',

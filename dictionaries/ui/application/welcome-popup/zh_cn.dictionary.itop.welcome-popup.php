@@ -27,7 +27,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 <div>我们已实现核心 API ,它将支持未来的增强功能，为新的智能功能和更丰富的体验铺平道路.</div>
 <br>
 <div>敬请拭目以待,这仅仅是好戏的开始.</div>',
-	'UI:WelcomePopup:Message:330_03_CMDB:Title' => '增强版 CMDB',
+	'UI:WelcomePopup:Message:330_03_CMDB:Title' => '增强的 CMDB',
 	'UI:WelcomePopup:Message:330_03_CMDB:Description' => '<div>此版本对数据模型进行了多项改进，以更好地适配持续变化的业务需求.</div>
 <br>
 <div>我们引入了容器管理, 改进的工作流管理, 更丰富的类描述, 以及生命周期管理 (End of Life / End of Support). 服务管理菜单也经过重新设计, 界面更加清晰易用, 部分配置项中还新增了图片和 Logo.</div>
@@ -39,10 +39,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 <div>MFA, 现已直接集成至核心使用流程, 在强化整体安全防护能力的同时, 保障用户获得更流畅统一的使用体验.</div>
 <br>
 <div>我们建议您检查账户设置并开启多因子认证，以获得更强的账户安全防护.</div>',
-	'UI:WelcomePopup:Message:330_05_Portal:Title' => 'New Portal Experience~~',
-	'UI:WelcomePopup:Message:330_05_Portal:Description' => '<div>This new version natively brings a more modern, flexible, and responsive experience to the portal, with a look and feel aligned with the console.</div>
+	'UI:WelcomePopup:Message:330_05_Portal:Title' => '全新的门户体验',
+	'UI:WelcomePopup:Message:330_05_Portal:Description' => '<div>新版本不仅为门户带来更现代化、灵活且响应式的使用体验,而且界面风格与控制台保持一致.</div>
 <br>
-<div>We’ve redesigned the navigation for a clearer and more consistent experience, enhanced the flexibility of menus and dashboards, and introduced responsive cards that adapt to different screen sizes. "My Profile" has also been enhanced, allowing users to manage their account and MFA settings more easily.</div>
+<div>我们重新设计了导航栏，带来更清晰、统一的使用体验，提升了菜单与仪表盘的灵活性，并推出可适配不同屏幕尺寸的响应式卡片.“我的个人资料” 模块也已得到增强,方便用户更轻松地管理账户以及 MFA 设置.</div>
 <br>
-<div>The portal can also be customized with your own look and feel, helping you deliver a more consistent and branded experience to your users.</div>~~',
+<div>门户还可自定义专属外观与风格, 为用户提供风格更加统一、具备品牌特色的使用体验.</div>',
 ]);

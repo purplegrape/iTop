@@ -55,13 +55,15 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'iTopUpdate:UI:Status' => '状态',
 	'iTopUpdate:UI:Action' => '升级',
-	'iTopUpdate:UI:Setup' => ITOP_APPLICATION_SHORT.'安装',
+	'iTopUpdate:UI:Setup' => ITOP_APPLICATION_SHORT.' 安装',
 	'iTopUpdate:UI:History' => '版本历史',
 	'iTopUpdate:UI:Progress' => '升级进度',
+
 	'iTopUpdate:UI:Backup:Label' => '备份文件和数据库',
 	'iTopUpdate:UI:Backup:Warning' => '由于磁盘空间不足, 不建议备份',
+
 	'iTopUpdate:UI:DiskFreeSpace' => '磁盘剩余空间',
-	'iTopUpdate:UI:ItopDiskSpace' => ITOP_APPLICATION_SHORT.'的磁盘空间',
+	'iTopUpdate:UI:ItopDiskSpace' => ITOP_APPLICATION_SHORT.' 的磁盘空间',
 	'iTopUpdate:UI:DBDiskSpace' => '数据库的磁盘空间',
 	'iTopUpdate:UI:FileUploadMaxSize' => '文件上传大小上限',
 
@@ -78,8 +80,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'iTopUpdate:UI:CannotUpdateUseSetup' => '<b>检测到一些文件被修改</b>, 无法进行局部升级.</br>请按照<a target="_blank" href="%2$s">流程</a>一步步操作以手动升级系统. 您必须使用<a href="%1$s">安装向导</a>来升级应用.',
 	'iTopUpdate:UI:CheckInProgress' => '完整性检查中, 请稍候',
 
-	'iTopUpdate:UI:SetupLaunch' => '启动'.ITOP_APPLICATION_SHORT.'安装向导',
-	'iTopUpdate:UI:SetupLaunchConfirm' => '即将启动'.ITOP_APPLICATION_SHORT.'安装向导, 请确定?',
+	'iTopUpdate:UI:SetupLaunch' => '启动 '.ITOP_APPLICATION_SHORT.' 安装向导',
+	'iTopUpdate:UI:SetupLaunchConfirm' => '即将启动 '.ITOP_APPLICATION_SHORT.' 安装向导, 请确定?',
 	'iTopUpdate:UI:FastSetupLaunch' => '快速安装',
 
 	// Setup Messages

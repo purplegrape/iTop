@@ -84,7 +84,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI' => '功能配置项',
-	'Class:FunctionalCI+' => '用于CMDB的抽象类, 用于分组大多数配置项类型.',
+	'Class:FunctionalCI+' => '用于 CMDB 的抽象类, 用于对大多数配置项进行分类.',
 	'Class:FunctionalCI/Attribute:name' => '名称',
 	'Class:FunctionalCI/Attribute:name+' => '',
 	'Class:FunctionalCI/Attribute:description' => '描述',
@@ -92,7 +92,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI/Attribute:org_id' => '组织',
 	'Class:FunctionalCI/Attribute:org_id+' => '',
 	'Class:FunctionalCI/Attribute:organization_name' => '组织名称',
-	'Class:FunctionalCI/Attribute:organization_name+' => '通用名',
+	'Class:FunctionalCI/Attribute:organization_name+' => '通用名称',
 	'Class:FunctionalCI/Attribute:business_criticity' => '业务关键性',
 	'Class:FunctionalCI/Attribute:business_criticity+' => '',
 	'Class:FunctionalCI/Attribute:business_criticity/Value:high' => '高',
@@ -113,7 +113,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI/Attribute:applicationsolution_list+' => '此配置项依赖的所有应用方案',
 	'Class:FunctionalCI/Attribute:softwares_list' => '软件',
 	'Class:FunctionalCI/Attribute:softwares_list+' => '此配置项上已安装的所有软件',
-	'Class:FunctionalCI/Attribute:finalclass' => '类型',
+	'Class:FunctionalCI/Attribute:finalclass' => '配置项子类',
 	'Class:FunctionalCI/Attribute:finalclass+' => '根本属性的名称',
 	'Class:FunctionalCI/Tab:OpenedTickets' => '活跃的工单',
 	'Class:FunctionalCI/Tab:OpenedTickets+' => '影响当前功能配置项的活跃工单',
@@ -131,7 +131,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PhysicalDevice/Attribute:serialnumber+' => '',
 	'Class:PhysicalDevice/Attribute:location_id' => '位置',
 	'Class:PhysicalDevice/Attribute:location_id+' => '',
-	'Class:PhysicalDevice/Attribute:location_name' => '名称',
+	'Class:PhysicalDevice/Attribute:location_name' => '位置名称',
 	'Class:PhysicalDevice/Attribute:location_name+' => '',
 	'Class:PhysicalDevice/Attribute:status' => '状态',
 	'Class:PhysicalDevice/Attribute:status+' => '',
@@ -273,7 +273,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DatacenterDevice/Attribute:fiberinterfacelist_list' => '光口',
 	'Class:DatacenterDevice/Attribute:fiberinterfacelist_list+' => '此设备的所有光纤接口',
 	'Class:DatacenterDevice/Attribute:san_list' => 'SAN',
-	'Class:DatacenterDevice/Attribute:san_list+' => '连接到这台设备的所有SAN交换机',
+	'Class:DatacenterDevice/Attribute:san_list+' => '连接到这台设备的所有光纤交换机',
 	'Class:DatacenterDevice/Attribute:redundancy' => '冗余',
 	'Class:DatacenterDevice/Attribute:redundancy/count' => '此设备运行正常至少需要一路电源 (主或备)',
 	// Unused yet
@@ -300,7 +300,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:NetworkDevice/Attribute:iosversion_name' => 'IOS 版本名称',
 	'Class:NetworkDevice/Attribute:iosversion_name+' => '',
 	'Class:NetworkDevice/Attribute:ios_end_of_support' => 'IOS 过保日期',
-	'Class:NetworkDevice/Attribute:ios_end_of_support+' => '厂商不再为该IOS版本提供修复的时间.',
+	'Class:NetworkDevice/Attribute:ios_end_of_support+' => '厂商不再为该 IOS 版本提供修复的时间.',
 	'Class:NetworkDevice/Attribute:ram' => '内存',
 	'Class:NetworkDevice/Attribute:ram+' => '',
 ]);
@@ -322,7 +322,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Server/Attribute:osversion_name' => 'OS 版本名称',
 	'Class:Server/Attribute:osversion_name+' => '',
 	'Class:Server/Attribute:os_end_of_support' => 'OS 过保日期',
-	'Class:Server/Attribute:os_end_of_support+' => '厂商不再为该操作系统版本提供补丁的日期.',
+	'Class:Server/Attribute:os_end_of_support+' => '厂商不再为该 OS 版本提供补丁的日期.',
 	'Class:Server/Attribute:oslicence_id' => 'OS 许可证',
 	'Class:Server/Attribute:oslicence_id+' => '',
 	'Class:Server/Attribute:oslicence_name' => 'OS 许可证名称',
@@ -352,11 +352,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:SANSwitch' => 'SAN交换机',
-	'Class:SANSwitch+' => 'SAN交换机是指兼容光纤通道协议的网络交换机, 通常用于存储网络. 它是一个数据中心设备.',
+	'Class:SANSwitch' => '光纤交换机',
+	'Class:SANSwitch+' => '光纤交换机是指兼容光纤通道协议的网络交换机, 通常用于存储网络. 它是一种数据中心设备.',
 	'Class:SANSwitch/ComplementaryName' => '%1$s - %2$s',
 	'Class:SANSwitch/Attribute:datacenterdevice_list' => '设备',
-	'Class:SANSwitch/Attribute:datacenterdevice_list+' => '连接到此SAN交换机的所有设备',
+	'Class:SANSwitch/Attribute:datacenterdevice_list+' => '连接到此光纤交换机的所有设备',
 ]);
 
 //
@@ -380,7 +380,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:NAS+' => '数据中心里联网的大容量存储设备. 在 '.ITOP_APPLICATION_SHORT.' 中 NAS (Network-attached storage) 用于托管 NAS 文件系统.',
 	'Class:NAS/ComplementaryName' => '%1$s - %2$s',
 	'Class:NAS/Attribute:nasfilesystem_list' => '文件系统',
-	'Class:NAS/Attribute:nasfilesystem_list+' => '此NAS里的所有文件系统',
+	'Class:NAS/Attribute:nasfilesystem_list+' => '此 NAS 里的所有文件系统',
 ]);
 
 //
@@ -400,7 +400,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PC/Attribute:osversion_name' => 'OS 版本名称',
 	'Class:PC/Attribute:osversion_name+' => '',
 	'Class:PC/Attribute:os_end_of_support' => 'OS 过保日期',
-	'Class:PC/Attribute:os_end_of_support+' => '厂商不再为该操作系统版本提供补丁的日期.',
+	'Class:PC/Attribute:os_end_of_support+' => '厂商不再为该 OS 版本提供补丁的日期.',
 	'Class:PC/Attribute:cpu' => 'CPU',
 	'Class:PC/Attribute:cpu+' => '',
 	'Class:PC/Attribute:ram' => '内存',
@@ -419,7 +419,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Printer' => '打印机',
-	'Class:Printer+' => '可连接的配置项. 可以联网或连接到PC的物理设备.',
+	'Class:Printer+' => '可连接的配置项. 可以联网或连接到 PC 的物理设备.',
 	'Class:Printer/ComplementaryName' => '%1$s - %2$s',
 ]);
 
@@ -542,7 +542,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Software' => '软件',
-	'Class:Software+' => '软件是软件清单中的一个基本项目. 它有一个特定的版本. 在 '.ITOP_APPLICATION_SHORT.' 中, 软件分为: DB服务器、中间件、PC软件、Web服务器和其它软件.',
+	'Class:Software+' => '软件是软件清单中的基本项目. 通常有一个特定的版本. 在 '.ITOP_APPLICATION_SHORT.' 中, 软件分为: DB服务器、中间件、PC软件、Web服务器和其它软件.',
 	'Class:Software/ComplementaryName' => '%1$s - %2$s',
 	'Class:Software/Attribute:name' => '名称',
 	'Class:Software/Attribute:name+' => '',
@@ -732,10 +732,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:VirtualHost' => '虚拟化主机',
+	'Class:VirtualHost' => '虚拟化宿主机',
 	'Class:VirtualHost+' => '对虚拟设备(虚拟机监视器, 集群,...)的抽象, 用于托管虚拟机.',
 	'Class:VirtualHost/Attribute:virtualmachine_list' => '虚拟机',
-	'Class:VirtualHost/Attribute:virtualmachine_list+' => '此虚拟化主机托管的所有虚拟机',
+	'Class:VirtualHost/Attribute:virtualmachine_list+' => '此虚拟化宿主机托管的所有虚拟机',
 ]);
 
 //
@@ -743,8 +743,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:Hypervisor' => 'Hypervisor',
-	'Class:Hypervisor+' => '虚拟化主机. 运行虚拟化软件(MS Hyper-V, VMWare ESX, Xen, 等.), 运行在物理服务器上并支持创建虚拟机.',
+	'Class:Hypervisor' => '虚拟机管理器',
+	'Class:Hypervisor+' => '即虚拟化宿主机. 运行虚拟化软件(MS Hyper-V, VMWare ESX, Xen, 等.), 运行在物理服务器上并支持创建虚拟机.',
 	'Class:Hypervisor/Attribute:farm_id' => '集群',
 	'Class:Hypervisor/Attribute:farm_id+' => '',
 	'Class:Hypervisor/Attribute:farm_name' => '名称',
@@ -761,13 +761,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Farm' => '集群',
-	'Class:Farm+' => '虚拟化的主机. 集群由一组虚拟化监视器组成, 它们通过共享存储资源为托管的虚拟机提供容错能力.',
-	'Class:Farm/Attribute:hypervisor_list' => 'Hypervisor',
-	'Class:Farm/Attribute:hypervisor_list+' => '集群由哪些 Hypervisor 组成',
+	'Class:Farm+' => '虚拟化的主机. 集群通常由一组虚拟化宿主机构成, 并通过共享存储资源为托管的虚拟机提供容错能力.',
+	'Class:Farm/Attribute:hypervisor_list' => '虚拟化管理器',
+	'Class:Farm/Attribute:hypervisor_list+' => '集群由哪些虚拟化管理器组成',
 	'Class:Farm/Attribute:redundancy' => '高可用性',
-	'Class:Farm/Attribute:redundancy/disabled' => '所有 Hypervisor 正常, 集群才正常',
-	'Class:Farm/Attribute:redundancy/count' => '至少%1$s个 Hypervisor 是正常的, 集群才是正常的',
-	'Class:Farm/Attribute:redundancy/percent' => '至少%1$s %%的 Hypervisor 是正常的, 集群才正常',
+	'Class:Farm/Attribute:redundancy/disabled' => '所有虚拟化管理器正常, 集群才正常',
+	'Class:Farm/Attribute:redundancy/count' => '至少 %1$s 个虚拟化管理器是正常的, 集群才正常',
+	'Class:Farm/Attribute:redundancy/percent' => '至少 %1$s %% 的虚拟化管理器是正常的, 集群才正常',
 ]);
 
 //
@@ -776,9 +776,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualMachine' => '虚拟机',
-	'Class:VirtualMachine+' => '与物理机类似的虚拟设备，它既可以托管在 Hypervisor 上，也可以托管在集群上.',
+	'Class:VirtualMachine+' => '与物理机类似的虚拟设备，它既可以直接托管在虚拟化管理器上，也可以托管在集群上.',
 	'Class:VirtualMachine/ComplementaryName' => '%1$s - %2$s',
-	'Class:VirtualMachine/Attribute:virtualhost_id' => '虚拟化主机',
+	'Class:VirtualMachine/Attribute:virtualhost_id' => '虚拟化宿主机',
 	'Class:VirtualMachine/Attribute:virtualhost_id+' => '',
 	'Class:VirtualMachine/Attribute:virtualhost_name' => '名称',
 	'Class:VirtualMachine/Attribute:virtualhost_name+' => '',
@@ -800,7 +800,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualMachine/Attribute:cpu+' => '',
 	'Class:VirtualMachine/Attribute:ram' => '内存',
 	'Class:VirtualMachine/Attribute:ram+' => '',
-	'Class:VirtualMachine/Attribute:managementip' => '管理 IP',
+	'Class:VirtualMachine/Attribute:managementip' => '管理IP',
 	'Class:VirtualMachine/Attribute:managementip+' => '',
 	'Class:VirtualMachine/Attribute:logicalinterface_list' => '网卡',
 	'Class:VirtualMachine/Attribute:logicalinterface_list+' => '所有逻辑网卡',
@@ -878,10 +878,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:lnkSanToDatacenterDevice' => '链接 SAN交换机/数据中心设备',
-	'Class:lnkSanToDatacenterDevice+' => '这是多对多的关系, SAN交换机与数据中心设备(服务器、网络设备等)之间存在的网络连接.',
+	'Class:lnkSanToDatacenterDevice' => '链接 光纤交换机/数据中心设备',
+	'Class:lnkSanToDatacenterDevice+' => '这是多对多的关系, 光纤交换机与数据中心设备(服务器、网络设备等)之间存在的网络连接.',
 	'Class:lnkSanToDatacenterDevice/Name' => '%1$s / %2$s',
-	'Class:lnkSanToDatacenterDevice/Attribute:san_id' => 'SAN 交换机',
+	'Class:lnkSanToDatacenterDevice/Attribute:san_id' => '光纤交换机',
 	'Class:lnkSanToDatacenterDevice/Attribute:san_id+' => '',
 	'Class:lnkSanToDatacenterDevice/Attribute:san_name' => '名称',
 	'Class:lnkSanToDatacenterDevice/Attribute:san_name+' => '',
@@ -889,7 +889,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_id+' => '',
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_name' => '名称',
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_name+' => '',
-	'Class:lnkSanToDatacenterDevice/Attribute:san_port' => 'SAN 光口',
+	'Class:lnkSanToDatacenterDevice/Attribute:san_port' => '光口',
 	'Class:lnkSanToDatacenterDevice/Attribute:san_port+' => '',
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_port' => '设备光口',
 	'Class:lnkSanToDatacenterDevice/Attribute:datacenterdevice_port+' => '',
@@ -948,7 +948,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Patch/Attribute:documents_list+' => '此补丁相关的所有文档',
 	'Class:Patch/Attribute:description' => '描述',
 	'Class:Patch/Attribute:description+' => '',
-	'Class:Patch/Attribute:finalclass' => '补丁类型',
+	'Class:Patch/Attribute:finalclass' => '补丁子类',
 	'Class:Patch/Attribute:finalclass+' => '根本属性的名称',
 ]);
 
@@ -965,7 +965,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OSPatch/Attribute:osversion_id+' => '',
 	'Class:OSPatch/Attribute:osfamily_id' => 'OS 家族',
 	'Class:OSPatch/Attribute:osfamily_id+' => '',
-	'Class:OSPatch/Attribute:osversion_name' => '名称',
+	'Class:OSPatch/Attribute:osversion_name' => 'OS 版本名称',
 	'Class:OSPatch/Attribute:osversion_name+' => '',
 ]);
 
@@ -978,7 +978,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SoftwarePatch+' => '针对特定软件的补丁、热修复、安全修复或服务包.',
 	'Class:SoftwarePatch/Attribute:software_id' => '软件',
 	'Class:SoftwarePatch/Attribute:software_id+' => '',
-	'Class:SoftwarePatch/Attribute:software_name' => '名称',
+	'Class:SoftwarePatch/Attribute:software_name' => '软件名称',
 	'Class:SoftwarePatch/Attribute:software_name+' => '',
 	'Class:SoftwarePatch/Attribute:softwareinstances_list' => '软件实例',
 	'Class:SoftwarePatch/Attribute:softwareinstances_list+' => '已安装此软件补丁的所有系统',
@@ -1027,11 +1027,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OSLicence' => 'OS 许可证',
 	'Class:OSLicence+' => '针对特定操作系统的许可证合同. 该许可证与操作系统相关联 (例如 Windows 2008 R2) 并可以与多个物理机或虚拟机关联.',
 	'Class:OSLicence/ComplementaryName' => '%1$s - %2$s',
-	'Class:OSLicence/Attribute:osversion_id' => 'OS版本',
+	'Class:OSLicence/Attribute:osversion_id' => 'OS 版本',
 	'Class:OSLicence/Attribute:osversion_id+' => '',
-	'Class:OSLicence/Attribute:osfamily_id' => 'OS家族',
+	'Class:OSLicence/Attribute:osfamily_id' => 'OS 家族',
 	'Class:OSLicence/Attribute:osfamily_id+' => '',
-	'Class:OSLicence/Attribute:osversion_name' => '名称',
+	'Class:OSLicence/Attribute:osversion_name' => 'OS 版本名称',
 	'Class:OSLicence/Attribute:osversion_name+' => '',
 	'Class:OSLicence/Attribute:virtualmachines_list' => '虚拟机',
 	'Class:OSLicence/Attribute:virtualmachines_list+' => '使用此许可证的所有虚拟机',
@@ -1049,7 +1049,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SoftwareLicence/ComplementaryName' => '%1$s - %2$s',
 	'Class:SoftwareLicence/Attribute:software_id' => '软件',
 	'Class:SoftwareLicence/Attribute:software_id+' => '',
-	'Class:SoftwareLicence/Attribute:software_name' => '名称',
+	'Class:SoftwareLicence/Attribute:software_name' => '软件名称',
 	'Class:SoftwareLicence/Attribute:software_name+' => '',
 	'Class:SoftwareLicence/Attribute:softwareinstance_list' => '软件实例',
 	'Class:SoftwareLicence/Attribute:softwareinstance_list+' => '使用此许可证的所有系统',
@@ -1065,7 +1065,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToLicence/Name' => '%1$s / %2$s',
 	'Class:lnkDocumentToLicence/Attribute:licence_id' => '许可证',
 	'Class:lnkDocumentToLicence/Attribute:licence_id+' => '',
-	'Class:lnkDocumentToLicence/Attribute:licence_name' => '名称',
+	'Class:lnkDocumentToLicence/Attribute:licence_name' => '许可证名称',
 	'Class:lnkDocumentToLicence/Attribute:licence_name+' => '',
 	'Class:lnkDocumentToLicence/Attribute:document_id' => '文档',
 	'Class:lnkDocumentToLicence/Attribute:document_id+' => '',
@@ -1082,7 +1082,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OSVersion+' => '分类. 计算机 (物理机, 虚拟机 或 PC) 的 "OS 版本" 对应的可能的值. OS 版本以 OS 家族为单位进行组织.',
 	'Class:OSVersion/Attribute:osfamily_id' => 'OS 家族',
 	'Class:OSVersion/Attribute:osfamily_id+' => '',
-	'Class:OSVersion/Attribute:osfamily_name' => '名称',
+	'Class:OSVersion/Attribute:osfamily_name' => 'OS 家族名称',
 	'Class:OSVersion/Attribute:osfamily_name+' => '',
 	'Class:OSVersion/Attribute:end_of_support' => '过保日期',
 	'Class:OSVersion/Attribute:end_of_support+' => '厂商停止为此 OS 版本提供补丁的截止日期.',
@@ -1166,7 +1166,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Model/Attribute:type/Value:Printer+' => '打印机',
 	'Class:Model/Attribute:type/Value:Rack' => '机架',
 	'Class:Model/Attribute:type/Value:Rack+' => '机架',
-	'Class:Model/Attribute:type/Value:SANSwitch' => 'SAN 交换机',
+	'Class:Model/Attribute:type/Value:SANSwitch' => '光纤交换机',
 	'Class:Model/Attribute:type/Value:SANSwitch+' => '光纤交换机',
 	'Class:Model/Attribute:type/Value:Server' => '物理机',
 	'Class:Model/Attribute:type/Value:Server+' => '物理机',
@@ -1377,7 +1377,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:IPInterface/Attribute:ipaddress' => 'IP 地址',
 	'Class:IPInterface/Attribute:ipaddress+' => '',
 
-	'Class:IPInterface/Attribute:macaddress' => 'MAC地址',
+	'Class:IPInterface/Attribute:macaddress' => 'MAC 地址',
 	'Class:IPInterface/Attribute:macaddress+' => '',
 	'Class:IPInterface/Attribute:comment' => '备注',
 	'Class:IPInterface/Attribute:coment+' => '',

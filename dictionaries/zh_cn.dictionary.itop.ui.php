@@ -131,8 +131,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Query/Attribute:export_last_user_contact+' => '最近一次执行导出的联系人',
 	'Class:Query/Attribute:usages' => '用法',
 	'Class:Query/Attribute:usages+' => '说明该查询可能的用法.
- - "参考 AI" 标签, 假定描述非常明确且符合 OQL 标准。它可以作为通过 AI 构建 OQL 查询的范例。
- - "通知" 标签, 表示返回的对象，有且仅有一个类型为 email 的字段。
+ - "参考 AI" 标签, 假定描述非常明确且符合 OQL 标准. 它可以作为通过 AI 构建 OQL 查询的范例.
+ - "通知" 标签, 表示返回的对象，有且仅有一个类型为 email 的字段.
  - "仪表" 标签, 假定 OQL 返回一个单一类型的对象.',
 	'Class:Query/Attribute:usages/Value:export' => '导出',
 	'Class:Query/Attribute:usages/Value:reference' => '参考 AI',
@@ -399,9 +399,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:WelcomeMenu' => '欢迎',
-	'Menu:WelcomeMenu+' => '欢迎使用'.ITOP_APPLICATION_SHORT,
+	'Menu:WelcomeMenu+' => '欢迎使用 '.ITOP_APPLICATION_SHORT,
 	'Menu:WelcomeMenuPage' => '欢迎',
-	'Menu:WelcomeMenuPage+' => '欢迎使用'.ITOP_APPLICATION_SHORT,
+	'Menu:WelcomeMenuPage+' => '欢迎使用 '.ITOP_APPLICATION_SHORT,
 	'Menu:AdminTools' => '管理',
 	'Menu:AdminTools+' => '管理工具',
 	'Menu:AdminTools?' => '具有管理员角色的用户才能使用的工具',
@@ -425,7 +425,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'BooleanLabel:yes' => '是',
 	'BooleanLabel:no' => '否',
-	'UI:WelcomeMenu:Title' => '欢迎使用'.ITOP_APPLICATION_SHORT,
+	'UI:WelcomeMenu:Title' => '欢迎使用 '.ITOP_APPLICATION_SHORT,
 	'UI:WelcomeMenu:AllOpenRequests' => '所有待处理的需求: %1$d',
 	'UI:WelcomeMenu:MyCalls'         => '我办理的需求',
 	'UI:WelcomeMenu:OpenIncidents'   => '所有待处理的事件: %1$d',
@@ -521,7 +521,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Error:InvalidDashboard'                           => '错误: 无效的仪表盘',
 	'UI:Error:MaintenanceMode'                            => '应用正处于维护中',
 	'UI:Error:MaintenanceTitle'                           => '维护',
-	'UI:Error:InvalidToken'                               => '当前会话无效。请刷新页面后重试。如果问题仍然存在，请先退出登录再重新登录。',
+	'UI:Error:InvalidToken'                               => '当前会话无效, 请刷新页面后重试. 如果问题仍然存在, 请先退出登录再重新登录.',
 	'UI:Error:TwigController'                             => '表单控制器内部错误',
 
 	'UI:Error:SMTP:UnknownVendor' => 'OAuth SMTP提供者%1$s不存在 (email_transport_smtp.oauth.provider)',
@@ -632,7 +632,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:CSVImport:Column'                     => '列 %1$s',
 	'UI:CSVImport:SelectFile'                 => '请选择要导入的文件:',
 	'UI:CSVImport:Tab:LoadFromFile'           => '从文件导入',
-	'UI:CSVImport:Tab:CopyPaste'              => '复制和粘贴的数据',
+	'UI:CSVImport:Tab:CopyPaste'              => '复制粘贴的数据',
 	'UI:CSVImport:Tab:Templates'              => '模板',
 	'UI:CSVImport:PasteData'                  => '粘贴数据以导入:',
 	'UI:CSVImport:PickClassForTemplate'       => '请选择模板: ',
@@ -761,12 +761,12 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:RunQuery:ExpressionToEvaluate'  => '请输入表达式: ',
 	'UI:RunQuery:QueryArguments'        => '查询参数',
 	'UI:RunQuery:MoreInfo'              => '此查询的更多信息: ',
-	'UI:RunQuery:DevelopedQuery'        => '快捷查询表达式: ',
+	'UI:RunQuery:DevelopedQuery'        => '优化过的查询表达式: ',
 	'UI:RunQuery:SerializedFilter'      => '序列化的过滤器: ',
-	'UI:RunQuery:DevelopedOQL'          => '优化的OQL',
-	'UI:RunQuery:DevelopedOQLCount'     => '开发的OQL计数',
-	'UI:RunQuery:ResultSQLCount'        => '结果SQL计数',
-	'UI:RunQuery:ResultSQL'             => '结果SQL',
+	'UI:RunQuery:DevelopedOQL'          => '自定义的 OQL',
+	'UI:RunQuery:DevelopedOQLCount'     => '用于统计的自定义 OQL',
+	'UI:RunQuery:ResultSQLCount'        => '用于统计的最终执行的 SQL',
+	'UI:RunQuery:ResultSQL'             => '最终执行的 SQL',
 	'UI:RunQuery:Error'                 => '运行此查询时发生了一个错误',
 	'UI:Query:UrlForExcel'              => '用于 MS-Excel 网络查询的 URL',
 	'UI:Query:UrlV1'                    => '没有定义字段列表. 没有这个信息页面<em>export-V2.php</em>无法调用. 因此, 建议的以下 URL 指向传统页面: <em>export.php</em>. 该传统版本导出具有以下限制: 导出的字段列表很大程度依赖于导出格式和'.ITOP_APPLICATION_SHORT.'数据模型. <br/>如果您需要确保导出的列保持长期稳定, 则必须为属性 "Fields" 指定值并使用页面<em>export-V2.php</em>.',
@@ -1494,7 +1494,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'UI:BrowseInlineImages' => '浏览图片...',
 	'UI:UploadInlineImageLegend' => '上传新图片',
-	'UI:SelectInlineImageToUpload' => '选择要上传的图片',
+	'UI:SelectInlineImageToUpload' => '请选择要上传的图片',
 	'UI:AvailableInlineImagesLegend' => '可用的图片',
 	'UI:NoInlineImage' => '服务器上没有图片. 使用上面的 "浏览" 按钮, 从您的电脑上选择并上传到服务器.',
 	'UI:MissingInlineImage' => '缺少图片',
@@ -1684,7 +1684,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ProfilesMenu+'            => '查看已有的角色',
 	'Menu:ProfilesMenu:Title'       => '角色',
 	'Menu:UserAccountsMenu'         => '账号',
-	'Menu:UserAccountsMenu+'        => '处理 '.ITOP_APPLICATION_SHORT.' 用户及权限',
+	'Menu:UserAccountsMenu+'        => '处理 '.ITOP_APPLICATION_SHORT.' 用户和权限',
 	'Menu:UserAccountsMenu:Title'   => '账号',
 	'Menu:UserManagement'           => '用户管理',
 	'Menu:Queries'                  => '查询',

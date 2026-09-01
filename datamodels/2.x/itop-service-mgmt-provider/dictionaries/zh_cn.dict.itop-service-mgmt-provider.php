@@ -392,7 +392,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SLT/Attribute:name' => '名称',
 	'Class:SLT/Attribute:name+' => '',
 	'Class:SLT/Attribute:priority' => '优先级',
-	'Class:SLT/Attribute:priority+' => '此 SLT 适用的工单优先级。仅有此优先级的工单需遵守此 SLT 的要求.',
+	'Class:SLT/Attribute:priority+' => '此 SLT 适用的工单优先级. 仅有此优先级的工单需遵守此 SLT 的要求.',
 	'Class:SLT/Attribute:priority/Value:1' => '紧急',
 	'Class:SLT/Attribute:priority/Value:1+' => '紧急',
 	'Class:SLT/Attribute:priority/Value:2' => '高',
