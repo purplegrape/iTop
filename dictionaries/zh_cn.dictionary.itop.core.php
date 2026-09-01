@@ -47,7 +47,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Core:AttributeObsolescenceDate' => '报废日期',
 	'Core:AttributeObsolescenceDate+' => '',
 
-	'Core:AttributeTagSet' => '清单',
+	'Core:AttributeTagSet' => '标签清单',
 	'Core:AttributeTagSet+' => '',
 	'Core:AttributeSet:placeholder' => '请点击这里添加',
 	'Core:Placeholder:CannotBeResolved' => '(%1$s : 无法解析)',
