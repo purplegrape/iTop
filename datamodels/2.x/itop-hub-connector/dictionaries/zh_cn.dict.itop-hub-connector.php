@@ -67,7 +67,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'iTopHub:InstallationWelcome' => '安装来自 iTop Hub 的扩展',
 	'iTopHub:DBBackupLabel' => '实例备份',
 	'iTopHub:DBBackupSentence' => '在升级之前,备份数据库和 '.ITOP_APPLICATION_SHORT.' 配置文件',
-	'iTopHub:DeployBtn' => '安装!',
+	'iTopHub:DeployBtn' => '部署 !',
 	'iTopHub:DatabaseBackupProgress' => '实例备份...',
 
 	'iTopHub:InstallationEffect:Install' => '版本: %1$s 将被安装.',
