@@ -2,7 +2,7 @@
 
 /*
  * @copyright   Copyright (C) 2010-2026 Combodo SAS
- * @license     http://opensource.org/licenses/AGPL-3.0
+ * @license     https://opensource.org/licenses/AGPL-3.0
  */
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
@@ -54,5 +54,5 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Login:Error:AccessAdmin'                   => '只有具有管理员权限的人才能访问. 请联系管理员.',
 	'UI:Login:Error:WrongOrganizationName'         => '未知组织',
 	'UI:Login:Error:MultipleContactsHaveSameEmail' => '多个联系人存在相同的邮箱',
-	'UI:Login:Error:NoValidProfiles' => '无效的资料',
+	'UI:Login:Error:NoValidProfiles'               => '无效的资料',
 ]);
