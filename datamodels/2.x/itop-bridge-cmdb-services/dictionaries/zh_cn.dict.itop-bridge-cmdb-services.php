@@ -1,16 +1,38 @@
 <?php
 
+// Copyright (C) 2010-2024 Combodo SAS
+//
+//   This file is part of iTop.
+//
+//   iTop is free software; you can redistribute it and/or modify
+//   it under the terms of the GNU Affero General Public License as published by
+//   the Free Software Foundation, either version 3 of the License, or
+//   (at your option) any later version.
+//
+//   iTop is distributed in the hope that it will be useful,
+//   but WITHOUT ANY WARRANTY; without even the implied warranty of
+//   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//   GNU Affero General Public License for more details.
+//
+//   You should have received a copy of the GNU Affero General Public License
+//   along with iTop. If not, see <http://www.gnu.org/licenses/>
 /**
- * Localized data
- *
- * @copyright Copyright (C) 2010-2024 Combodo SAS
- * @license    https://opensource.org/licenses/AGPL-3.0
- *
- */
-/**
- * @author Benjamin Planque <benjamin.planque@combodo.com>
- *
- */
+* @author       Benjamin Planque <benjamin.planque@combodo.com>
+* @copyright   Copyright (C) 2010-2024 Combodo SAS
+* @license     http://opensource.org/licenses/AGPL-3.0
+*/
+
+//////////////////////////////////////////////////////////////////////
+// Note: The classes have been grouped by categories: bizmodel
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+// Classes in 'bizmodel'
+//////////////////////////////////////////////////////////////////////
+//
+//
+// Class: lnkFunctionalCIToProviderContract
+//
+
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToProviderContract' => '链接 功能配置项/供应商合同',
 	'Class:lnkFunctionalCIToProviderContract+' => 'This link models the functional CIs that are supported by an external company through a provider contract.~~',
@@ -23,6 +45,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToProviderContract/Attribute:functionalci_id+' => '~~',
 	'Class:lnkFunctionalCIToProviderContract/Attribute:functionalci_name' => '配置项名称',
 	'Class:lnkFunctionalCIToProviderContract/Attribute:functionalci_name+' => '~~',
+]);
+
+//
+// Class: lnkFunctionalCIToService
+//
+
+Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToService' => '链接 功能配置项/服务',
 	'Class:lnkFunctionalCIToService+' => 'This link models the functional CIs that are required to deliver a Service and whose malfunction would affect the quality of the Service.~~',
 	'Class:lnkFunctionalCIToService/Name' => '%1$s / %2$s',
@@ -34,10 +63,24 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToService/Attribute:functionalci_id+' => '~~',
 	'Class:lnkFunctionalCIToService/Attribute:functionalci_name' => '配置项名称',
 	'Class:lnkFunctionalCIToService/Attribute:functionalci_name+' => '~~',
+]);
+
+//
+// Class: FunctionalCI
+//
+
+Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI/Attribute:providercontracts_list' => '供应商合同',
 	'Class:FunctionalCI/Attribute:providercontracts_list+' => '此配置项的所有供应商合同',
 	'Class:FunctionalCI/Attribute:services_list' => '服务',
 	'Class:FunctionalCI/Attribute:services_list+' => '此配置项影响的所有服务',
+]);
+
+//
+// Class: Document
+//
+
+Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Document/Attribute:contracts_list' => '合同',
 	'Class:Document/Attribute:contracts_list+' => '此文档相关的所有合同',
 	'Class:Document/Attribute:services_list' => '服务',

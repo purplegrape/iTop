@@ -25,7 +25,7 @@
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ChangeManagement' => '变更管理',
 	'Menu:Change:Overview' => '概况',
-	'Menu:Change:Overview+' => '~~',
+	'Menu:Change:Overview+' => '',
 	'Menu:NewChange' => '新建变更',
 	'Menu:NewChange+' => '新建变更工单',
 	'Menu:SearchChanges' => '搜索变更',
@@ -33,7 +33,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:Change:Shortcuts' => '变更',
 	'Menu:Change:Shortcuts+' => '快速访问预定义的变更数据',
 	'Menu:WaitingAcceptance' => '等待审核的变更',
-	'Menu:WaitingAcceptance+' => '~~',
+	'Menu:WaitingAcceptance+' => '',
 	'Menu:WaitingApproval' => '等待批准的变更',
 	'Menu:WaitingApproval+' => '处于计划状态的变更',
 	'Menu:Changes' => '所有待处理的变更',

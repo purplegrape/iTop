@@ -5,18 +5,17 @@
  *
  * @copyright Copyright (C) 2010-2024 Combodo SAS
  * @license    https://opensource.org/licenses/AGPL-3.0
- *
  */
-/**
- *
- */
+
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:CreateMailbox' => '创建邮箱...',
 	'Menu:OAuthClient' => 'OAuth Mail Access~~',
 	'Menu:OAuthClient+' => 'Oauth for email access~~',
 	'Menu:GenerateTokens' => '生成访问令牌...',
 	'Menu:RegenerateTokens' => '重新生成访问令牌...',
+
 	'itop-oauth-client/Operation:CreateMailBox/Title' => '邮箱创建',
+
 	'itop-oauth-client:UsedForSMTP' => '此OAuth客户端用户SMTP',
 	'itop-oauth-client:TestSMTP' => '发送测试邮件',
 	'itop-oauth-client:MissingOAuthClient' => '没有Oauth客户端给用户%1$s',
@@ -25,12 +24,21 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'itop-oauth-client:Message:TokenCreated' => '访问令牌已生成',
 	'itop-oauth-client:Message:TokenRecreated' => '访问令牌已重新生成',
 	'itop-oauth-client:Message:TokenError' => '由于服务错误没有生成访问令牌',
+
 	'OAuthClient:Name/UseForSMTPMustBeUnique' => '此组合登录 (%1$s) 和使用于SMTP (%2$s) 已经在OAuth客户端使用',
+
 	'OAuthClient:baseinfo' => '基本信息',
 	'OAuthClient:scope' => '范围',
+]);
+
+//
+// Class: OAuthClient
+//
+
+Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OAuthClient' => 'OAuth Mail Access~~',
 	'Class:OAuthClient/Attribute:provider' => '提供商',
-	'Class:OAuthClient/Attribute:provider+' => '~~',
+	'Class:OAuthClient/Attribute:provider+' => '',
 	'Class:OAuthClient/Attribute:name' => '登录',
 	'Class:OAuthClient/Attribute:name+' => '通常, 这里填您的邮箱地址',
 	'Class:OAuthClient/Attribute:status' => '状态',
@@ -38,24 +46,34 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OAuthClient/Attribute:status/Value:active' => '已生成访问令牌',
 	'Class:OAuthClient/Attribute:status/Value:inactive' => '没有访问令牌',
 	'Class:OAuthClient/Attribute:description' => '描述',
-	'Class:OAuthClient/Attribute:description+' => '~~',
+	'Class:OAuthClient/Attribute:description+' => '',
 	'Class:OAuthClient/Attribute:client_id' => '客户端编号',
 	'Class:OAuthClient/Attribute:client_id+' => 'A long string of characters provided by your OAuth2 provider~~',
 	'Class:OAuthClient/Attribute:client_secret' => '客户端密码',
 	'Class:OAuthClient/Attribute:client_secret+' => 'Another long string of characters provided by your OAuth2 provider~~',
 	'Class:OAuthClient/Attribute:refresh_token' => '刷新令牌',
-	'Class:OAuthClient/Attribute:refresh_token+' => '~~',
+	'Class:OAuthClient/Attribute:refresh_token+' => '',
 	'Class:OAuthClient/Attribute:refresh_token_expiration' => '刷新令牌有效期',
 	'Class:OAuthClient/Attribute:refresh_token_expiration+' => '~~',
 	'Class:OAuthClient/Attribute:token' => '访问令牌',
-	'Class:OAuthClient/Attribute:token+' => '~~',
+	'Class:OAuthClient/Attribute:token+' => '',
 	'Class:OAuthClient/Attribute:token_expiration' => '访问令牌有效期',
-	'Class:OAuthClient/Attribute:token_expiration+' => '~~',
+	'Class:OAuthClient/Attribute:token_expiration+' => '',
 	'Class:OAuthClient/Attribute:redirect_url' => 'Redirect url',
-	'Class:OAuthClient/Attribute:redirect_url+' => 'This url must be copied in the OAuth2 configuration of the provider
-Erase the field to recalculate default value',
-	'Class:OAuthClient/Attribute:mailbox_list' => '邮箱列表',
-	'Class:OAuthClient/Attribute:mailbox_list+' => '~~',
+	'Class:OAuthClient/Attribute:redirect_url+' => <<<EOF
+This url must be copied in the OAuth2 configuration of the provider
+Erase the field to recalculate default value
+EOF
+,
+	'Class:OAuthClient/Attribute:mailbox_list' => 'Mailbox list~~',
+	'Class:OAuthClient/Attribute:mailbox_list+' => '',
+]);
+
+//
+// Class: OAuthClientAzure
+//
+
+Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OAuthClientAzure' => 'OAuth Mail Access for Microsoft Azure~~',
 	'Class:OAuthClientAzure/Name' => '%1$s (%2$s)',
 	'Class:OAuthClientAzure/Attribute:scope' => '范围',
@@ -78,6 +96,13 @@ Erase the field to recalculate default value',
 	'Class:OAuthClientAzure/Attribute:used_for_smtp/Value:no' => '否',
 	'Class:OAuthClientAzure/Attribute:tenant' => '租户',
 	'Class:OAuthClientAzure/Attribute:tenant+' => 'Tenant ID of the configured application. For multi-tenant application, use "common".~~',
+]);
+
+//
+// Class: OAuthClientGoogle
+//
+
+Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OAuthClientGoogle' => 'OAuth Mail Access for Google~~',
 	'Class:OAuthClientGoogle/Name' => '%1$s (%2$s)',
 	'Class:OAuthClientGoogle/Attribute:scope' => '范围',

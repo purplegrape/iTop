@@ -12,7 +12,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Relation:dataflows/Description'    => '配置项之间的数据流',
 	'Relation:dataflows/DownStream'     => '出站数据流...',
 	'Relation:dataflows/DownStream+'    => 'Outbound flows map from~~',
-	'Relation:dataflows/UpStream'       => '进站数据流...',
+	'Relation:dataflows/UpStream'       => '入站数据流...',
 	'Relation:dataflows/UpStream+'      => 'Inbound flows map to~~',
 
 	'Class:FunctionalCI/Attribute:dataflows' => '数据流',
@@ -46,6 +46,12 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DataFlow/Attribute:destination_impact/Value:no+' => '如果数据流停止，目标不受影响',
 	'Class:DataFlow/Attribute:dataflowtype_id' => '数据流类型',
 	'Class:DataFlow/Attribute:dataflowtype_id+' => '数据流的分类',
+	'Class:DataFlow/Attribute:dataflowprotocol_id' => 'Flow protocol~~',
+	'Class:DataFlow/Attribute:dataflowprotocol_id+' => 'Values defined in a typology of Data Flow Protocol~~',
+	'Class:DataFlow/Attribute:documentation_url' => 'Documentation URL~~',
+	'Class:DataFlow/Attribute:documentation_url+' => 'URL to the documentation of the data flow~~',
+	'Class:DataFlow/Attribute:last_change_date' => 'Last change date~~',
+	'Class:DataFlow/Attribute:last_change_date+' => 'Last time the software or configuration of the Data Flow was updated~~',
 	'Class:DataFlow/Attribute:status' => '状态',
 	'Class:DataFlow/Attribute:status+' => '',
 	'Class:DataFlow/Attribute:status/Value:active' => '启用',
@@ -74,18 +80,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DataFlowType' => '数据流类型',
 	'Class:DataFlowType+' => '数据流的分类',
 
-/*
-	'Class:DataFlow/Attribute:source_id_friendlyname'             => 'source_id_friendlyname',
-	'Class:DataFlow/Attribute:source_id_friendlyname+'            => 'Full name',
-	'Class:DataFlow/Attribute:source_id_finalclass_recall'        => 'source_id->CI sub-class',
-	'Class:DataFlow/Attribute:source_id_finalclass_recall+'       => 'Name of the final class',
-	'Class:DataFlow/Attribute:source_id_obsolescence_flag'        => 'source_id->Obsolete',
-	'Class:DataFlow/Attribute:source_id_obsolescence_flag+'       => 'Computed dynamically on other attributes',
-	'Class:DataFlow/Attribute:destination_id_friendlyname'        => 'destination_id_friendlyname',
-	'Class:DataFlow/Attribute:destination_id_friendlyname+'       => 'Full name',
-	'Class:DataFlow/Attribute:destination_id_finalclass_recall'   => 'destination_id->CI sub-class',
-	'Class:DataFlow/Attribute:destination_id_finalclass_recall+'  => 'Name of the final class',
-	'Class:DataFlow/Attribute:destination_id_obsolescence_flag'   => 'destination_id->Obsolete',
-	'Class:DataFlow/Attribute:destination_id_obsolescence_flag+'  => 'Computed dynamically on other attributes',
-*/
+	'Class:DataFlowProtocol' => 'Data Flow Protocol',
+	'Class:DataFlowProtocol+' => 'Typology of Data Flow Protocol',
+
 ]);
