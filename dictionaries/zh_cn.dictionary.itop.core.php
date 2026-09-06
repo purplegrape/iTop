@@ -719,7 +719,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Trigger/Attribute:subscription_policy'  => '订阅策略',
 	'Class:Trigger/Attribute:subscription_policy+' => '允许用户从触发器取消订阅',
 	'Class:Trigger/Attribute:subscription_policy/Value:allow_no_channel' => '允许完全取消订阅',
-	'Class:Trigger/Attribute:subscription_policy/Value:force_at_least_one_channel' => '强制至少选择一个通道 (新闻或邮件)',
+	'Class:Trigger/Attribute:subscription_policy/Value:force_at_least_one_channel' => '强制至少选择一个通道 (消息或邮件)',
 	'Class:Trigger/Attribute:subscription_policy/Value:force_all_channels' => '拒绝取消订阅',
 ]);
 
