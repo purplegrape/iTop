@@ -12,5 +12,5 @@
  */
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Component:Field:BulkModify:UnknownValues:Tooltip' => '未知值',
-	'UI:Component:Field:GroupedActions:Tooltip' => 'More actions~~',
+	'UI:Component:Field:GroupedActions:Tooltip' => '更多操作',
 ]);
