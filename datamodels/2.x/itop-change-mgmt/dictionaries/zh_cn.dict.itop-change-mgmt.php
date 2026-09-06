@@ -4,7 +4,7 @@
  * Localized data
  *
  * @copyright Copyright (C) 2010-2024 Combodo SAS
- * @license    https://opensource.org/licenses/AGPL-3.0
+ * @license    http://opensource.org/licenses/AGPL-3.0
  *
  * This file is part of iTop.
  *
@@ -25,7 +25,7 @@
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:ChangeManagement' => '变更管理',
 	'Menu:Change:Overview' => '概况',
-	'Menu:Change:Overview+' => '',
+	'Menu:Change:Overview+' => '~~',
 	'Menu:NewChange' => '新建变更',
 	'Menu:NewChange+' => '新建变更工单',
 	'Menu:SearchChanges' => '搜索变更',
@@ -33,11 +33,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:Change:Shortcuts' => '变更',
 	'Menu:Change:Shortcuts+' => '快速访问预定义的变更数据',
 	'Menu:WaitingAcceptance' => '等待审核的变更',
-	'Menu:WaitingAcceptance+' => '',
+	'Menu:WaitingAcceptance+' => '~~',
 	'Menu:WaitingApproval' => '等待批准的变更',
 	'Menu:WaitingApproval+' => '处于计划状态的变更',
 	'Menu:Changes' => '待处理的变更',
-	'Menu:Changes+' => '待处理的变更',
+	'Menu:Changes+' => '所有待处理的变更',
 	'Menu:MyChanges' => '分配给我的变更',
 	'Menu:MyChanges+' => '分配给我的变更 (作为办理人)',
 	'UI-ChangeManagementOverview-ChangeByCategory-last-7-days' => '最近一周的变更 (按类型)',
@@ -110,13 +110,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Change/Attribute:fallback_plan' => '回滚计划',
 	'Class:Change/Attribute:fallback_plan+' => '',
 	'Class:Change/Attribute:related_request_list' => '相关需求',
-	'Class:Change/Attribute:related_request_list+' => '此变更相关的需求',
+	'Class:Change/Attribute:related_request_list+' => '此变更相关的所有需求',
 	'Class:Change/Attribute:related_incident_list' => '相关事件',
-	'Class:Change/Attribute:related_incident_list+' => '此变更相关的事件',
+	'Class:Change/Attribute:related_incident_list+' => '此变更相关的所有事件',
 	'Class:Change/Attribute:related_problems_list' => '相关问题',
-	'Class:Change/Attribute:related_problems_list+' => '此变更相关的问题',
+	'Class:Change/Attribute:related_problems_list+' => '此变更相关的所有问题',
 	'Class:Change/Attribute:child_changes_list' => '子变更',
-	'Class:Change/Attribute:child_changes_list+' => '此变更相关的子变更',
+	'Class:Change/Attribute:child_changes_list+' => '此变更相关的所有子变更',
 	'Class:Change/Attribute:parent_id_friendlyname' => '父级变更昵称',
 	'Class:Change/Attribute:parent_id_friendlyname+' => '',
 	'Class:Change/Stimulus:ev_assign' => '分配',

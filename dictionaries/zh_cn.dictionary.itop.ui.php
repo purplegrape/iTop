@@ -176,9 +176,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:User/Attribute:email'                 => '邮箱',
 	'Class:User/Attribute:email+'                => '对应联系人的邮箱',
 	'Class:User/Attribute:login'                 => '登录名',
-	'Class:User/Attribute:login+'                => '账户标识字符串, 在 '.ITOP_APPLICATION_SHORT.' 中必须唯一',
+	'Class:User/Attribute:login+'                => '账户标识字符串, 在'.ITOP_APPLICATION_SHORT.'中必须唯一',
 	'Class:User/Attribute:language'              => '语言',
-	'Class:User/Attribute:language+'             => '此用户的 '.ITOP_APPLICATION_SHORT.' 默认语言, 请在 '.ITOP_APPLICATION_SHORT.' 支持的本地化语言中选择. ',
+	'Class:User/Attribute:language+'             => '此用户的'.ITOP_APPLICATION_SHORT.'默认语言, 在 '.ITOP_APPLICATION_SHORT.' 支持的本地化语言中选择. ',
 	'Class:User/Attribute:language/Value:EN US'  => '英语',
 	'Class:User/Attribute:language/Value:EN US+' => '英语 (U.S.)',
 	'Class:User/Attribute:language/Value:FR FR'  => '法语',
@@ -208,7 +208,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:User/Warning:NoOrganizationMeansFullAccess' => '没有为此用户定义 "可访问的组织" , 这意味着他可以访问任何组织',
 	'Class:User/Warning:NoContactHasImpact' => '注意: 此用户未关联任何个体, 这会导致无法访问门户、接收新闻推送, 同时后台管理系统也会出现其它异常',
 	'Class:UserInternal' => '内部用户',
-	'Class:UserInternal+' => ITOP_APPLICATION_SHORT.' 内部定义的用户',
+	'Class:UserInternal+' => ITOP_APPLICATION_SHORT.'内部定义的用户',
 ]);
 
 //
@@ -219,7 +219,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:URP_Profiles' => '角色',
 	'Class:URP_Profiles+' => '用户角色',
 	'Class:URP_Profiles/Attribute:name' => '名称',
-	'Class:URP_Profiles/Attribute:name+' => '',
+	'Class:URP_Profiles/Attribute:name+' => '~~',
 	'Class:URP_Profiles/Attribute:description' => '描述',
 	'Class:URP_Profiles/Attribute:description+' => '简短描述',
 	'Class:URP_Profiles/Attribute:user_list' => '用户',
@@ -234,7 +234,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:URP_Dimensions' => '维度',
 	'Class:URP_Dimensions+' => '应用维度 (定义纵深)',
 	'Class:URP_Dimensions/Attribute:name' => '名称',
-	'Class:URP_Dimensions/Attribute:name+' => '',
+	'Class:URP_Dimensions/Attribute:name+' => '~~',
 	'Class:URP_Dimensions/Attribute:description' => '描述',
 	'Class:URP_Dimensions/Attribute:description+' => '简短描述',
 	'Class:URP_Dimensions/Attribute:type' => '类型',
@@ -426,9 +426,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'BooleanLabel:yes' => '是',
 	'BooleanLabel:no' => '否',
 	'UI:WelcomeMenu:Title' => '欢迎使用 '.ITOP_APPLICATION_SHORT,
-	'UI:WelcomeMenu:AllOpenRequests' => '待处理的需求: %1$d',
+	'UI:WelcomeMenu:AllOpenRequests' => '所有待处理的需求: %1$d',
 	'UI:WelcomeMenu:MyCalls'         => '我办理的需求',
-	'UI:WelcomeMenu:OpenIncidents'   => '待处理的事件: %1$d',
+	'UI:WelcomeMenu:OpenIncidents'   => '所有待处理的事件: %1$d',
 	'UI:WelcomeMenu:AllConfigItems'  => '配置项: %1$d',
 	'UI:WelcomeMenu:MyIncidents'     => '分配给我的事件',
 	'UI:AllOrganizations'            => ' 所有组织 ',
@@ -510,13 +510,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Error:ObjectAlreadyUpdated'                       => '错误: 此对象已更新.',
 	'UI:Error:ObjectCannotBeUpdated'                      => '错误: 对象无法更新.',
 	'UI:Error:ObjectsAlreadyDeleted'                      => '错误: 对象已被删除!',
-	'UI:Error:BulkDeleteNotAllowedOn_Class'               => '您无权对 %1$s 进行批量删除',
-	'UI:Error:DeleteNotAllowedOn_Class'                   => '您无权删除 %1$s',
-	'UI:Error:ReadNotAllowedOn_Class'                     => '您无权查看 %1$s',
-	'UI:Error:BulkModifyNotAllowedOn_Class'               => '您无权对 %1$s 进行批量更新',
+	'UI:Error:BulkDeleteNotAllowedOn_Class'               => '您无权进行%1$s类型对象的批量删除',
+	'UI:Error:DeleteNotAllowedOn_Class'                   => '您无权删除%1$s类型的对象',
+	'UI:Error:ReadNotAllowedOn_Class'                     => '您无权查看对象的%1$s',
+	'UI:Error:BulkModifyNotAllowedOn_Class'               => '您无权进行%1$s类型对象的批量更新',
 	'UI:Error:ObjectAlreadyCloned'                        => '错误: 此对象已被克隆!',
 	'UI:Error:ObjectAlreadyCreated'                       => '错误: 此对象已被创建!',
-	'UI:Error:Invalid_Stimulus_On_Object_In_State'        => '错误: 在对象 %2$s 的 "%3$s" 状态上的无效调整 "%1$s".',
+	'UI:Error:Invalid_Stimulus_On_Object_In_State'        => '错误: 在对象%2$s的 "%3$s" 状态上的无效权限 "%1$s".',
 	'UI:Error:InvalidDashboardFile'                       => '错误: 无效的仪表盘文件',
 	'UI:Error:InvalidDashboard'                           => '错误: 无效的仪表盘',
 	'UI:Error:MaintenanceMode'                            => '应用正处于维护中',
@@ -563,10 +563,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Menu:OpenOQL' => '查看 OQL 查询',
 	'UI:Menu:Modify' => '修改...',
 	'UI:Menu:Delete' => '删除...',
-	'UI:Menu:BulkDelete' => '批量删除...',
-	'UI:Menu:BulkDelete_Class' => '批量删除 %1$s...',
-	'UI:Menu:BulkDelete_Link' => '批量删除 %1$s...',
-	'UI:Menu:BulkDelete_Remote' => '批量删除 %1$s...',
+	'UI:Menu:BulkDelete' => '删除...',
+	'UI:Menu:BulkDelete_Class' => '删除%1$s个对象...',
+	'UI:Menu:BulkDelete_Link' => '删除%1$s...',
+	'UI:Menu:BulkDelete_Remote' => '删除%1$s...',
 	'UI:UndefinedObject' => '未定义',
 	'UI:Document:OpenInNewWindow:Download' => '在新窗口打开: %1$s, 下载: %2$s',
 	'UI:SplitDateTime-Date' => '日期',
@@ -769,7 +769,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:RunQuery:ResultSQL'             => '最终执行的 SQL',
 	'UI:RunQuery:Error'                 => '运行此查询时发生了一个错误',
 	'UI:Query:UrlForExcel'              => '用于 MS-Excel 网络查询的 URL',
-	'UI:Query:UrlV1'                    => '没有定义字段列表. 没有这个信息页面<em>export-V2.php</em>无法调用. 因此, 建议的以下 URL 指向传统页面: <em>export.php</em>. 该传统版本导出具有以下限制: 导出的字段列表很大程度依赖于导出格式和 '.ITOP_APPLICATION_SHORT.' 数据模型. <br/>如果您需要确保导出的列保持长期稳定, 则必须为属性 "Fields" 指定值并使用页面<em>export-V2.php</em>.',
+	'UI:Query:UrlV1'                    => '没有定义字段列表. 没有这个信息页面<em>export-V2.php</em>无法调用. 因此, 建议的以下 URL 指向传统页面: <em>export.php</em>. 该传统版本导出具有以下限制: 导出的字段列表很大程度依赖于导出格式和'.ITOP_APPLICATION_SHORT.'数据模型. <br/>如果您需要确保导出的列保持长期稳定, 则必须为属性 "Fields" 指定值并使用页面<em>export-V2.php</em>.',
 	'UI:Schema:Title'                   => ITOP_APPLICATION_SHORT.'对象模型',
 	'UI:Schema:TitleForClass'           => '%1$s 模式',
 	'UI:Schema:NoClassSelected'         => '尚未选择, 必须选择一项',
@@ -807,7 +807,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Schema:FilterDescription+' => '此搜索条件的描述',
 	'UI:Schema:AvailOperators' => '可用的运算符',
 	'UI:Schema:AvailOperators+' => '此搜索条件可能的运算符',
-	'UI:Schema:ChildClasses' => '类型',
+	'UI:Schema:ChildClasses' => '子类型',
 	'UI:Schema:ReferencingClasses' => '参考类型',
 	'UI:Schema:RelatedClasses' => '相关类型',
 	'UI:Schema:LifeCycle' => '生命周期',
@@ -897,9 +897,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Delete:SorryDeletionNotAllowed' => '抱歉, 您无权删除此对象, 请看上述详细解释',
 	'UI:Delete:PleaseDoTheManualOperations' => '在删除此对象之前, 请先手工完成上述列出的操作',
 	'UI:Delect:Confirm_Object' => '请确认要删除%1$s.',
-	'UI:Delect:Confirm_Count_ObjectsOf_Class' => '请确认要删除下列 %1$d 个 %2$s.',
-	'UI:Delete:Confirm_Object' => '请确认要删除 %1$s.',
-	'UI:Delete:Confirm_Count_ObjectsOf_Class' => '请确认要删除下列 %1$d 个 %2$s.',
+	'UI:Delect:Confirm_Count_ObjectsOf_Class' => '请确认要删除下列%2$s类型的%1$d个对象.',
+	'UI:Delete:Confirm_Object' => '请确认要删除%1$s.',
+	'UI:Delete:Confirm_Count_ObjectsOf_Class' => '请确认要删除下列%2$s类型的%1$d个对象.',
 	'UI:WelcomeToITop' => '欢迎使用'.ITOP_APPLICATION,
 	'UI:DetailsPageTitle' => ITOP_APPLICATION_SHORT.' - %1$s - %2$s 详细内容',
 	'UI:ErrorPageTitle' => ITOP_APPLICATION_SHORT.' - 错误',
@@ -950,8 +950,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:UserManagement:AnyObject' => '* 任何 *',
 	'UI:UserManagement:User' => '用户',
 	'UI:UserManagement:User+' => '与此映射相关的用户',
-	'UI:UserManagement:Action:Read' => '读取',
-	'UI:UserManagement:Action:Read+' => '读取/显示对象',
+	'UI:UserManagement:Action:Read' => '读',
+	'UI:UserManagement:Action:Read+' => '读/显示对象',
 	'UI:UserManagement:Action:Modify' => '修改',
 	'UI:UserManagement:Action:Modify+' => '创建和编辑 (修改) 对象',
 	'UI:UserManagement:Action:Delete' => '删除',
@@ -963,7 +963,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:UserManagement:Action:BulkDelete' => '批量删除',
 	'UI:UserManagement:Action:BulkDelete+' => '批量删除对象',
 	'UI:UserManagement:Action:Stimuli' => '调整',
-	'UI:UserManagement:Action:Stimuli+' => '权限的(混合)操作',
+	'UI:UserManagement:Action:Stimuli+' => '允许 (混合) 操作',
 	'UI:UserManagement:Action' => '操作',
 	'UI:UserManagement:Action+' => '此用户进行的操作',
 	'UI:UserManagement:TitleActions' => '操作',
@@ -993,8 +993,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI-ConfigurationManagementMenu-InfraByStatus' => '按状态划分基础架构对象',
 
 	'UI:ConfigMgmtMenuOverview:Title' => '配置管理仪表盘',
-	'UI-ConfigMgmtMenuOverview-FunctionalCIbyStatus' => '配置项(按状态)',
-	'UI-ConfigMgmtMenuOverview-FunctionalCIByType' => '配置项(按类别)',
+	'UI-ConfigMgmtMenuOverview-FunctionalCIbyStatus' => '按状态配置项目',
+	'UI-ConfigMgmtMenuOverview-FunctionalCIByType' => '按类别配置项目',
 
 	'UI:RequestMgmtMenuOverview:Title' => '需求管理仪表盘',
 	'UI-RequestManagementOverview-RequestByService' => '按服务划分需求',
@@ -1024,12 +1024,12 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'UI:NotificationsMenu:Title' => '配置通知',
 	'UI:NotificationsMenu:Help' => '帮助',
-	'UI:NotificationsMenu:HelpContent' => '<p>在 '.ITOP_APPLICATION_SHORT.' 中, 通知可以被自定义. 它们基于两个对象集: <i>触发器和操作</i>.</p>
+	'UI:NotificationsMenu:HelpContent' => '<p>在'.ITOP_APPLICATION_SHORT.'中, 通知可以被自定义. 它们基于两个对象集: <i>触发器和操作</i>.</p>
 <p><i><b>触发器</b></i>定义了什么时候发送通知. '.ITOP_APPLICATION_SHORT.'内核自带一些触发器, 另一些触发器可由扩展提供:
 <ol>
 	<li>有的触发器执行于指定类型的对象被<b>创建后</b>, <b>更新后</b>或<b>删除后</b>.</li>
 	<li>有的触发器执行于指定类型的对象<b>进入</b>或<b>离开</b>指定</b>状态</b>.</li>
-	<li>有的触发器执行于<b>TTO阈值或TTR阈值</b>的预设值<b>达到时</b>.</li>
+	<li>有的触发器执行于<b>TTO阈值或TTR阈值</b>预设值<b>达到时</b>.</li>
 </ol>
 </p>
 <p>
@@ -1037,8 +1037,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 <ol>
 	<li>发送电子邮件: 此动作同时需要指定发送的邮件所使用的模板, 以及一些其它参数, 例如收件人, 优先级, 等.<br />
 	这里有一个专用的页面: <a href="../setup/email.test.php" target="_blank">email.test.php</a>可用于测试和调试PHP的邮件配置.</li>
-	<li>发送消息: 在应用程序中通过新闻室直接向用户显示消息（左侧菜单上的铃铛图标）</li>
-	<li>调用外部 webhook: 允许通过发送结构化数据到指定 URL 来与第三方应用集成.</li>
+	<li>发送新闻消息: 在应用程序中通过新闻室直接向用户显示新闻消息（左侧菜单上的铃铛图标）</li>
+	<li>调用外部webhook: 允许通过发送结构化数据到指定URL来与第三方应用集成.</li>
 </ol>
 </p>
 <p>若要执行, 操作必须和触发器相关联.
@@ -1050,7 +1050,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:NotificationsMenu:OnStateLeave' => '当对象离开指定状态',
 	'UI:NotificationsMenu:Actions' => '操作',
 	'UI:NotificationsMenu:Actions:ActionEmail' => '邮件操作',
-	'UI:NotificationsMenu:Actions:ActionWebhook' => 'Webhook 操作 (与外部集成)',
+	'UI:NotificationsMenu:Actions:ActionWebhook' => 'Webhook操作 (外部集成)',
 	'UI:NotificationsMenu:Actions:Action' => '其它操作',
 	'UI:NotificationsMenu:AvailableActions' => '有效的操作',
 
@@ -1084,7 +1084,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:OperationCancelled' => '操作已取消',
 	'UI:ElementsDisplayed' => '筛选',
 	'UI:RelationGroupNumber_N' => '分组#%1$d',
-	'UI:Relation:ExportAsPDF' => 'PDF 导出...',
+	'UI:Relation:ExportAsPDF' => '导出PDF...',
 	'UI:RelationOption:GroupingThreshold' => '分组阈值',
 	'UI:Relation:AdditionalContextInfo' => '其它信息',
 	'UI:Relation:NoneSelected' => '无',
@@ -1128,10 +1128,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Portal:ResolvedRequests' => '已解决的需求',
 	'Portal:SelectService' => '从类别中选择一项服务:',
 	'Portal:PleaseSelectOneService' => '请选择一项服务',
-	'Portal:SelectSubcategoryFrom_Service' => '请为 %1$s 选择属性:',
-	'Portal:PleaseSelectAServiceSubCategory' => '请选择属性',
+	'Portal:SelectSubcategoryFrom_Service' => '从服务中选择型%1$s:',
+	'Portal:PleaseSelectAServiceSubCategory' => '请选择子类型',
 	'Portal:DescriptionOfTheRequest' => '请输入描述:',
-	'Portal:TitleRequestDetailsFor_Request' => '需求详情 %1$s:',
+	'Portal:TitleRequestDetailsFor_Request' => '需求详情%1$s:',
 	'Portal:NoOpenRequest' => '此类别中没有待处理的需求.',
 	'Portal:NoClosedRequest' => '此分类中没有需求',
 	'Portal:Button:ReopenTicket' => '重新打开工单',
@@ -1147,13 +1147,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Enum:Undefined' => '未定义',
 	'UI:DurationForm_Days_Hours_Minutes_Seconds' => '%1$s天%2$s小时%3$s分%4$s秒',
 	'UI:ModifyAllPageTitle' => '修改所有',
-	'UI:Modify_ObjectsOf_Class' => '批量修改 %1$s',
-	'UI:Modify_N_ObjectsOf_Class' => '正在修改 %1$d 个 %2$s',
+	'UI:Modify_ObjectsOf_Class' => '修改类型%1$s的对象',
+	'UI:Modify_N_ObjectsOf_Class' => '正在修%1$d个%2$s',
 	'UI:Modify_M_ObjectsOf_Class_OutOf_N' => '正在修改 %1$d 个 %2$s, 一共 %3$d 个',
-	'UI:Menu:ModifyAll' => '批量修改...',
-	'UI:Menu:ModifyAll_Class' => '批量修改 %1$s ...',
-	'UI:Menu:ModifyAll_Link' => '批量修改 %1$s...',
-	'UI:Menu:ModifyAll_Remote' => '批量修改 %1$s...',
+	'UI:Menu:ModifyAll' => '修改...',
+	'UI:Menu:ModifyAll_Class' => '修改 %1$s 个对象...',
+	'UI:Menu:ModifyAll_Link' => '修改 %1$s...',
+	'UI:Menu:ModifyAll_Remote' => '修改 %1$s...',
 	'UI:Button:ModifyAll' => '全部修改',
 	'UI:Button:PreviewModifications' => '修改预览 >>',
 	'UI:ModifiedObject' => '对象已修改',
@@ -1358,7 +1358,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'DayOfWeek-Sunday' => '周日',
 	'DayOfWeek-Monday' => '周一',
 	'DayOfWeek-Tuesday' => '周二',
-	'DayOfWeek-Wednesday'           => '周三',
+	'DayOfWeek-Wednesday'           => 'Wednesday',
 	'DayOfWeek-Thursday'            => '周四',
 	'DayOfWeek-Friday'              => '周五',
 	'DayOfWeek-Saturday'            => '周六',
@@ -1489,7 +1489,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:ConcurrentLockKilled' => '阻止并发修改当前对象的锁定已被删除.',
 	'UI:Menu:KillConcurrentLock' => '消除并发修改锁定!',
 
-	'UI:Menu:ExportPDF' => 'PDF 导出...',
+	'UI:Menu:ExportPDF' => '导出PDF...',
 	'UI:Menu:PrintableVersion' => '优质打印版本',
 
 	'UI:BrowseInlineImages' => '浏览图片...',

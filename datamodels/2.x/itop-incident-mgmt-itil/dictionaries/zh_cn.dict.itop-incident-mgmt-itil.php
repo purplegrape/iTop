@@ -4,7 +4,7 @@
  * Localized data
  *
  * @copyright Copyright (C) 2010-2024 Combodo SAS
- * @license    https://opensource.org/licenses/AGPL-3.0
+ * @license    http://opensource.org/licenses/AGPL-3.0
  *
  * This file is part of iTop.
  *
@@ -40,7 +40,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:Incident:EscalatedIncidents' => '待升级的事件',
 	'Menu:Incident:EscalatedIncidents+' => '按状态或热门标识划分的待升级的事件',
 	'Menu:Incident:OpenIncidents' => '待处理的事件',
-	'Menu:Incident:OpenIncidents+' => '尚未关闭的事件',
+	'Menu:Incident:OpenIncidents+' => '所有尚未关闭的事件',
 	'UI-IncidentManagementOverview-IncidentByPriority-last-14-days' => '最近两周的事件 (按优先级)',
 	'UI-IncidentManagementOverview-Last-14-days' => '最近两周的事件 (按数量)',
 	'UI-IncidentManagementOverview-OpenIncidentByStatus' => '待处理的事件 (按状态)',
@@ -210,9 +210,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Incident/Attribute:parent_problem_ref' => '父级问题编号',
 	'Class:Incident/Attribute:parent_problem_ref+' => '~~',
 	'Class:Incident/Attribute:related_request_list' => '相关需求',
-	'Class:Incident/Attribute:related_request_list+' => '此事件相关的需求',
+	'Class:Incident/Attribute:related_request_list+' => '此事件相关的所有需求',
 	'Class:Incident/Attribute:child_incidents_list' => '子事件',
-	'Class:Incident/Attribute:child_incidents_list+' => '此事件相关的衍生事件',
+	'Class:Incident/Attribute:child_incidents_list+' => '此事件相关的所有衍生事件',
 	'Class:Incident/Attribute:public_log' => '公共日志',
 	'Class:Incident/Attribute:public_log+' => '',
 	'Class:Incident/Attribute:user_satisfaction' => '用户满意度',

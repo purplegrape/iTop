@@ -2,7 +2,7 @@
 
 /*
  * @copyright   Copyright (C) 2010-2026 Combodo SAS
- * @license     https://opensource.org/licenses/AGPL-3.0
+ * @license     http://opensource.org/licenses/AGPL-3.0
  */
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
@@ -36,7 +36,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:ResetPwd-Ready'               => '密码已修改成功.',
 	'UI:ResetPwd-Login'               => '点击这里登录...',
 
-	'UI:Login:About'                               => ITOP_APPLICATION.' 由 Combodo 提供技术支持',
+	'UI:Login:About'                               => ITOP_APPLICATION.' 由 Combodo 创建',
 	'UI:Login:ChangeYourPassword'                  => '修改您的密码',
 	'UI:Login:OldPasswordPrompt'                   => '旧密码',
 	'UI:Login:NewPasswordPrompt'                   => '新密码',
@@ -54,5 +54,5 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Login:Error:AccessAdmin'                   => '只有具有管理员权限的人才能访问. 请联系管理员.',
 	'UI:Login:Error:WrongOrganizationName'         => '未知组织',
 	'UI:Login:Error:MultipleContactsHaveSameEmail' => '多个联系人存在相同的邮箱',
-	'UI:Login:Error:NoValidProfiles'               => '无效的资料',
+	'UI:Login:Error:NoValidProfiles' => '无效的资料',
 ]);
