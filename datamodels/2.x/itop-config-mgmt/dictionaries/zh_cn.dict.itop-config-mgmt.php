@@ -102,7 +102,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI/Attribute:business_criticity/Value:medium' => '中',
 	'Class:FunctionalCI/Attribute:business_criticity/Value:medium+' => '中',
 	'Class:FunctionalCI/Attribute:move2production' => '投产日期',
-	'Class:FunctionalCI/Attribute:move2production+' => '~~',
+	'Class:FunctionalCI/Attribute:move2production+' => '',
 	'Class:FunctionalCI/Attribute:groups_list' => '分组',
 	'Class:FunctionalCI/Attribute:groups_list+' => '分组可用作标记, 用于记录环境、项目 (迁移、升级、安全) 等等…',
 	'Class:FunctionalCI/Attribute:contacts_list' => '联系人',
@@ -1500,13 +1500,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkApplicationSolutionToFunctionalCI+' => 'Models the membership of a device to an Application Solution. The meaning of this relationship varies depending on the types of Application Solution.~~',
 	'Class:lnkApplicationSolutionToFunctionalCI/Name' => '%1$s / %2$s',
 	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:applicationsolution_id' => '应用方案',
-	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:applicationsolution_id+' => '~~',
+	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:applicationsolution_id+' => '',
 	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:applicationsolution_name' => '应用方案名称',
-	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:applicationsolution_name+' => '~~',
+	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:applicationsolution_name+' => '',
 	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:functionalci_id' => '功能配置项',
-	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:functionalci_id+' => '~~',
+	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:functionalci_id+' => '',
 	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:functionalci_name' => '功能配置项名称',
-	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:functionalci_name+' => '~~',
+	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:functionalci_name+' => '',
 ]);
 
 //
