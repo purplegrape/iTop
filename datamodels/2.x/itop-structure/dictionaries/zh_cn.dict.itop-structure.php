@@ -264,7 +264,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DocumentNote' => '文档笔记',
 	'Class:DocumentNote+' => '用于存储文本文档。支持使用 WYSIWYG 编辑器进行 HTML 格式化. 可以对其内容执行搜索.',
-	'Class:DocumentNote/Attribute:text' => '正文',
+	'Class:DocumentNote/Attribute:text' => '内容',
 	'Class:DocumentNote/Attribute:text+' => '',
 ]);
 
