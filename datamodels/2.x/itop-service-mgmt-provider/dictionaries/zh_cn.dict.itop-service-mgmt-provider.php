@@ -147,7 +147,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Contract/Attribute:status/Value:obsolete+' => '废弃',
 	'Class:Contract/Attribute:status/Value:production' => '正式',
 	'Class:Contract/Attribute:status/Value:production+' => '正式',
-	'Class:Contract/Attribute:finalclass' => '合同子类',
+	'Class:Contract/Attribute:finalclass' => '合同类型',
 	'Class:Contract/Attribute:finalclass+' => '根本属性的名称',
 ]);
 
