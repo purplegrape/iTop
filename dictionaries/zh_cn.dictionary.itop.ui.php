@@ -993,8 +993,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI-ConfigurationManagementMenu-InfraByStatus' => '按状态划分基础架构对象',
 
 	'UI:ConfigMgmtMenuOverview:Title' => '配置管理仪表盘',
-	'UI-ConfigMgmtMenuOverview-FunctionalCIbyStatus' => '按状态配置项目',
-	'UI-ConfigMgmtMenuOverview-FunctionalCIByType' => '按类别配置项目',
+	'UI-ConfigMgmtMenuOverview-FunctionalCIbyStatus' => '配置项(按状态)',
+	'UI-ConfigMgmtMenuOverview-FunctionalCIByType' => '配置项(按类别)',
 
 	'UI:RequestMgmtMenuOverview:Title' => '需求管理仪表盘',
 	'UI-RequestManagementOverview-RequestByService' => '按服务划分需求',
