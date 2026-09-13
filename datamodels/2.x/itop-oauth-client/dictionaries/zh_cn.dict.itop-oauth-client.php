@@ -8,7 +8,7 @@
  */
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Menu:CreateMailbox' => '创建邮箱...',
+	'Menu:CreateMailbox' => '新建邮箱...',
 	'Menu:OAuthClient' => 'OAuth Mail Access~~',
 	'Menu:OAuthClient+' => 'Oauth for email access~~',
 	'Menu:GenerateTokens' => '生成访问令牌...',
