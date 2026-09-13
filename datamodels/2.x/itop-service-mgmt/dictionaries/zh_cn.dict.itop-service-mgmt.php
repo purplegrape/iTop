@@ -457,7 +457,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkCustomerContractToService/Attribute:service_name' => '服务名称',
 	'Class:lnkCustomerContractToService/Attribute:service_name+' => '',
 	'Class:lnkCustomerContractToService/Attribute:sla_id' => 'SLA',
-	'Class:lnkCustomerContractToService/Attribute:sla_id+' => 'Service Level Agreement applicable to this service for this customer contract.~~',
+	'Class:lnkCustomerContractToService/Attribute:sla_id+' => '适用于此服务的服务级别协议.',
 	'Class:lnkCustomerContractToService/Attribute:sla_name' => 'SLA 名称',
 	'Class:lnkCustomerContractToService/Attribute:sla_name+' => '',
 	'Class:lnkCustomerContractToService/Attribute:provider_id' => '供应商id',
@@ -470,7 +470,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkProviderContractToService' => '链接 供应商合同/服务',
-	'Class:lnkProviderContractToService+' => 'This link can model that a provider contract enables the delivery of a Service.~~',
+	'Class:lnkProviderContractToService+' => '此链接用于表示供应商合同能够支持某个服务的交付.',
 	'Class:lnkProviderContractToService/Name' => '%1$s / %2$s',
 	'Class:lnkProviderContractToService/Attribute:service_id' => '服务',
 	'Class:lnkProviderContractToService/Attribute:service_id+' => '',
@@ -512,7 +512,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDeliveryModelToContact' => '链接 交付模式/联系人',
-	'Class:lnkDeliveryModelToContact+' => '此链接指定了团队 (较少是个体) 在交付模式中的角色.',
+	'Class:lnkDeliveryModelToContact+' => '此链接指定了团队 (较少指个体) 在交付模式中的角色.',
 	'Class:lnkDeliveryModelToContact/Name' => '%1$s / %2$s',
 	'Class:lnkDeliveryModelToContact/Attribute:deliverymodel_id' => '交付模式',
 	'Class:lnkDeliveryModelToContact/Attribute:deliverymodel_id+' => '',
