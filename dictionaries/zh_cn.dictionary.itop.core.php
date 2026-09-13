@@ -62,7 +62,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Core:AttributeMetaEnum+' => '',
 
 	'Core:AttributeLinkedSetIndirect' => '对象数组 (N-N)',
-	'Core:AttributeLinkedSetIndirect+' => '相同类型的任何对象 [子类型]',
+	'Core:AttributeLinkedSetIndirect+' => '相同类型的任何对象 [含子类型]',
 
 	'Core:AttributeInteger' => '整数',
 	'Core:AttributeInteger+' => '整数(可以为负)',
@@ -905,7 +905,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SynchroDataSource/Attribute:delete_policy_retention+'                    => '废弃对象在删除前的保留时长',
 	'Class:SynchroDataSource/Attribute:database_table_name'                         => '数据表',
 	'Class:SynchroDataSource/Attribute:database_table_name+'                        => '储存同步数据的表名称. 若留空则计算一个缺省名称.',
-	'Class:SynchroDataSource/Attribute:status/Value:implementation'                 => '生效',
+	'Class:SynchroDataSource/Attribute:status/Value:implementation'                 => '实施',
 	'Class:SynchroDataSource/Attribute:status/Value:obsolete'                       => '废弃',
 	'Class:SynchroDataSource/Attribute:status/Value:production'                     => '生产',
 	'Class:SynchroDataSource/Attribute:scope_restriction'                           => '限定范围',
