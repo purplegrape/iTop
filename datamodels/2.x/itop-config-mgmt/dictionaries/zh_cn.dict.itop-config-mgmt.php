@@ -113,7 +113,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI/Attribute:applicationsolution_list+' => '此配置项依赖的应用方案',
 	'Class:FunctionalCI/Attribute:softwares_list' => '软件',
 	'Class:FunctionalCI/Attribute:softwares_list+' => '此配置项上已安装的软件',
-	'Class:FunctionalCI/Attribute:finalclass' => '配置项子类',
+	'Class:FunctionalCI/Attribute:finalclass' => '类型',
 	'Class:FunctionalCI/Attribute:finalclass+' => '根本属性的名称',
 	'Class:FunctionalCI/Tab:OpenedTickets' => '活跃的工单',
 	'Class:FunctionalCI/Tab:OpenedTickets+' => '影响当前功能配置项的活跃工单',
@@ -943,12 +943,12 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Patch' => '补丁',
 	'Class:Patch+' => '抽象类，用于对系统或软件提供的补丁、热修复、安全修复或软件服务包.',
 	'Class:Patch/Attribute:name' => '名称',
-	'Class:Patch/Attribute:name+' => '~~',
+	'Class:Patch/Attribute:name+' => '',
 	'Class:Patch/Attribute:documents_list' => '文档',
 	'Class:Patch/Attribute:documents_list+' => '此补丁相关的文档',
 	'Class:Patch/Attribute:description' => '描述',
 	'Class:Patch/Attribute:description+' => '',
-	'Class:Patch/Attribute:finalclass' => '补丁子类',
+	'Class:Patch/Attribute:finalclass' => '补丁类型',
 	'Class:Patch/Attribute:finalclass+' => '根本属性的名称',
 ]);
 
