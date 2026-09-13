@@ -176,9 +176,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:User/Attribute:email'                 => '邮箱',
 	'Class:User/Attribute:email+'                => '对应联系人的邮箱',
 	'Class:User/Attribute:login'                 => '登录名',
-	'Class:User/Attribute:login+'                => '账户标识字符串, 在'.ITOP_APPLICATION_SHORT.'中必须唯一',
+	'Class:User/Attribute:login+'                => '账户标识字符串, 在 '.ITOP_APPLICATION_SHORT.' 中必须唯一',
 	'Class:User/Attribute:language'              => '语言',
-	'Class:User/Attribute:language+'             => '此用户的'.ITOP_APPLICATION_SHORT.'默认语言, 在 '.ITOP_APPLICATION_SHORT.' 支持的本地化语言中选择. ',
+	'Class:User/Attribute:language+'             => '此用户的 '.ITOP_APPLICATION_SHORT.' 默认语言, 请在 '.ITOP_APPLICATION_SHORT.' 支持的本地化语言中选择. ',
 	'Class:User/Attribute:language/Value:EN US'  => '英语',
 	'Class:User/Attribute:language/Value:EN US+' => '英语 (U.S.)',
 	'Class:User/Attribute:language/Value:FR FR'  => '法语',
@@ -208,7 +208,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:User/Warning:NoOrganizationMeansFullAccess' => '没有为此用户定义 "可访问的组织" , 这意味着他可以访问任何组织',
 	'Class:User/Warning:NoContactHasImpact' => '注意: 此用户未关联任何个体, 这会导致无法访问门户、接收新闻推送, 同时后台管理系统也会出现其它异常',
 	'Class:UserInternal' => '内部用户',
-	'Class:UserInternal+' => ITOP_APPLICATION_SHORT.'内部定义的用户',
+	'Class:UserInternal+' => ITOP_APPLICATION_SHORT.' 内部定义的用户',
 ]);
 
 //
@@ -769,7 +769,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:RunQuery:ResultSQL'             => '最终执行的 SQL',
 	'UI:RunQuery:Error'                 => '运行此查询时发生了一个错误',
 	'UI:Query:UrlForExcel'              => '用于 MS-Excel 网络查询的 URL',
-	'UI:Query:UrlV1'                    => '没有定义字段列表. 没有这个信息页面<em>export-V2.php</em>无法调用. 因此, 建议的以下 URL 指向传统页面: <em>export.php</em>. 该传统版本导出具有以下限制: 导出的字段列表很大程度依赖于导出格式和'.ITOP_APPLICATION_SHORT.'数据模型. <br/>如果您需要确保导出的列保持长期稳定, 则必须为属性 "Fields" 指定值并使用页面<em>export-V2.php</em>.',
+	'UI:Query:UrlV1'                    => '没有定义字段列表. 没有这个信息页面<em>export-V2.php</em>无法调用. 因此, 建议的以下 URL 指向传统页面: <em>export.php</em>. 该传统版本导出具有以下限制: 导出的字段列表很大程度依赖于导出格式和 '.ITOP_APPLICATION_SHORT.' 数据模型. <br/>如果您需要确保导出的列保持长期稳定, 则必须为属性 "Fields" 指定值并使用页面<em>export-V2.php</em>.',
 	'UI:Schema:Title'                   => ITOP_APPLICATION_SHORT.'对象模型',
 	'UI:Schema:TitleForClass'           => '%1$s 模式',
 	'UI:Schema:NoClassSelected'         => '尚未选择, 必须选择一项',
