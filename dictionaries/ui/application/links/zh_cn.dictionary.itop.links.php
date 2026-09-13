@@ -36,8 +36,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	// Add
 	'UI:Links:Add:Button'                           => '添加',
-	'UI:Links:Add:Button+'                          => '添加一个 %4$s',
-	'UI:Links:Add:Modal:Title'                      => '添加一个 %4$s 至 %2$s',
+	'UI:Links:Add:Button+'                          => '添加 %4$s',
+	'UI:Links:Add:Modal:Title'                      => '添加 %4$s 至 %2$s',
 
 	// Modify link
 	'UI:Links:ModifyLink:Button'                    => '修改',
