@@ -208,7 +208,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkContractToDocument' => '链接 合同/文档',
-	'Class:lnkContractToDocument+' => '此链接用于当某个文档适用于某个合同.',
+	'Class:lnkContractToDocument+' => '此链接用于表示当某个文档适用于某个合同.',
 	'Class:lnkContractToDocument/Name' => '%1$s / %2$s',
 	'Class:lnkContractToDocument/Attribute:contract_id' => '合同',
 	'Class:lnkContractToDocument/Attribute:contract_id+' => '',
@@ -285,7 +285,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToService' => '链接 文档/服务',
-	'Class:lnkDocumentToService+' => 'Link used when a Document is applicable to a Service.~~',
+	'Class:lnkDocumentToService+' => '此链接用于表示当某个文档适用于某个服务时.',
 	'Class:lnkDocumentToService/Name' => '%1$s / %2$s',
 	'Class:lnkDocumentToService/Attribute:service_id' => '服务',
 	'Class:lnkDocumentToService/Attribute:service_id+' => '',
@@ -303,7 +303,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkContactToService' => '链接 联系人/服务',
-	'Class:lnkContactToService+' => 'Ideal for defining the team to which Tickets created on the related Service will be assigned (automatically or manually).~~',
+	'Class:lnkContactToService+' => '适合用于表示基于相关服务而创建的工单将分配到哪个团队（自动分配或手动分配）.',
 	'Class:lnkContactToService/Name' => '%1$s / %2$s',
 	'Class:lnkContactToService/Attribute:service_id' => '服务',
 	'Class:lnkContactToService/Attribute:service_id+' => '',
@@ -446,7 +446,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkCustomerContractToService' => '链接 客户合同/服务',
-	'Class:lnkCustomerContractToService+' => 'A single line of a customer contract, specifying the Service provided and, for this service, the subscribed commitment levels (Service Level Aggrement and Coverage Window).~~',
+	'Class:lnkCustomerContractToService+' => '客户合同中的单项条款, 指定具体提供的服务以及该服务应享有的服务水平(服务级别协议和服务时间窗口).',
 	'Class:lnkCustomerContractToService/Name' => '%1$s / %2$s',
 	'Class:lnkCustomerContractToService/Attribute:customercontract_id' => '客户合同',
 	'Class:lnkCustomerContractToService/Attribute:customercontract_id+' => '',
