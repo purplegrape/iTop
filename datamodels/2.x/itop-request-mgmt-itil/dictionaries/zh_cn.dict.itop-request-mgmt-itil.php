@@ -26,7 +26,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:UserRequest:MySupportRequests+' => '由我发起且未关闭的需求',
 	'Menu:UserRequest:EscalatedRequests' => '待升级的需求',
 	'Menu:UserRequest:EscalatedRequests+' => '按状态或热门标识分类的待升级的需求',
-	'Menu:UserRequest:OpenRequests' => '所有待处理的需求',
+	'Menu:UserRequest:OpenRequests' => '待处理的需求',
 	'Menu:UserRequest:OpenRequests+' => '所有尚未关闭的需求',
 	'UI:WelcomeMenu:MyAssignedCalls' => '分配给我的需求',
 	'UI-RequestManagementOverview-RequestByType-last-14-days' => '最近两周的需求 (按类型)',
