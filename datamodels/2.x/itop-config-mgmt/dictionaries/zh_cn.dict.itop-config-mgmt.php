@@ -66,7 +66,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkContactToFunctionalCI' => '链接 联系人/功能配置项',
-	'Class:lnkContactToFunctionalCI+' => '管理联系人与功能配置项的链接. 它可以是一个团队的职责范围, 分配工单, 或者将特定设备(如PC或电话)分配给对应的人员, 以管理资产.',
+	'Class:lnkContactToFunctionalCI+' => '管理联系人与功能配置项之间的链接. 它可以是一个团队的职责范围, 分配工单, 或者将特定设备(如PC或电话)分配给对应的人员, 以管理资产.',
 	'Class:lnkContactToFunctionalCI/Name' => '%1$s / %2$s',
 	'Class:lnkContactToFunctionalCI/Attribute:functionalci_id' => '功能配置项',
 	'Class:lnkContactToFunctionalCI/Attribute:functionalci_id+' => '',
@@ -1061,7 +1061,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToLicence' => '链接 文档/许可证',
-	'Class:lnkDocumentToLicence+' => '此链接用于当某个文档适用于某个许可证时.',
+	'Class:lnkDocumentToLicence+' => '此链接用于表示当某个文档适用于某个许可证时.',
 	'Class:lnkDocumentToLicence/Name' => '%1$s / %2$s',
 	'Class:lnkDocumentToLicence/Attribute:licence_id' => '许可证',
 	'Class:lnkDocumentToLicence/Attribute:licence_id+' => '',
@@ -1222,7 +1222,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToPatch' => '链接 文档/补丁',
-	'Class:lnkDocumentToPatch+' => '此链接用于当某个文档适用于某个补丁时.',
+	'Class:lnkDocumentToPatch+' => '此链接用于表示当某个文档适用于某个补丁时.',
 	'Class:lnkDocumentToPatch/Name' => '%1$s / %2$s',
 	'Class:lnkDocumentToPatch/Attribute:patch_id' => '补丁',
 	'Class:lnkDocumentToPatch/Attribute:patch_id+' => '~~',
@@ -1240,7 +1240,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkSoftwareInstanceToSoftwarePatch' => '链接 软件实例/软件补丁',
-	'Class:lnkSoftwareInstanceToSoftwarePatch+' => '此链接表示某个软件补丁已应用于软件实例.',
+	'Class:lnkSoftwareInstanceToSoftwarePatch+' => '此链接用于表示某个软件补丁已应用于软件实例.',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Name' => '%1$s / %2$s',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_id' => '软件补丁',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_id+' => '~~',
@@ -1258,7 +1258,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToOSPatch' => '链接 功能配置项/OS 补丁',
-	'Class:lnkFunctionalCIToOSPatch+' => 'Models the deployment of an OS Patch on a device.~~',
+	'Class:lnkFunctionalCIToOSPatch+' => '此链接用于表示在设备上部署的 OS 补丁.',
 	'Class:lnkFunctionalCIToOSPatch/Name' => '%1$s / %2$s',
 	'Class:lnkFunctionalCIToOSPatch/Attribute:ospatch_id' => 'OS 补丁',
 	'Class:lnkFunctionalCIToOSPatch/Attribute:ospatch_id+' => '',
@@ -1276,7 +1276,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToSoftware' => '链接 文档/软件',
-	'Class:lnkDocumentToSoftware+' => '此链接用于当某个文档适用于某个软件时.',
+	'Class:lnkDocumentToSoftware+' => '此链接用于表示当某个文档适用于某个软件时.',
 	'Class:lnkDocumentToSoftware/Name' => '%1$s / %2$s',
 	'Class:lnkDocumentToSoftware/Attribute:software_id' => '软件',
 	'Class:lnkDocumentToSoftware/Attribute:software_id+' => '',
@@ -1415,7 +1415,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkPhysicalInterfaceToVLAN' => '链接 物理网卡/VLAN',
-	'Class:lnkPhysicalInterfaceToVLAN+' => '此链接表示物理网卡是否属于某个VLAN (虚拟局域网).',
+	'Class:lnkPhysicalInterfaceToVLAN+' => '此链接用于表示物理网卡是否属于某个VLAN (虚拟局域网).',
 	'Class:lnkPhysicalInterfaceToVLAN/Name' => '%1$s %2$s / %3$s',
 	'Class:lnkPhysicalInterfaceToVLAN/Attribute:physicalinterface_id' => '物理网卡',
 	'Class:lnkPhysicalInterfaceToVLAN/Attribute:physicalinterface_id+' => '',
@@ -1497,7 +1497,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkApplicationSolutionToFunctionalCI' => '链接 应用方案/功能配置项',
-	'Class:lnkApplicationSolutionToFunctionalCI+' => 'Models the membership of a device to an Application Solution. The meaning of this relationship varies depending on the types of Application Solution.~~',
+	'Class:lnkApplicationSolutionToFunctionalCI+' => '用于表示设备与应用方案的关联. 具体含义取决于应用方案的类型.',
 	'Class:lnkApplicationSolutionToFunctionalCI/Name' => '%1$s / %2$s',
 	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:applicationsolution_id' => '应用方案',
 	'Class:lnkApplicationSolutionToFunctionalCI/Attribute:applicationsolution_id+' => '',
@@ -1515,16 +1515,16 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkApplicationSolutionToBusinessProcess' => '链接 应用方案/业务流程',
-	'Class:lnkApplicationSolutionToBusinessProcess+' => 'Models the relationship between an Application Solution and a Business Process.~~',
+	'Class:lnkApplicationSolutionToBusinessProcess+' => '用于表示应用方案与业务流程之间的关系.',
 	'Class:lnkApplicationSolutionToBusinessProcess/Name' => '%1$s / %2$s',
 	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:businessprocess_id' => '业务流程',
-	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:businessprocess_id+' => '~~',
+	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:businessprocess_id+' => '',
 	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:businessprocess_name' => '业务流程名称',
-	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:businessprocess_name+' => '~~',
+	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:businessprocess_name+' => '',
 	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:applicationsolution_id' => '应用方案',
-	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:applicationsolution_id+' => '~~',
+	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:applicationsolution_id+' => '',
 	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:applicationsolution_name' => '应用方案名称',
-	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:applicationsolution_name+' => '~~',
+	'Class:lnkApplicationSolutionToBusinessProcess/Attribute:applicationsolution_name+' => '',
 ]);
 
 //
@@ -1569,7 +1569,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkGroupToCI' => '链接 配置组/配置项',
-	'Class:lnkGroupToCI+' => '此链接表示某个功能配置项属于某个配置组.',
+	'Class:lnkGroupToCI+' => '此链接用于表示某个功能配置项属于某个配置组.',
 	'Class:lnkGroupToCI/Name' => '%1$s / %2$s',
 	'Class:lnkGroupToCI/Attribute:group_id' => '配置组',
 	'Class:lnkGroupToCI/Attribute:group_id+' => '',
@@ -1589,7 +1589,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToFunctionalCI' => '链接 文档/功能配置项',
-	'Class:lnkDocumentToFunctionalCI+' => '此链接用于当某个文档适用于某个功能配置项时.',
+	'Class:lnkDocumentToFunctionalCI+' => '此链接用于表示当某个文档适用于某个功能配置项时.',
 	'Class:lnkDocumentToFunctionalCI/Name' => '%1$s / %2$s',
 	'Class:lnkDocumentToFunctionalCI/Attribute:functionalci_id' => '功能配置项',
 	'Class:lnkDocumentToFunctionalCI/Attribute:functionalci_id+' => '',
