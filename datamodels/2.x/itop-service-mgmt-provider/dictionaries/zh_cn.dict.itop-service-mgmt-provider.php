@@ -205,7 +205,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkContractToDocument' => '链接 合同/文档',
-	'Class:lnkContractToDocument+' => 'Link used when a Document is applicable to a Contract.~~',
+	'Class:lnkContractToDocument+' => '此链接用于表示当某个文档适用于某个合同.',
 	'Class:lnkContractToDocument/Name' => '%1$s / %2$s',
 	'Class:lnkContractToDocument/Attribute:contract_id' => '合同',
 	'Class:lnkContractToDocument/Attribute:contract_id+' => '',
@@ -223,7 +223,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToProviderContract' => '关联功能配置项/供应商合同',
-	'Class:lnkFunctionalCIToProviderContract+' => 'This link models the Functional CIs that are supported by an external company through a Provider Contract.~~',
+	'Class:lnkFunctionalCIToProviderContract+' => '此链接用于表示功能配置项由外部公司通过供应商合同提供支持.',
 	'Class:lnkFunctionalCIToProviderContract/Name' => '%1$s / %2$s',
 	'Class:lnkFunctionalCIToProviderContract/Attribute:providercontract_id' => '供应商合同',
 	'Class:lnkFunctionalCIToProviderContract/Attribute:providercontract_id+' => '',
@@ -296,7 +296,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToService' => '链接 文档/服务',
-	'Class:lnkDocumentToService+' => 'Link used when a Document is applicable to a Service.~~',
+	'Class:lnkDocumentToService+' => '此链接用于表示当某个文档适用于某个服务时.',
 	'Class:lnkDocumentToService/Name' => '%1$s / %2$s',
 	'Class:lnkDocumentToService/Attribute:service_id' => '服务',
 	'Class:lnkDocumentToService/Attribute:service_id+' => '',
@@ -314,7 +314,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkContactToService' => '链接 联系人/服务',
-	'Class:lnkContactToService+' => 'Ideal for defining the Team to which Tickets created on the related Service will be assigned (automatically or manually).~~',
+	'Class:lnkContactToService+' => '适合用于表示基于相关服务而创建的工单将分配到哪个团队（自动分配或手动分配）.',
 	'Class:lnkContactToService/Name' => '%1$s / %2$s',
 	'Class:lnkContactToService/Attribute:service_id' => '服务',
 	'Class:lnkContactToService/Attribute:service_id+' => '',
@@ -429,7 +429,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkSLAToSLT' => '链接 SLA/SLT',
-	'Class:lnkSLAToSLT+' => 'This link indicates that an SLT is included in the Service Level Agreement (SLA). An SLA usually contains several SLTs. An SLT can be reused as is by several SLAs (seldom).~~',
+	'Class:lnkSLAToSLT+' => '此链接表示某个 SLT 包含在某个服务级别协议 (SLA) 中. 一个 SLA 通常包含多个 SLT. 一个 SLT 可以被多个 SLA 重复引用 (较少见).',
 	'Class:lnkSLAToSLT/Name' => '%1$s / %2$s',
 	'Class:lnkSLAToSLT/Attribute:sla_id' => 'SLA',
 	'Class:lnkSLAToSLT/Attribute:sla_id+' => '',
@@ -457,7 +457,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkCustomerContractToService' => '链接 客户合同/服务',
-	'Class:lnkCustomerContractToService+' => 'A single line of a Customer Contract, specifying the Service provided and, for this service, the subscribed commitment levels (Service Level Agreement and Coverage Window).~~',
+	'Class:lnkCustomerContractToService+' => '客户合同中的单项条款，指定了提供的服务以及该服务应享有的服务水平（服务级别协议和服务时间窗口）.',
 	'Class:lnkCustomerContractToService/Name' => '%1$s / %2$s',
 	'Class:lnkCustomerContractToService/Attribute:customercontract_id' => '客户合同',
 	'Class:lnkCustomerContractToService/Attribute:customercontract_id+' => '',
@@ -481,7 +481,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkCustomerContractToProviderContract' => '链接 客户合同/供应商合同',
-	'Class:lnkCustomerContractToProviderContract+' => 'This link models when a Provider Contract contributes to the delivery of a Customer Contract.~~',
+	'Class:lnkCustomerContractToProviderContract+' => '此链接用于表示供应商合同如何作用于客户合同的交付.',
 	'Class:lnkCustomerContractToProviderContract/Name' => '%1$s / %2$s',
 	'Class:lnkCustomerContractToProviderContract/Attribute:customercontract_id' => '客户合同',
 	'Class:lnkCustomerContractToProviderContract/Attribute:customercontract_id+' => '',
@@ -499,7 +499,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkCustomerContractToFunctionalCI' => '链接 客户合同/功能配置项',
-	'Class:lnkCustomerContractToFunctionalCI+' => 'This link models the equipment (Functional CI) covered by a Customer Contract.~~',
+	'Class:lnkCustomerContractToFunctionalCI+' => '此链接用于表示客户合同所涵盖的所有设备 (功能配置项).',
 	'Class:lnkCustomerContractToFunctionalCI/Name' => '%1$s / %2$s',
 	'Class:lnkCustomerContractToFunctionalCI/Attribute:customercontract_id' => '客户合同',
 	'Class:lnkCustomerContractToFunctionalCI/Attribute:customercontract_id+' => '',
@@ -539,7 +539,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDeliveryModelToContact' => '链接 交付模式/联系人',
-	'Class:lnkDeliveryModelToContact+' => 'This link specifies the role of a Team (more rarely a Person) within a Delivery Model.~~',
+	'Class:lnkDeliveryModelToContact+' => '此链接指定了团队 (较少指个体) 在交付模式中的角色.',
 	'Class:lnkDeliveryModelToContact/Name' => '%1$s / %2$s',
 	'Class:lnkDeliveryModelToContact/Attribute:deliverymodel_id' => '交付模式',
 	'Class:lnkDeliveryModelToContact/Attribute:deliverymodel_id+' => '',
