@@ -36,7 +36,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:WaitingAcceptance+' => '',
 	'Menu:WaitingApproval' => '等待批准的变更',
 	'Menu:WaitingApproval+' => '处于计划状态的变更',
-	'Menu:Changes' => '所有待处理的变更',
+	'Menu:Changes' => '待处理的变更',
 	'Menu:Changes+' => '所有待处理的变更',
 	'Menu:MyChanges' => '分配给我的变更',
 	'Menu:MyChanges+' => '分配给我的变更 (作为办理人)',
