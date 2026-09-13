@@ -30,9 +30,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Links:Object:New:Modal:Title'               => '创建对象',
 
 	// Create
-	'UI:Links:Create:Button'                        => '创建',
-	'UI:Links:Create:Button+'                       => '创建一个 %4$s',
-	'UI:Links:Create:Modal:Title'                   => '创建一个 %4$s 至 %2$s',
+	'UI:Links:Create:Button'                        => '新建',
+	'UI:Links:Create:Button+'                       => '新建 %4$s',
+	'UI:Links:Create:Modal:Title'                   => '新建 %4$s 至 %2$s',
 
 	// Add
 	'UI:Links:Add:Button'                           => '添加',
