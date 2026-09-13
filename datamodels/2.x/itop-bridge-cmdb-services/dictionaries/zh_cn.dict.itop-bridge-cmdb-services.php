@@ -35,7 +35,7 @@
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToProviderContract' => '链接 功能配置项/供应商合同',
-	'Class:lnkFunctionalCIToProviderContract+' => 'This link models the functional CIs that are supported by an external company through a provider contract.~~',
+	'Class:lnkFunctionalCIToProviderContract+' => '此链接用于表示由外部公司依据供应商合同提供支持的功能配置项.',
 	'Class:lnkFunctionalCIToProviderContract/Name' => '%1$s / %2$s',
 	'Class:lnkFunctionalCIToProviderContract/Attribute:providercontract_id' => '供应商合同',
 	'Class:lnkFunctionalCIToProviderContract/Attribute:providercontract_id+' => '',
@@ -53,7 +53,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToService' => '链接 功能配置项/服务',
-	'Class:lnkFunctionalCIToService+' => 'This link models the functional CIs that are required to deliver a Service and whose malfunction would affect the quality of the Service.~~',
+	'Class:lnkFunctionalCIToService+' => '此链接用于表示为交付服务而需要的功能配置项，其故障会影响服务的质量.',
 	'Class:lnkFunctionalCIToService/Name' => '%1$s / %2$s',
 	'Class:lnkFunctionalCIToService/Attribute:service_id' => '服务',
 	'Class:lnkFunctionalCIToService/Attribute:service_id+' => '',
