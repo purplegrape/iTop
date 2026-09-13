@@ -36,7 +36,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:ResetPwd-Ready'               => '密码已修改成功.',
 	'UI:ResetPwd-Login'               => '点击这里登录...',
 
-	'UI:Login:About'                               => ITOP_APPLICATION.' 由 Combodo 创建',
+	'UI:Login:About'                               => ITOP_APPLICATION.' 由 Combodo 提供技术支持',
 	'UI:Login:ChangeYourPassword'                  => '修改您的密码',
 	'UI:Login:OldPasswordPrompt'                   => '旧密码',
 	'UI:Login:NewPasswordPrompt'                   => '新密码',
