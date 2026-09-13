@@ -72,7 +72,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI-ServiceCatalogMenu-ContractBySLA' => '统计 SLA/合同',
 
 	'Menu:Procedure' => '流程目录',
-	'Menu:Procedure+' => '所有流程目录',
+	'Menu:Procedure+' => '流程目录',
 	'Contract:baseinfo' => '基本信息',
 	'Contract:moreinfo' => '合同信息',
 	'Contract:cost' => '费用信息',
@@ -112,9 +112,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Contract/Attribute:organization_name' => '客户名称',
 	'Class:Contract/Attribute:organization_name+' => '通用名称',
 	'Class:Contract/Attribute:contacts_list' => '联系人',
-	'Class:Contract/Attribute:contacts_list+' => '此客户合同相关的所有联系人',
+	'Class:Contract/Attribute:contacts_list+' => '此客户合同相关的联系人',
 	'Class:Contract/Attribute:documents_list' => '文档',
-	'Class:Contract/Attribute:documents_list+' => '此客户合同相关的所有文档',
+	'Class:Contract/Attribute:documents_list+' => '此客户合同相关的文档',
 	'Class:Contract/Attribute:description' => '描述',
 	'Class:Contract/Attribute:description+' => '',
 	'Class:Contract/Attribute:start_date' => '开始日期',
@@ -160,7 +160,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:CustomerContract' => '客户合同',
 	'Class:CustomerContract+' => '客户与供应商之间关于服务交付的协议，可选择包含承诺服务级别 (SLA, 窗口时间).',
 	'Class:CustomerContract/Attribute:services_list' => '服务',
-	'Class:CustomerContract/Attribute:services_list+' => '此合同包含的所有服务',
+	'Class:CustomerContract/Attribute:services_list+' => '此合同包含的服务',
 ]);
 
 //
@@ -171,7 +171,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ProviderContract' => '供应商合同',
 	'Class:ProviderContract+' => '外部供应商与内部组织之间的协议.',
 	'Class:ProviderContract/Attribute:functionalcis_list' => '配置项',
-	'Class:ProviderContract/Attribute:functionalcis_list+' => '此供应商合同包含的所有配置项',
+	'Class:ProviderContract/Attribute:functionalcis_list+' => '此供应商合同包含的配置项',
 	'Class:ProviderContract/Attribute:sla' => 'SLA',
 	'Class:ProviderContract/Attribute:sla+' => '服务级别协议',
 	'Class:ProviderContract/Attribute:coverage' => '服务时间',
@@ -181,7 +181,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ProviderContract/Attribute:contracttype_name' => '合同类型名称',
 	'Class:ProviderContract/Attribute:contracttype_name+' => '~~',
 	'Class:ProviderContract/Attribute:services_list' => '服务',
-	'Class:ProviderContract/Attribute:services_list+' => '此供应商合同包含的所有服务',
+	'Class:ProviderContract/Attribute:services_list+' => '此供应商合同包含的服务',
 ]);
 
 //
@@ -256,9 +256,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Service/Attribute:description' => '描述',
 	'Class:Service/Attribute:description+' => '',
 	'Class:Service/Attribute:documents_list' => '文档',
-	'Class:Service/Attribute:documents_list+' => '此服务相关的所有文档',
+	'Class:Service/Attribute:documents_list+' => '此服务相关的文档',
 	'Class:Service/Attribute:contacts_list' => '联系人',
-	'Class:Service/Attribute:contacts_list+' => '此服务相关的所有联系人',
+	'Class:Service/Attribute:contacts_list+' => '此服务相关的联系人',
 	'Class:Service/Attribute:status' => '状态',
 	'Class:Service/Attribute:status+' => '默认情况下,只有生产状态的服务才会在用户门户中可见',
 	'Class:Service/Attribute:status/Value:implementation' => '生效',
@@ -276,7 +276,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Service/Attribute:functionalcis_list' => '配置项',
 	'Class:Service/Attribute:functionalcis_list+' => '提供此服务所需的所有配置项',
 	'Class:Service/Attribute:servicesubcategories_list' => '子服务',
-	'Class:Service/Attribute:servicesubcategories_list+' => '此服务的所有子服务',
+	'Class:Service/Attribute:servicesubcategories_list+' => '此服务包含的子服务',
 ]);
 
 //
@@ -363,9 +363,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SLA/Attribute:organization_name' => '供应商名称',
 	'Class:SLA/Attribute:organization_name+' => '通用名称',
 	'Class:SLA/Attribute:slts_list' => 'SLT',
-	'Class:SLA/Attribute:slts_list+' => '此SLA包含的所有服务级别目标',
+	'Class:SLA/Attribute:slts_list+' => '此 SLA 包含的 SLT',
 	'Class:SLA/Attribute:customercontracts_list' => '客户合同',
-	'Class:SLA/Attribute:customercontracts_list+' => '使用此SLA的所有客户合同',
+	'Class:SLA/Attribute:customercontracts_list+' => '使用此 SLA 的客户合同',
 	'Class:SLA/Error:UniqueLnkCustomerContractToService' => '无法保存客户合同%1$s与服务%2$s的链接: SLA已存在',
 ]);
 
@@ -409,7 +409,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SLT/Attribute:unit/Value:minutes' => '分钟',
 	'Class:SLT/Attribute:unit/Value:minutes+' => '分钟',
 	'Class:SLT/Attribute:slas_list' => 'SLA',
-	'Class:SLT/Attribute:slas_list+' => '使用此 SLT 的所有 SLA',
+	'Class:SLT/Attribute:slas_list+' => '使用此 SLT 的 SLA',
 ]);
 
 //
@@ -503,7 +503,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DeliveryModel/Attribute:contacts_list' => '联系人',
 	'Class:DeliveryModel/Attribute:contacts_list+' => '必须至少有一个团队才能进行工单分配',
 	'Class:DeliveryModel/Attribute:customers_list' => '客户',
-	'Class:DeliveryModel/Attribute:customers_list+' => '使用此交付模式的所有客户',
+	'Class:DeliveryModel/Attribute:customers_list+' => '使用此交付模式的客户',
 ]);
 
 //

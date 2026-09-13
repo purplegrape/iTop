@@ -23,7 +23,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'DataFeatureRemoval:NoResult:Title' => '无需修改',
 	'DataFeatureRemoval:Execution:Title' => '删除执行',
 	'DataFeatureRemoval:Analysis:Title' => '分析结果',
-	'DataFeatureRemoval:Analysis:Subtitle' => '审查所有需要关注的元素',
+	'DataFeatureRemoval:Analysis:Subtitle' => '审查需要关注的元素',
 	'DataFeatureRemoval:Analysis:SubTitle' => '%1$s 个元素需要在继续之前清理',
 
 	'DataFeatureRemoval:DeletionPlan:Title' => '数据删除计划',

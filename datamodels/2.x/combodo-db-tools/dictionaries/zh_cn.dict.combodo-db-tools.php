@@ -46,7 +46,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'DBTools:Analyze' => '分析',
 	'DBTools:Details' => '显示详情',
-	'DBTools:ShowAll' => '显示所有错误',
+	'DBTools:ShowAll' => '显示错误',
 
 	'DBTools:Inconsistencies' => '数据库不一致',
 	'DBTools:DetailedErrorTitle' => '%2$s个错误在类型%1$s: %3$s',
@@ -83,7 +83,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'DBTools:LostAttachments:Step:Analyze' => '首先, 通过分析数据库来搜索丢失或误挪动的附件.',
 
 	'DBTools:LostAttachments:Step:AnalyzeResults' => '分析结果:',
-	'DBTools:LostAttachments:Step:AnalyzeResults:None' => '非常好! 所有附件都是正常的.',
+	'DBTools:LostAttachments:Step:AnalyzeResults:None' => '非常好! 附件都是正常的.',
 	'DBTools:LostAttachments:Step:AnalyzeResults:Some' => '某些附件 (%1$d) 看起来放错了位置. 请检查下面的列表并选择要挪动的文件.',
 	'DBTools:LostAttachments:Step:AnalyzeResults:Item:Filename' => '文件名',
 	'DBTools:LostAttachments:Step:AnalyzeResults:Item:CurrentLocation' => '当前位置',

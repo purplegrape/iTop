@@ -71,9 +71,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI/Attribute:providercontracts_list' => '供应商合同',
-	'Class:FunctionalCI/Attribute:providercontracts_list+' => '此配置项的所有供应商合同',
+	'Class:FunctionalCI/Attribute:providercontracts_list+' => '此配置项的供应商合同',
 	'Class:FunctionalCI/Attribute:services_list' => '服务',
-	'Class:FunctionalCI/Attribute:services_list+' => '此配置项影响的所有服务',
+	'Class:FunctionalCI/Attribute:services_list+' => '此配置项影响的服务',
 ]);
 
 //
@@ -82,7 +82,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Document/Attribute:contracts_list' => '合同',
-	'Class:Document/Attribute:contracts_list+' => '此文档相关的所有合同',
+	'Class:Document/Attribute:contracts_list+' => '此文档相关的合同',
 	'Class:Document/Attribute:services_list' => '服务',
-	'Class:Document/Attribute:services_list+' => '此文档相关的所有服务',
+	'Class:Document/Attribute:services_list+' => '此文档相关的服务',
 ]);

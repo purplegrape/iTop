@@ -27,7 +27,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:UserRequest:EscalatedRequests' => '待升级的需求',
 	'Menu:UserRequest:EscalatedRequests+' => '按状态或热门标识分类的待升级的需求',
 	'Menu:UserRequest:OpenRequests' => '待处理的需求',
-	'Menu:UserRequest:OpenRequests+' => '所有尚未关闭的需求',
+	'Menu:UserRequest:OpenRequests+' => '尚未关闭的需求',
 	'UI:WelcomeMenu:MyAssignedCalls' => '分配给我的需求',
 	'UI-RequestManagementOverview-RequestByType-last-14-days' => '最近两周的需求 (按类型)',
 	'UI-RequestManagementOverview-Last-14-days' => '最近两周的需求 (按数量)',
@@ -213,9 +213,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:UserRequest/Attribute:parent_incident_ref' => '父级事件编号',
 	'Class:UserRequest/Attribute:parent_incident_ref+' => '',
 	'Class:UserRequest/Attribute:related_incident_list' => '子事件',
-	'Class:UserRequest/Attribute:related_incident_list+' => '与父级需求相关的所有子事件',
+	'Class:UserRequest/Attribute:related_incident_list+' => '此需求相关的子事件',
 	'Class:UserRequest/Attribute:related_request_list' => '子需求',
-	'Class:UserRequest/Attribute:related_request_list+' => '此父级需求相关的所有衍生需求',
+	'Class:UserRequest/Attribute:related_request_list+' => '此需求相关的子需求',
 	'Class:UserRequest/Attribute:public_log' => '公共日志',
 	'Class:UserRequest/Attribute:public_log+' => '',
 	'Class:UserRequest/Attribute:user_satisfaction' => '用户满意度',
@@ -264,6 +264,6 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Organization:Overview:UserRequests' => '此组织的所有需求',
-	'Organization:Overview:MyUserRequests' => '我在此组织发起的需求',
+	'Organization:Overview:MyUserRequests' => '我在此组织内发起的需求',
 	'Organization:Overview:Tickets' => '此组织内的所有工单',
 ]);
