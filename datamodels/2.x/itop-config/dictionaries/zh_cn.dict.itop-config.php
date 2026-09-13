@@ -39,6 +39,6 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'config-saved-warning-db-password' => '保存成功, 但因为数据库密码中包含不支持的字符, 配置文件备份不会成功.',
 	'config-error-transaction' => '错误: 无效的事务编号. 配置<b>没有</b>被更新.',
 	'config-error-file-changed' => '错误: 配置文件在您打开以后已被更改, 无法保存. 请刷新并再次保存.',
-	'config-not-allowed-in-demo' => '抱歉, '.ITOP_APPLICATION_SHORT.'处于<b>演示模式</b>: 不能编辑配置文件.',
-	'config-interactive-not-allowed' => ITOP_APPLICATION_SHORT.'交互式配置编辑器已禁用. 请在配置文件中查看 <code>\'config_editor\' => \'disabled\'</code>.',
+	'config-not-allowed-in-demo' => '抱歉, '.ITOP_APPLICATION_SHORT.' 处于<b>演示模式</b>: 不能编辑配置文件.',
+	'config-interactive-not-allowed' => ITOP_APPLICATION_SHORT.' 交互式配置编辑器已禁用. 请在配置文件中查看 <code>\'config_editor\' => \'disabled\'</code>.',
 ]);
