@@ -72,7 +72,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Organization/Attribute:overview' => '概况',
 	'Organization:Overview:FunctionalCIs' => '此组织的所有配置项',
 	'Organization:Overview:FunctionalCIs:subtitle' => '按类型',
-	'Organization:Overview:Users' => '此组织里所有的'.ITOP_APPLICATION_SHORT.'用户',
+	'Organization:Overview:Users' => '此组织里的 '.ITOP_APPLICATION_SHORT.' 用户',
 ]);
 
 //
@@ -141,7 +141,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Contact/Attribute:function' => '职责',
 	'Class:Contact/Attribute:function+' => '',
 	'Class:Contact/Attribute:cis_list' => '配置项',
-	'Class:Contact/Attribute:cis_list+' => '此联系人相关的所有配置项',
+	'Class:Contact/Attribute:cis_list+' => '此联系人相关的配置项',
 	'Class:Contact/Attribute:finalclass' => '联系人类型',
 	'Class:Contact/Attribute:finalclass+' => '根本属性的名称',
 ]);
@@ -172,12 +172,12 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Person/Attribute:manager_name' => '经理名称',
 	'Class:Person/Attribute:manager_name+' => '',
 	'Class:Person/Attribute:team_list' => '团队',
-	'Class:Person/Attribute:team_list+' => '这个体归属的所有团队',
+	'Class:Person/Attribute:team_list+' => '个体归属的团队',
 	'Class:Person/Attribute:tickets_list' => '工单',
-	'Class:Person/Attribute:tickets_list+' => '此人发起的所有工单',
+	'Class:Person/Attribute:tickets_list+' => '此人发起的工单',
 	'Class:Person/Attribute:tickets_list/UI:Links:Create:Modal:Title' => '创建一个 %4$s 至 %2$s',
 	'Class:Person/Attribute:user_list' => '用户',
-	'Class:Person/Attribute:user_list+' => '此个体相关的所有用户',
+	'Class:Person/Attribute:user_list+' => '此个体相关的用户',
 	'Class:Person/Attribute:manager_id_friendlyname' => '经理昵称',
 	'Class:Person/Attribute:manager_id_friendlyname+' => '',
 	'Class:Person/Attribute:picture' => '头像',
@@ -198,7 +198,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Team+' => '一种联系人类型, 通常用于对人员分组，但不仅限于此。团队会监控分配给他们的工单，并将其指派给一个坐席，通常是该团队的成员.',
 	'Class:Team/ComplementaryName' => '%1$s - %2$s',
 	'Class:Team/Attribute:persons_list' => '成员',
-	'Class:Team/Attribute:persons_list+' => '此团队包含的所有成员',
+	'Class:Team/Attribute:persons_list+' => '此团队包含的成员',
 	'Class:Team/Attribute:overview' => '概况',
 	'Team:Overview' => '此团队管理的工单和配置项',
 	'Team:Overview:ActiveTickets' => '活跃的工单',
@@ -207,7 +207,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Team:Overview:UserRequest-ClosedByMonth' => '过去12个月关闭的需求',
 	'Team:Overview:UserRequest-ClosedByAgent' => '过去12个月由办理人关闭的需求',
 	'Class:Team/Attribute:tickets_list' => '工单',
-	'Class:Team/Attribute:tickets_list+' => '此团队分配到的所有工单',
+	'Class:Team/Attribute:tickets_list+' => '此团队分配到的工单',
 ]);
 
 //
@@ -241,7 +241,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Document/Attribute:status/Value:published' => '正式',
 	'Class:Document/Attribute:status/Value:published+' => '',
 	'Class:Document/Attribute:cis_list' => '配置项',
-	'Class:Document/Attribute:cis_list+' => '此文档相关的所有配置项',
+	'Class:Document/Attribute:cis_list+' => '此文档相关的配置项',
 	'Class:Document/Attribute:finalclass' => '文档类型',
 	'Class:Document/Attribute:finalclass+' => '根本属性的名称',
 ]);
@@ -252,7 +252,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DocumentFile' => '文档文件',
-	'Class:DocumentFile+' => '一种包含上传文件的文档类型（支持任何格式：Word、PDF、电子表格等）。~~',
+	'Class:DocumentFile+' => '一种包含上传文件的文档类型 (支持任何格式: Word、PDF、Excel等).',
 	'Class:DocumentFile/Attribute:file' => '文件',
 	'Class:DocumentFile/Attribute:file+' => '',
 ]);

@@ -94,7 +94,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI/Attribute:organization_name' => '组织名称',
 	'Class:FunctionalCI/Attribute:organization_name+' => '通用名称',
 	'Class:FunctionalCI/Attribute:business_criticity' => '业务关键性',
-	'Class:FunctionalCI/Attribute:business_criticity+' => '',
+	'Class:FunctionalCI/Attribute:business_criticity+' => '~~',
 	'Class:FunctionalCI/Attribute:business_criticity/Value:high' => '高',
 	'Class:FunctionalCI/Attribute:business_criticity/Value:high+' => '高',
 	'Class:FunctionalCI/Attribute:business_criticity/Value:low' => '低',
@@ -106,13 +106,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:FunctionalCI/Attribute:groups_list' => '分组',
 	'Class:FunctionalCI/Attribute:groups_list+' => '分组可用作标记, 用于记录环境、项目 (迁移、升级、安全) 等等…',
 	'Class:FunctionalCI/Attribute:contacts_list' => '联系人',
-	'Class:FunctionalCI/Attribute:contacts_list+' => '此配置项的所有联系人',
+	'Class:FunctionalCI/Attribute:contacts_list+' => '此配置项的联系人',
 	'Class:FunctionalCI/Attribute:documents_list' => '文档',
-	'Class:FunctionalCI/Attribute:documents_list+' => '此配置项相关的所有文档',
+	'Class:FunctionalCI/Attribute:documents_list+' => '此配置项相关的文档',
 	'Class:FunctionalCI/Attribute:applicationsolution_list' => '应用方案',
-	'Class:FunctionalCI/Attribute:applicationsolution_list+' => '此配置项依赖的所有应用方案',
+	'Class:FunctionalCI/Attribute:applicationsolution_list+' => '此配置项依赖的应用方案',
 	'Class:FunctionalCI/Attribute:softwares_list' => '软件',
-	'Class:FunctionalCI/Attribute:softwares_list+' => '此配置项上已安装的所有软件',
+	'Class:FunctionalCI/Attribute:softwares_list+' => '此配置项上已安装的软件',
 	'Class:FunctionalCI/Attribute:finalclass' => '配置项子类',
 	'Class:FunctionalCI/Attribute:finalclass+' => '根本属性的名称',
 	'Class:FunctionalCI/Tab:OpenedTickets' => '活跃的工单',
@@ -172,9 +172,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Rack/Attribute:nb_u' => '机架高度',
 	'Class:Rack/Attribute:nb_u+' => '',
 	'Class:Rack/Attribute:device_list' => '设备',
-	'Class:Rack/Attribute:device_list+' => '此机架托管的所有物理设备',
+	'Class:Rack/Attribute:device_list+' => '此机架托管的物理设备',
 	'Class:Rack/Attribute:enclosure_list' => '机柜',
-	'Class:Rack/Attribute:enclosure_list+' => '此机架上的所有机柜',
+	'Class:Rack/Attribute:enclosure_list+' => '此机架里的机柜',
 ]);
 
 //
@@ -237,9 +237,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ConnectableCI+' => '可联网的物理设备',
 	'Class:ConnectableCI/ComplementaryName' => '%1$s - %2$s',
 	'Class:ConnectableCI/Attribute:networkdevice_list' => '网络设备',
-	'Class:ConnectableCI/Attribute:networkdevice_list+' => '连接到这台设备的所有网络设备',
+	'Class:ConnectableCI/Attribute:networkdevice_list+' => '这台设备所连接的网络设备',
 	'Class:ConnectableCI/Attribute:physicalinterface_list' => '网卡',
-	'Class:ConnectableCI/Attribute:physicalinterface_list+' => '所有物理网卡',
+	'Class:ConnectableCI/Attribute:physicalinterface_list+' => '物理网卡',
 ]);
 
 //
@@ -271,9 +271,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DatacenterDevice/Attribute:powerB_name' => '电源B名称',
 	'Class:DatacenterDevice/Attribute:powerB_name+' => '',
 	'Class:DatacenterDevice/Attribute:fiberinterfacelist_list' => '光口',
-	'Class:DatacenterDevice/Attribute:fiberinterfacelist_list+' => '此设备的所有光纤接口',
+	'Class:DatacenterDevice/Attribute:fiberinterfacelist_list+' => '此设备的光纤接口',
 	'Class:DatacenterDevice/Attribute:san_list' => 'SAN',
-	'Class:DatacenterDevice/Attribute:san_list+' => '连接到这台设备的所有光纤交换机',
+	'Class:DatacenterDevice/Attribute:san_list+' => '连接到这台设备的光纤交换机',
 	'Class:DatacenterDevice/Attribute:redundancy' => '冗余',
 	'Class:DatacenterDevice/Attribute:redundancy/count' => '此设备运行正常至少需要一路电源 (主或备)',
 	// Unused yet
@@ -294,7 +294,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:NetworkDevice/Attribute:networkdevicetype_name' => '网络设备类型名称',
 	'Class:NetworkDevice/Attribute:networkdevicetype_name+' => '',
 	'Class:NetworkDevice/Attribute:connectablecis_list' => '设备',
-	'Class:NetworkDevice/Attribute:connectablecis_list+' => '连接到此网络设备的所有设备',
+	'Class:NetworkDevice/Attribute:connectablecis_list+' => '连接到此网络设备的设备',
 	'Class:NetworkDevice/Attribute:iosversion_id' => 'IOS 版本',
 	'Class:NetworkDevice/Attribute:iosversion_id+' => '',
 	'Class:NetworkDevice/Attribute:iosversion_name' => 'IOS 版本名称',
@@ -332,7 +332,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Server/Attribute:ram' => '内存',
 	'Class:Server/Attribute:ram+' => '',
 	'Class:Server/Attribute:logicalvolumes_list' => '逻辑卷',
-	'Class:Server/Attribute:logicalvolumes_list+' => '连接到此物理机的所有逻辑卷',
+	'Class:Server/Attribute:logicalvolumes_list+' => '连接到此物理机的逻辑卷',
 ]);
 
 //
@@ -344,7 +344,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:StorageSystem+' => '存储系统通常使用光纤或以太网, 以逻辑卷为单位进行管理.',
 	'Class:StorageSystem/ComplementaryName' => '%1$s - %2$s',
 	'Class:StorageSystem/Attribute:logicalvolume_list' => '逻辑卷',
-	'Class:StorageSystem/Attribute:logicalvolume_list+' => '此存储系统包含的所有逻辑卷',
+	'Class:StorageSystem/Attribute:logicalvolume_list+' => '此存储系统包含的逻辑卷',
 ]);
 
 //
@@ -356,7 +356,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SANSwitch+' => '光纤交换机是指兼容光纤通道协议的网络交换机, 通常用于存储网络. 它是一种数据中心设备.',
 	'Class:SANSwitch/ComplementaryName' => '%1$s - %2$s',
 	'Class:SANSwitch/Attribute:datacenterdevice_list' => '设备',
-	'Class:SANSwitch/Attribute:datacenterdevice_list+' => '连接到此光纤交换机的所有设备',
+	'Class:SANSwitch/Attribute:datacenterdevice_list+' => '连接到此光纤交换机的设备',
 ]);
 
 //
@@ -368,7 +368,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:TapeLibrary+' => '托管了多个磁带(含盒式磁带)的数据中心设备. 磁带库通常用于数据备份或归档.',
 	'Class:TapeLibrary/ComplementaryName' => '%1$s - %2$s',
 	'Class:TapeLibrary/Attribute:tapes_list' => '磁带',
-	'Class:TapeLibrary/Attribute:tapes_list+' => '此磁带库里的所有磁带',
+	'Class:TapeLibrary/Attribute:tapes_list+' => '此磁带库里的磁带',
 ]);
 
 //
@@ -380,7 +380,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:NAS+' => '数据中心里联网的大容量存储设备. 在 '.ITOP_APPLICATION_SHORT.' 中 NAS (Network-attached storage) 用于托管 NAS 文件系统.',
 	'Class:NAS/ComplementaryName' => '%1$s - %2$s',
 	'Class:NAS/Attribute:nasfilesystem_list' => '文件系统',
-	'Class:NAS/Attribute:nasfilesystem_list+' => '此 NAS 里的所有文件系统',
+	'Class:NAS/Attribute:nasfilesystem_list+' => '此 NAS 里的文件系统',
 ]);
 
 //
@@ -442,7 +442,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PowerSource+' => '物理电源连接. 用于描述数据中心的任何类型的电源 (主电源入口, 断路器…) ，但不是 PDU.',
 	'Class:PowerSource/ComplementaryName' => '%1$s - %2$s',
 	'Class:PowerSource/Attribute:pdus_list' => 'PDU',
-	'Class:PowerSource/Attribute:pdus_list+' => '使用此电源的所有 PDU',
+	'Class:PowerSource/Attribute:pdus_list+' => '使用此电源的 PDU',
 ]);
 
 //
@@ -489,7 +489,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Enclosure/Attribute:nb_u' => '高度',
 	'Class:Enclosure/Attribute:nb_u+' => '',
 	'Class:Enclosure/Attribute:device_list' => '设备',
-	'Class:Enclosure/Attribute:device_list+' => '此机柜的所有设备',
+	'Class:Enclosure/Attribute:device_list+' => '此机柜的设备',
 ]);
 
 //
@@ -500,13 +500,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ApplicationSolution' => '应用方案',
 	'Class:ApplicationSolution+' => '应用方案描述了复杂应用是如何由多个基本组件组装的. 应用方案的主要信息是组件之间的依赖关系列表.',
 	'Class:ApplicationSolution/Attribute:functionalcis_list' => '配置项',
-	'Class:ApplicationSolution/Attribute:functionalcis_list+' => '此应用方案包含的所有配置项',
+	'Class:ApplicationSolution/Attribute:functionalcis_list+' => '此应用方案包含的配置项',
 	'Class:ApplicationSolution/Attribute:businessprocess_list' => '业务流程',
-	'Class:ApplicationSolution/Attribute:businessprocess_list+' => '依赖此应用方案的所有业务流程',
+	'Class:ApplicationSolution/Attribute:businessprocess_list+' => '依赖此应用方案的业务流程',
 	'Class:ApplicationSolution/Attribute:logo' => 'Logo',
 	'Class:ApplicationSolution/Attribute:logo+' => '用于在显示影响分析图表时作为对象图标',
 	'Class:ApplicationSolution/Attribute:status' => '状态',
-	'Class:ApplicationSolution/Attribute:status+' => '',
+	'Class:ApplicationSolution/Attribute:status+' => '~~',
 	'Class:ApplicationSolution/Attribute:status/Value:active' => '启用',
 	'Class:ApplicationSolution/Attribute:status/Value:active+' => '启用',
 	'Class:ApplicationSolution/Attribute:status/Value:inactive' => '停用',
@@ -525,11 +525,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:BusinessProcess' => '业务流程',
 	'Class:BusinessProcess+' => '业务流程描述了运营过程中的高级流程或重要应用. 它与应用方案非常类似, 但是用于描述更高层次的应用或整个组织的流程.',
 	'Class:BusinessProcess/Attribute:applicationsolutions_list' => '应用方案',
-	'Class:BusinessProcess/Attribute:applicationsolutions_list+' => '影响此业务流程的所有应用方案',
+	'Class:BusinessProcess/Attribute:applicationsolutions_list+' => '影响此业务流程的应用方案',
 	'Class:BusinessProcess/Attribute:logo' => 'Logo',
 	'Class:BusinessProcess/Attribute:logo+' => '用于在显示影响分析图表时作为对象图标',
 	'Class:BusinessProcess/Attribute:status' => '状态',
-	'Class:BusinessProcess/Attribute:status+' => '',
+	'Class:BusinessProcess/Attribute:status+' => '~~',
 	'Class:BusinessProcess/Attribute:status/Value:active' => '启用',
 	'Class:BusinessProcess/Attribute:status/Value:active+' => '启用',
 	'Class:BusinessProcess/Attribute:status/Value:inactive' => '停用',
@@ -553,8 +553,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Software/Attribute:end_of_support' => '过保日期',
 	'Class:Software/Attribute:end_of_support+' => '厂商提供的最后支持日期，此后不再提供此软件版本的补丁.',
 	'Class:Software/Attribute:documents_list' => '文档',
-	'Class:Software/Attribute:documents_list+' => '此软件相关的所有文档',
-  'Class:Software/Attribute:logo' => 'Logo',
+	'Class:Software/Attribute:documents_list+' => '此软件相关的文档',
+	'Class:Software/Attribute:logo' => 'Logo',
 	'Class:Software/Attribute:logo+' => '用于在显示影响分析图表时作为所有使用了此软件的软件实例对象的图标',
 	'Class:Software/Attribute:type' => '类型',
 	'Class:Software/Attribute:type+' => '',
@@ -569,11 +569,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Software/Attribute:type/Value:WebServer' => 'Web 服务器',
 	'Class:Software/Attribute:type/Value:WebServer+' => 'Web 服务器',
 	'Class:Software/Attribute:softwareinstance_list' => '软件实例',
-	'Class:Software/Attribute:softwareinstance_list+' => '此软件的所有实例',
+	'Class:Software/Attribute:softwareinstance_list+' => '此软件的实例',
 	'Class:Software/Attribute:softwarepatch_list' => '软件补丁',
-	'Class:Software/Attribute:softwarepatch_list+' => '此软件的所有补丁',
+	'Class:Software/Attribute:softwarepatch_list+' => '此软件的补丁',
 	'Class:Software/Attribute:softwarelicence_list' => '软件许可证',
-	'Class:Software/Attribute:softwarelicence_list+' => '此软件的所有许可证',
+	'Class:Software/Attribute:softwarelicence_list+' => '此软件的许可证',
 ]);
 
 //
@@ -615,7 +615,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Middleware' => '中间件',
 	'Class:Middleware+' => '向其它软件提供服务的软件实例 (例如: Tomcat, JBoss, Talend, Microsoft BizTalk, IBM Websphere 或 Lotus Domino), 通常安装在特定系统(PC, 物理机或虚拟机)上.',
 	'Class:Middleware/Attribute:middlewareinstance_list' => '中间件实例',
-	'Class:Middleware/Attribute:middlewareinstance_list+' => '此中间件的所有实例',
+	'Class:Middleware/Attribute:middlewareinstance_list+' => '此中间件的实例',
 ]);
 
 //
@@ -626,7 +626,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DBServer' => 'DB 服务器',
 	'Class:DBServer+' => '提供数据库服务的软件实例 (例如: MySQL 8.0, Oracle, SQL Server, DB2…), 通常安装在特定系统(PC, 物理机或虚拟机)上.',
 	'Class:DBServer/Attribute:dbschema_list' => '数据库模式',
-	'Class:DBServer/Attribute:dbschema_list+' => '此数据库服务器上的所有数据库模式',
+	'Class:DBServer/Attribute:dbschema_list+' => '此数据库服务器上的数据库模式',
 ]);
 
 //
@@ -636,8 +636,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:WebServer' => 'Web 服务器',
 	'Class:WebServer+' => '提供网页服务的软件实例 (例如: Apache 2.4, Nginx 1.29.4, IIS 7.0), 通常安装在特定系统(PC, 物理机或虚拟机)上.',
-	'Class:WebServer/Attribute:webapp_list' => 'Web应用',
-	'Class:WebServer/Attribute:webapp_list+' => '此web服务器上的所有web应用',
+	'Class:WebServer/Attribute:webapp_list' => 'Web 应用',
+	'Class:WebServer/Attribute:webapp_list+' => '此 web 服务器上的 web 应用',
 ]);
 
 //
@@ -724,7 +724,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualDevice/Attribute:status/Value:stock' => '库存',
 	'Class:VirtualDevice/Attribute:status/Value:stock+' => '库存',
 	'Class:VirtualDevice/Attribute:logicalvolumes_list' => '逻辑卷',
-	'Class:VirtualDevice/Attribute:logicalvolumes_list+' => '此设备使用的所有逻辑卷',
+	'Class:VirtualDevice/Attribute:logicalvolumes_list+' => '此设备使用的逻辑卷',
 ]);
 
 //
@@ -735,7 +735,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualHost' => '虚拟化宿主机',
 	'Class:VirtualHost+' => '对虚拟设备(虚拟机监视器, 集群,...)的抽象, 用于托管虚拟机.',
 	'Class:VirtualHost/Attribute:virtualmachine_list' => '虚拟机',
-	'Class:VirtualHost/Attribute:virtualmachine_list+' => '此虚拟化宿主机托管的所有虚拟机',
+	'Class:VirtualHost/Attribute:virtualmachine_list+' => '此虚拟化宿主机托管的虚拟机',
 ]);
 
 //
@@ -760,14 +760,14 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:Farm' => '集群',
-	'Class:Farm+' => '虚拟化的主机. 集群通常由一组虚拟化宿主机构成, 并通过共享存储资源为托管的虚拟机提供容错能力.',
+	'Class:Farm' => '虚拟化集群',
+	'Class:Farm+' => '虚拟化集群通常由一组虚拟化宿主机组成, 并通过共享存储资源为托管的虚拟机提供容错能力.',
 	'Class:Farm/Attribute:hypervisor_list' => '虚拟化管理器',
 	'Class:Farm/Attribute:hypervisor_list+' => '集群由哪些虚拟化管理器组成',
 	'Class:Farm/Attribute:redundancy' => '高可用性',
-	'Class:Farm/Attribute:redundancy/disabled' => '所有虚拟化管理器正常, 集群才正常',
-	'Class:Farm/Attribute:redundancy/count' => '至少 %1$s 个虚拟化管理器是正常的, 集群才正常',
-	'Class:Farm/Attribute:redundancy/percent' => '至少 %1$s %% 的虚拟化管理器是正常的, 集群才正常',
+	'Class:Farm/Attribute:redundancy/disabled' => '所有虚拟化管理器正常, 虚拟化集群才正常',
+	'Class:Farm/Attribute:redundancy/count' => '至少 %1$s 个虚拟化管理器是正常的, 虚拟化集群才正常',
+	'Class:Farm/Attribute:redundancy/percent' => '至少 %1$s %% 的虚拟化管理器是正常的, 虚拟化集群才正常',
 ]);
 
 //
@@ -793,9 +793,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualMachine/Attribute:os_end_of_support' => 'OS 过保日期',
 	'Class:VirtualMachine/Attribute:os_end_of_support+' => '厂商不再支持该操作系统版本时的日期.',
 	'Class:VirtualMachine/Attribute:oslicence_id' => 'OS 许可证',
-	'Class:VirtualMachine/Attribute:oslicence_id+' => '',
+	'Class:VirtualMachine/Attribute:oslicence_id+' => '~~',
 	'Class:VirtualMachine/Attribute:oslicence_name' => '名称',
-	'Class:VirtualMachine/Attribute:oslicence_name+' => '',
+	'Class:VirtualMachine/Attribute:oslicence_name+' => '~~',
 	'Class:VirtualMachine/Attribute:cpu' => 'CPU',
 	'Class:VirtualMachine/Attribute:cpu+' => '',
 	'Class:VirtualMachine/Attribute:ram' => '内存',
@@ -803,7 +803,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualMachine/Attribute:managementip' => '管理IP',
 	'Class:VirtualMachine/Attribute:managementip+' => '',
 	'Class:VirtualMachine/Attribute:logicalinterface_list' => '网卡',
-	'Class:VirtualMachine/Attribute:logicalinterface_list+' => '所有逻辑网卡',
+	'Class:VirtualMachine/Attribute:logicalinterface_list+' => '逻辑网卡',
 ]);
 
 //
@@ -830,7 +830,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:LogicalVolume/Attribute:servers_list' => '服务器',
 	'Class:LogicalVolume/Attribute:servers_list+' => '使用此逻辑卷的服务器',
 	'Class:LogicalVolume/Attribute:virtualdevices_list' => '虚拟设备',
-	'Class:LogicalVolume/Attribute:virtualdevices_list+' => '使用此逻辑卷的所有虚拟设备',
+	'Class:LogicalVolume/Attribute:virtualdevices_list+' => '使用此逻辑卷的虚拟设备',
 ]);
 
 //
@@ -943,9 +943,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Patch' => '补丁',
 	'Class:Patch+' => '抽象类，用于对系统或软件提供的补丁、热修复、安全修复或软件服务包.',
 	'Class:Patch/Attribute:name' => '名称',
-	'Class:Patch/Attribute:name+' => '',
+	'Class:Patch/Attribute:name+' => '~~',
 	'Class:Patch/Attribute:documents_list' => '文档',
-	'Class:Patch/Attribute:documents_list+' => '此补丁相关的所有文档',
+	'Class:Patch/Attribute:documents_list+' => '此补丁相关的文档',
 	'Class:Patch/Attribute:description' => '描述',
 	'Class:Patch/Attribute:description+' => '',
 	'Class:Patch/Attribute:finalclass' => '补丁子类',
@@ -960,7 +960,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OSPatch' => 'OS 补丁',
 	'Class:OSPatch+' => '针对特定操作系统的补丁、热修复、安全修复或服务包.',
 	'Class:OSPatch/Attribute:functionalcis_list' => '设备',
-	'Class:OSPatch/Attribute:functionalcis_list+' => '已安装此补丁的所有系统',
+	'Class:OSPatch/Attribute:functionalcis_list+' => '已安装此补丁的系统',
 	'Class:OSPatch/Attribute:osversion_id' => 'OS 版本',
 	'Class:OSPatch/Attribute:osversion_id+' => '',
 	'Class:OSPatch/Attribute:osfamily_id' => 'OS 家族',
@@ -981,7 +981,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SoftwarePatch/Attribute:software_name' => '软件名称',
 	'Class:SoftwarePatch/Attribute:software_name+' => '',
 	'Class:SoftwarePatch/Attribute:softwareinstances_list' => '软件实例',
-	'Class:SoftwarePatch/Attribute:softwareinstances_list+' => '已安装此软件补丁的所有系统',
+	'Class:SoftwarePatch/Attribute:softwareinstances_list+' => '已安装此软件补丁的系统',
 ]);
 
 //
@@ -994,7 +994,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Licence/Attribute:name' => '名称',
 	'Class:Licence/Attribute:name+' => '',
 	'Class:Licence/Attribute:documents_list' => '文档',
-	'Class:Licence/Attribute:documents_list+' => '此许可证相关的所有文档',
+	'Class:Licence/Attribute:documents_list+' => '此许可证相关的文档',
 	'Class:Licence/Attribute:org_id' => '组织',
 	'Class:Licence/Attribute:org_id+' => '',
 	'Class:Licence/Attribute:organization_name' => '组织名称',
@@ -1034,9 +1034,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OSLicence/Attribute:osversion_name' => 'OS 版本名称',
 	'Class:OSLicence/Attribute:osversion_name+' => '',
 	'Class:OSLicence/Attribute:virtualmachines_list' => '虚拟机',
-	'Class:OSLicence/Attribute:virtualmachines_list+' => '使用此许可证的所有虚拟机',
+	'Class:OSLicence/Attribute:virtualmachines_list+' => '使用此许可证的虚拟机',
 	'Class:OSLicence/Attribute:servers_list' => '服务器',
-	'Class:OSLicence/Attribute:servers_list+' => '使用此许可证的所有服务器',
+	'Class:OSLicence/Attribute:servers_list+' => '使用此许可证的服务器',
 ]);
 
 //
@@ -1052,7 +1052,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SoftwareLicence/Attribute:software_name' => '软件名称',
 	'Class:SoftwareLicence/Attribute:software_name+' => '',
 	'Class:SoftwareLicence/Attribute:softwareinstance_list' => '软件实例',
-	'Class:SoftwareLicence/Attribute:softwareinstance_list+' => '使用此许可证的所有系统',
+	'Class:SoftwareLicence/Attribute:softwareinstance_list+' => '使用此许可证的系统',
 ]);
 
 //
@@ -1068,9 +1068,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToLicence/Attribute:licence_name' => '许可证名称',
 	'Class:lnkDocumentToLicence/Attribute:licence_name+' => '',
 	'Class:lnkDocumentToLicence/Attribute:document_id' => '文档',
-	'Class:lnkDocumentToLicence/Attribute:document_id+' => '',
+	'Class:lnkDocumentToLicence/Attribute:document_id+' => '~~',
 	'Class:lnkDocumentToLicence/Attribute:document_name' => '文档名称',
-	'Class:lnkDocumentToLicence/Attribute:document_name+' => '',
+	'Class:lnkDocumentToLicence/Attribute:document_name+' => '~~',
 ]);
 
 //
@@ -1085,9 +1085,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OSVersion/Attribute:osfamily_name' => 'OS 家族名称',
 	'Class:OSVersion/Attribute:osfamily_name+' => '',
 	'Class:OSVersion/Attribute:end_of_support' => '过保日期',
-	'Class:OSVersion/Attribute:end_of_support+' => '厂商停止为此 OS 版本提供补丁的截止日期.',
+	'Class:OSVersion/Attribute:end_of_support+' => '厂商停止为此 OS 版本提供补丁的截止时间.',
 	'Class:OSVersion/Attribute:ospatches_list' => 'OS 补丁',
-	'Class:OSVersion/Attribute:ospatches_list+' => '此 OS 版本的所有补丁',
+	'Class:OSVersion/Attribute:ospatches_list+' => '此 OS 版本的补丁',
 	'Class:OSVersion/UniquenessRule:name_osfamily+' => 'OS 家族的名称必须唯一',
 	'Class:OSVersion/UniquenessRule:name_osfamily' => '此 OS 版本已在 OS 家族中存在',
 ]);
@@ -1098,9 +1098,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OSFamily' => 'OS 家族',
-	'Class:OSFamily+' => '分类. 物理机、虚拟机、PC 的 "OS 家族" 属性可能的值列表.',
+	'Class:OSFamily+' => '物理机、虚拟机、PC 的 "OS 家族" 属性可能的值列表.',
 	'Class:OSFamily/Attribute:osversions_list' => 'OS 版本',
-	'Class:OSFamily/Attribute:osversions_list+' => '此 OS 家族的所有 OS 版本',
+	'Class:OSFamily/Attribute:osversions_list+' => '此 OS 家族的 OS 版本',
 	'Class:OSFamily/UniquenessRule:name+' => '名称必须唯一',
 	'Class:OSFamily/UniquenessRule:name' => '此 OS 家族已存在',
 ]);
@@ -1113,13 +1113,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Brand' => '品牌',
 	'Class:Brand+' => '分类. 物理设备 "品牌" 的可能的值列表.',
 	'Class:Brand/Attribute:iosversions_list' => 'IOS 版本',
-	'Class:Brand/Attribute:iosversions_list+' => '此品牌的所有 IOS 版本',
+	'Class:Brand/Attribute:iosversions_list+' => '此品牌的 IOS 版本',
 	'Class:Brand/Attribute:logo' => 'Logo',
 	'Class:Brand/Attribute:logo+' => '',
 	'Class:Brand/Attribute:models_list' => '型号',
 	'Class:Brand/Attribute:models_list+' => '此品牌的所有型号',
 	'Class:Brand/Attribute:physicaldevices_list' => '物理设备',
-	'Class:Brand/Attribute:physicaldevices_list+' => '此品牌的所有物理设备',
+	'Class:Brand/Attribute:physicaldevices_list+' => '属于此品牌的所有物理设备',
 	'Class:Brand/UniquenessRule:name+' => '名称必须唯一',
 	'Class:Brand/UniquenessRule:name' => '此品牌已存在',
 ]);
@@ -1133,15 +1133,15 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Model+' => '分类. 物理设备型号属性可能的值列表. 每个型号只属于一个品牌，通常适用于一种单一类别的物理设备.',
 	'Class:Model/ComplementaryName' => '%1$s - %2$s',
 	'Class:Model/Attribute:brand_id' => '品牌',
-	'Class:Model/Attribute:brand_id+' => '',
+	'Class:Model/Attribute:brand_id+' => '~~',
 	'Class:Model/Attribute:brand_name' => '品牌名称',
-	'Class:Model/Attribute:brand_name+' => '',
+	'Class:Model/Attribute:brand_name+' => '~~',
 	'Class:Model/Attribute:picture' => '相片',
-	'Class:Model/Attribute:picture+' => '',
+	'Class:Model/Attribute:picture+' => '~~',
 	'Class:Model/Attribute:type' => '设备类型',
-	'Class:Model/Attribute:type+' => '',
+	'Class:Model/Attribute:type+' => '~~',
 	'Class:Model/Attribute:end_of_support' => '过保日期',
-	'Class:Model/Attribute:end_of_support+' => '厂商提供补丁和支持的最后时间.',
+	'Class:Model/Attribute:end_of_support+' => '厂商提供补丁和支持的截止时间.',
 	'Class:Model/Attribute:type/Value:PowerSource' => '电源',
 	'Class:Model/Attribute:type/Value:PowerSource+' => '电源',
 	'Class:Model/Attribute:type/Value:DiskArray' => '磁盘阵列',
@@ -1179,7 +1179,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Model/Attribute:type/Value:Phone' => '电话',
 	'Class:Model/Attribute:type/Value:Phone+' => '电话',
 	'Class:Model/Attribute:physicaldevices_list' => '物理设备',
-	'Class:Model/Attribute:physicaldevices_list+' => '此型号的所有物理设备',
+	'Class:Model/Attribute:physicaldevices_list+' => '属于此型号的所有物理设备',
 	'Class:Model/UniquenessRule:name_brand+' => '名称必须唯一',
 	'Class:Model/UniquenessRule:name_brand' => '此型号已存在',
 ]);
@@ -1194,7 +1194,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:NetworkDeviceType/Attribute:logo' => 'Logo',
 	'Class:NetworkDeviceType/Attribute:logo+' => '用于此类型网络设备的图标，当在控制台中显示时 (详情、摘要卡片和影响分析图表)',
 	'Class:NetworkDeviceType/Attribute:networkdevicesdevices_list' => '网络设备',
-	'Class:NetworkDeviceType/Attribute:networkdevicesdevices_list+' => '此类型的所有网络设备',
+	'Class:NetworkDeviceType/Attribute:networkdevicesdevices_list+' => '属于此类型的所有网络设备',
 ]);
 
 //
@@ -1209,9 +1209,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:IOSVersion/Attribute:brand_name' => '名称',
 	'Class:IOSVersion/Attribute:brand_name+' => '',
 	'Class:IOSVersion/Attribute:end_of_support' => '过保日期',
-	'Class:IOSVersion/Attribute:end_of_support+' => '厂商提供补丁的最后时间.',
+	'Class:IOSVersion/Attribute:end_of_support+' => '厂商提供补丁的截止时间.',
 	'Class:IOSVersion/Attribute:networkdevices_list' => '网络设备',
-	'Class:IOSVersion/Attribute:networkdevices_list+' => '运行此 IOS 版本的所有网络设备',
+	'Class:IOSVersion/Attribute:networkdevices_list+' => '运行此 IOS 版本的网络设备',
 	'Class:IOSVersion/UniquenessRule:name_brand+' => '名称在品牌中必须唯一',
 	'Class:IOSVersion/UniquenessRule:name_brand' => '此 IOS 版本已存在于此品牌',
 ]);
@@ -1225,13 +1225,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkDocumentToPatch+' => '此链接用于表示当某个文档适用于某个补丁时.',
 	'Class:lnkDocumentToPatch/Name' => '%1$s / %2$s',
 	'Class:lnkDocumentToPatch/Attribute:patch_id' => '补丁',
-	'Class:lnkDocumentToPatch/Attribute:patch_id+' => '',
+	'Class:lnkDocumentToPatch/Attribute:patch_id+' => '~~',
 	'Class:lnkDocumentToPatch/Attribute:patch_name' => '补丁名称',
-	'Class:lnkDocumentToPatch/Attribute:patch_name+' => '',
+	'Class:lnkDocumentToPatch/Attribute:patch_name+' => '~~',
 	'Class:lnkDocumentToPatch/Attribute:document_id' => '文档',
-	'Class:lnkDocumentToPatch/Attribute:document_id+' => '',
+	'Class:lnkDocumentToPatch/Attribute:document_id+' => '~~',
 	'Class:lnkDocumentToPatch/Attribute:document_name' => '文档名称',
-	'Class:lnkDocumentToPatch/Attribute:document_name+' => '',
+	'Class:lnkDocumentToPatch/Attribute:document_name+' => '~~',
 ]);
 
 //
@@ -1243,13 +1243,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkSoftwareInstanceToSoftwarePatch+' => '此链接用于表示某个软件补丁已应用于软件实例.',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Name' => '%1$s / %2$s',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_id' => '软件补丁',
-	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_id+' => '',
+	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_id+' => '~~',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_name' => '软件补丁名称',
-	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_name+' => '',
+	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_name+' => '~~',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_id' => '软件实例',
-	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_id+' => '',
+	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_id+' => '~~',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_name' => '软件实例名称',
-	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_name+' => '',
+	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_name+' => '~~',
 ]);
 
 //
@@ -1303,8 +1303,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Subnet/Attribute:subnet_name+' => '',
 	'Class:Subnet/Attribute:org_id' => '所属组织',
 	'Class:Subnet/Attribute:org_id+' => '',
-	'Class:Subnet/Attribute:org_name' => '名称',
-	'Class:Subnet/Attribute:org_name+' => '名称',
+	'Class:Subnet/Attribute:org_name' => '组织名称',
+	'Class:Subnet/Attribute:org_name+' => '',
 	'Class:Subnet/Attribute:ip' => 'IP',
 	'Class:Subnet/Attribute:ip+' => '',
 	'Class:Subnet/Attribute:ip_mask' => '掩码',
@@ -1360,7 +1360,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:NetworkInterface' => '网卡',
-	'Class:NetworkInterface+' => '对所有网络接口的抽象.',
+	'Class:NetworkInterface+' => '对网络接口的抽象.',
 	'Class:NetworkInterface/Attribute:name' => '名称',
 	'Class:NetworkInterface/Attribute:name+' => '',
 	'Class:NetworkInterface/Attribute:finalclass' => '网卡类型',
@@ -1553,13 +1553,13 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Group/Attribute:description+' => '',
 	'Class:Group/Attribute:type' => '类型',
 	'Class:Group/Attribute:type+' => '',
-	'Class:Group/Attribute:parent_id' => '上级组',
+	'Class:Group/Attribute:parent_id' => '父级组',
 	'Class:Group/Attribute:parent_id+' => '',
 	'Class:Group/Attribute:parent_name' => '名称',
 	'Class:Group/Attribute:parent_name+' => '',
 	'Class:Group/Attribute:ci_list' => '关联的配置项',
-	'Class:Group/Attribute:ci_list+' => '此配置组相关的所有配置项',
-	'Class:Group/Attribute:parent_id_friendlyname' => '上级配置组',
+	'Class:Group/Attribute:ci_list+' => '此配置组相关的配置项',
+	'Class:Group/Attribute:parent_id_friendlyname' => '父级配置组',
 	'Class:Group/Attribute:parent_id_friendlyname+' => '',
 ]);
 
@@ -1571,7 +1571,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkGroupToCI' => '链接 配置组/配置项',
 	'Class:lnkGroupToCI+' => '此链接用于表示某个功能配置项属于某个配置组.',
 	'Class:lnkGroupToCI/Name' => '%1$s / %2$s',
-	'Class:lnkGroupToCI/Attribute:group_id' => '组',
+	'Class:lnkGroupToCI/Attribute:group_id' => '配置组',
 	'Class:lnkGroupToCI/Attribute:group_id+' => '',
 	'Class:lnkGroupToCI/Attribute:group_name' => '名称',
 	'Class:lnkGroupToCI/Attribute:group_name+' => '',
@@ -1635,29 +1635,29 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:DBServer' => '数据库服务器',
 	'Menu:DBServer+' => '数据库服务器',
 	'Menu:BusinessProcess' => '业务流程',
-	'Menu:BusinessProcess+' => '所有业务流程',
+	'Menu:BusinessProcess+' => '业务流程',
 	'Menu:ApplicationSolution' => '应用方案',
-	'Menu:ApplicationSolution+' => '所有应用方案',
+	'Menu:ApplicationSolution+' => '应用方案',
 	'Menu:ConfigManagementSoftware' => '应用管理',
 	'Menu:Licence' => '许可证',
-	'Menu:Licence+' => '所有许可证',
+	'Menu:Licence+' => '许可证',
 	'Menu:Patch' => '补丁',
-	'Menu:Patch+' => '所有补丁',
+	'Menu:Patch+' => '补丁',
 	'Menu:ApplicationInstance' => '已安装的软件',
 	'Menu:ApplicationInstance+' => '应用和数据库服务器',
 	'Menu:ConfigManagementHardware' => '基础设施管理',
 	'Menu:Subnet' => '子网',
-	'Menu:Subnet+' => '所有子网',
+	'Menu:Subnet+' => '子网',
 	'Menu:NetworkDevice' => '网络设备',
-	'Menu:NetworkDevice+' => '所有网络设备',
+	'Menu:NetworkDevice+' => '网络设备',
 	'Menu:Server' => '服务器',
-	'Menu:Server+' => '所有服务器',
+	'Menu:Server+' => '服务器',
 	'Menu:Printer' => '打印机',
-	'Menu:Printer+' => '所有打印机',
+	'Menu:Printer+' => '打印机',
 	'Menu:MobilePhone' => '手机',
-	'Menu:MobilePhone+' => '所有手机',
+	'Menu:MobilePhone+' => '手机',
 	'Menu:PC' => '个人电脑',
-	'Menu:PC+' => '所有个人电脑',
+	'Menu:PC+' => '个人电脑',
 	'Menu:NewCI' => '新建配置项',
 	'Menu:NewCI+' => '新建配置项',
 	'Menu:SearchCIs' => '搜索配置项',
