@@ -131,7 +131,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:UserRequest/Attribute:origin/Value:phone' => '电话',
 	'Class:UserRequest/Attribute:origin/Value:phone+' => '源自电话沟通',
 	'Class:UserRequest/Attribute:origin/Value:portal' => '门户',
-	'Class:UserRequest/Attribute:origin/Value:portal+' => '源自用户门户中创建的需求工单',
+	'Class:UserRequest/Attribute:origin/Value:portal+' => '源自用户门户中新建的需求工单',
 	'Class:UserRequest/Attribute:approver_id' => '审核人',
 	'Class:UserRequest/Attribute:approver_id+' => '',
 	'Class:UserRequest/Attribute:approver_email' => '邮箱',
