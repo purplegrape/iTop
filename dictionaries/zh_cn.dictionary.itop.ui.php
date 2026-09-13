@@ -1024,12 +1024,12 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'UI:NotificationsMenu:Title' => '配置通知',
 	'UI:NotificationsMenu:Help' => '帮助',
-	'UI:NotificationsMenu:HelpContent' => '<p>在'.ITOP_APPLICATION_SHORT.'中, 通知可以被自定义. 它们基于两个对象集: <i>触发器和操作</i>.</p>
+	'UI:NotificationsMenu:HelpContent' => '<p>在 '.ITOP_APPLICATION_SHORT.' 中, 通知可以被自定义. 它们基于两个对象集: <i>触发器和操作</i>.</p>
 <p><i><b>触发器</b></i>定义了什么时候发送通知. '.ITOP_APPLICATION_SHORT.'内核自带一些触发器, 另一些触发器可由扩展提供:
 <ol>
 	<li>有的触发器执行于指定类型的对象被<b>创建后</b>, <b>更新后</b>或<b>删除后</b>.</li>
 	<li>有的触发器执行于指定类型的对象<b>进入</b>或<b>离开</b>指定</b>状态</b>.</li>
-	<li>有的触发器执行于<b>TTO阈值或TTR阈值</b>预设值<b>达到时</b>.</li>
+	<li>有的触发器执行于<b>TTO阈值或TTR阈值</b>的预设值<b>达到时</b>.</li>
 </ol>
 </p>
 <p>
@@ -1050,7 +1050,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:NotificationsMenu:OnStateLeave' => '当对象离开指定状态',
 	'UI:NotificationsMenu:Actions' => '操作',
 	'UI:NotificationsMenu:Actions:ActionEmail' => '邮件操作',
-	'UI:NotificationsMenu:Actions:ActionWebhook' => 'Webhook操作 (外部集成)',
+	'UI:NotificationsMenu:Actions:ActionWebhook' => 'Webhook 操作 (与外部集成)',
 	'UI:NotificationsMenu:Actions:Action' => '其它操作',
 	'UI:NotificationsMenu:AvailableActions' => '有效的操作',
 
