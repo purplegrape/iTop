@@ -668,20 +668,20 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ActionNewsroom' => '新闻室的通知',
 	'Class:ActionNewsroom+' => '',
 	'Class:ActionNewsroom/Attribute:title' => '标题',
-	'Class:ActionNewsroom/Attribute:title+' => 'Title of the news. Can contain placeholders like $this->attribute_code$~~',
+	'Class:ActionNewsroom/Attribute:title+' => '消息标题. 可以包含占位符如 $this->attribute_code$',
 	'Class:ActionNewsroom/Attribute:message' => '消息',
-	'Class:ActionNewsroom/Attribute:message+' => 'Contents of the news, in Markdown format not HTML. Can contain placeholders like:
-- $this->attribute_code$ any attribute of the object triggering the notification,
-- $this->attribute_external_key->attribute$ recursive syntax for any remote attribute,
-- $current_contact->attribute$ attribute of the Person who triggered the notification~~',
+	'Class:ActionNewsroom/Attribute:message+' => '新闻内容, 使用 Markdown 格式而非 HTML. 可以包含以下占位符:
+- $this->attribute_code$ 触发通知的对象的任意属性,
+- $this->attribute_external_key->attribute$ 用于任何远程属性的递归语法,
+- $current_contact->attribute$ 触发通知的人员的属性',
 	'Class:ActionNewsroom/Attribute:icon' => '图标',
-	'Class:ActionNewsroom/Attribute:icon+' => 'Icon to appear next to the news in the newsroom.
-- If filled, the custom icon will be used
-- Else the icon of the triggering object if there is one (e.g. picture of a Person),
-- Else the icon of the triggering object class,
-- Otherwise, the application compact logo will be used~~',
+	'Class:ActionNewsroom/Attribute:icon+' => '新闻室中靠近消息位置显示的图标.
+- 如果已填写, 则使用自定义图标
+- 或者, 若存在触发对象, 则使用该触发对象的图标（例如：人物的头像）
+- 或者, 使用触发对象类型的图标
+- 其它情况, 将使用应用的 logo',
 	'Class:ActionNewsroom/Attribute:priority' => '优先级',
-	'Class:ActionNewsroom/Attribute:priority+' => '消息将按优先级降序排列，当在新闻室弹出窗口中显示时',
+	'Class:ActionNewsroom/Attribute:priority+' => '消息将按优先级降序排列, 当在新闻室弹出窗口中显示时',
 	'Class:ActionNewsroom/Attribute:priority/Value:1' => '严重',
 	'Class:ActionNewsroom/Attribute:priority/Value:1+' => '严重',
 	'Class:ActionNewsroom/Attribute:priority/Value:2' => '紧急',
@@ -691,11 +691,11 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ActionNewsroom/Attribute:priority/Value:4' => '标准',
 	'Class:ActionNewsroom/Attribute:priority/Value:4+' => '标准',
 	'Class:ActionNewsroom/Attribute:test_recipient_id' => '测试收件人',
-	'Class:ActionNewsroom/Attribute:test_recipient_id+' => 'Person used instead of Recipients when notification is being tested~~',
+	'Class:ActionNewsroom/Attribute:test_recipient_id+' => '测试通知时使用的人员,用于替代真实收件人',
 	'Class:ActionNewsroom/Attribute:recipients' => '收件人',
 	'Class:ActionNewsroom/Attribute:recipients+' => '返回联系人的 OQL 查询',
 	'Class:ActionNewsroom/Attribute:url' => 'URL',
-	'Class:ActionNewsroom/Attribute:url+' => '默认情况下，它指向触发该通知的对象。但你也可以指定自定义 URL.',
+	'Class:ActionNewsroom/Attribute:url+' => '默认情况下, 它指向触发该通知的对象. 但你也可以指定自定义 URL.',
 ]);
 
 //
