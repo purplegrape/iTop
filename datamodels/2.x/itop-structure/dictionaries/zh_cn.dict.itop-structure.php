@@ -175,7 +175,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Person/Attribute:team_list+' => '个体归属的团队',
 	'Class:Person/Attribute:tickets_list' => '工单',
 	'Class:Person/Attribute:tickets_list+' => '此人发起的工单',
-	'Class:Person/Attribute:tickets_list/UI:Links:Create:Modal:Title' => '创建一个 %4$s 至 %2$s',
+	'Class:Person/Attribute:tickets_list/UI:Links:Create:Modal:Title' => '新建 %4$s 至 %2$s',
 	'Class:Person/Attribute:user_list' => '用户',
 	'Class:Person/Attribute:user_list+' => '此个体相关的用户',
 	'Class:Person/Attribute:manager_id_friendlyname' => '经理昵称',
