@@ -288,7 +288,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Typology+' => 'Abstract class. ExternalKeyAttribute to a Typology subclass are used in place of an EnumAttribute, to have more dynamic values.~~',
 	'Class:Typology/Attribute:name' => '名称',
 	'Class:Typology/Attribute:name+' => '',
-	'Class:Typology/Attribute:finalclass' => '拓扑子类型',
+	'Class:Typology/Attribute:finalclass' => '拓扑类型',
 	'Class:Typology/Attribute:finalclass+' => '根本属性的名称',
 ]);
 
