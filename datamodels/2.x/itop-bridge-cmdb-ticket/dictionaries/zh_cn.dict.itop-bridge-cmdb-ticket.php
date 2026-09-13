@@ -36,7 +36,7 @@
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToTicket' => '链接 功能配置项/工单',
-	'Class:lnkFunctionalCIToTicket+' => 'This link models the functional CIs that are concerned by a Ticket (such as a User Request, an Incident, a Change, ...)~~',
+	'Class:lnkFunctionalCIToTicket+' => '此链接用于表示与工单相关的功能配置项 (如用户请求、事件、变更等)',
 	'Class:lnkFunctionalCIToTicket/Name' => '%1$s / %2$s',
 	'Class:lnkFunctionalCIToTicket/Attribute:ticket_id' => '工单',
 	'Class:lnkFunctionalCIToTicket/Attribute:ticket_id+' => '',
