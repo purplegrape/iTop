@@ -38,7 +38,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Layout:ActivityPanel:Tab:Toolbar:Filter:Edits:Tooltip' => '显示/隐藏字段编辑',
 	'UI:Layout:ActivityPanel:Tab:Toolbar:Action:OpenAll:Tooltip' => '全部打开',
 	'UI:Layout:ActivityPanel:Tab:Toolbar:Action:CloseAll:Tooltip' => '全部关闭',
-	'UI:Layout:ActivityPanel:Tab:Toolbar:Info:AuthorsCount:Tooltip' => '正在查看此条目的人数',
+	'UI:Layout:ActivityPanel:Tab:Toolbar:Info:AuthorsCount:Tooltip' => '正在查看此日志的人数',
 	'UI:Layout:ActivityPanel:Tab:Toolbar:Info:MessagesCount:Tooltip' => '此日志的消息数',
 
 	// Compose button
