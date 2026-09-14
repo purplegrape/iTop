@@ -387,7 +387,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 //
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
-	'Class:EventNotificationEmail' => '邮件发送',
+	'Class:EventNotificationEmail' => '已发送的邮件',
 	'Class:EventNotificationEmail+' => '跟踪已发送的邮件',
 	'Class:EventNotificationEmail/Attribute:to' => '收件人',
 	'Class:EventNotificationEmail/Attribute:to+' => '',
