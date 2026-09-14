@@ -807,7 +807,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Schema:FilterDescription+' => '此搜索条件的描述',
 	'UI:Schema:AvailOperators' => '可用的运算符',
 	'UI:Schema:AvailOperators+' => '此搜索条件可能的运算符',
-	'UI:Schema:ChildClasses' => '子类型',
+	'UI:Schema:ChildClasses' => '类型',
 	'UI:Schema:ReferencingClasses' => '参考类型',
 	'UI:Schema:RelatedClasses' => '相关类型',
 	'UI:Schema:LifeCycle' => '生命周期',
