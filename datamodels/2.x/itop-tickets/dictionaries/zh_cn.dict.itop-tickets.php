@@ -77,7 +77,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Ticket/Attribute:functionalcis_list+' => '此工单相关的配置项. 标记为 "Computed" 的项目已自动标记为受影响. 标记为 "Not impacted" 的项目则从影响范围内排除.',
 	'Class:Ticket/Attribute:workorders_list' => '工作任务',
 	'Class:Ticket/Attribute:workorders_list+' => '此工单相关的工作任务',
-	'Class:Ticket/Attribute:finalclass' => '类型',
+	'Class:Ticket/Attribute:finalclass' => '工单类型',
 	'Class:Ticket/Attribute:finalclass+' => '根本属性的名称',
 	'Class:Ticket/Attribute:operational_status' => '操作状态',
 	'Class:Ticket/Attribute:operational_status+' => '按具体状态',
