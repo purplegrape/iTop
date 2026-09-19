@@ -542,7 +542,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Software' => '软件',
-	'Class:Software+' => '软件是软件目录中的基本项目. 通常有一个特定的版本. 在 '.ITOP_APPLICATION_SHORT.' 中, 软件分为: DB服务器、中间件、PC软件、Web服务器和其它软件.',
+	'Class:Software+' => '软件是软件目录中的基本项目. 通常有一个特定的版本. 在 '.ITOP_APPLICATION_SHORT.' 中, 软件的类别分为: DB服务器、中间件、PC软件、Web服务器和其它软件.',
 	'Class:Software/ComplementaryName' => '%1$s - %2$s',
 	'Class:Software/Attribute:name' => '名称',
 	'Class:Software/Attribute:name+' => '',
