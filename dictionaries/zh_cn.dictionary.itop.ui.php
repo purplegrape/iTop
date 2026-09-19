@@ -639,7 +639,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:CSVImport:SeparatorCharacter'         => '分隔符:',
 	'UI:CSVImport:TextQualifierCharacter'     => '文本限定符',
 	'UI:CSVImport:CommentsAndHeader'          => '注释和头',
-	'UI:CSVImport:SelectClass'                => '请选择要导入的类别:',
+	'UI:CSVImport:SelectClass'                => '请选择要导入的类:',
 	'UI:CSVImport:AdvancedMode'               => '高级模式',
 	'UI:CSVImport:AdvancedMode+'              => '在高级模式中, 对象的"id" (主键) 可以被用来修改和重命名对象.'.
 		'不管怎样, 列 "id" (如果存在) 只能被用做一个搜索条件, 不能与其它搜索条件混用.',
