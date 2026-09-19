@@ -469,7 +469,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkCustomerContractToService/Attribute:service_name+' => '',
 	'Class:lnkCustomerContractToService/Attribute:sla_id' => 'SLA',
 	'Class:lnkCustomerContractToService/Attribute:sla_id+' => '适用于此客户合同的服务级别协议. 该 SLA 也适用于与该服务相关的所有子服务.',
-	'Class:lnkCustomerContractToService/Attribute:sla_name' => 'SLA名称',
+	'Class:lnkCustomerContractToService/Attribute:sla_name' => 'SLA 名称',
 	'Class:lnkCustomerContractToService/Attribute:sla_name+' => '',
 	'Class:lnkCustomerContractToService/Attribute:provider_id' => '供应商',
 	'Class:lnkCustomerContractToService/Attribute:provider_id+' => '',
