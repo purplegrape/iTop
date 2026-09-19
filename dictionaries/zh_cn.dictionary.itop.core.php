@@ -103,8 +103,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Core:AttributeApplicationLanguage' => '用户语言',
 	'Core:AttributeApplicationLanguage+' => '语言和国家/地区(EN US)',
 
-	'Core:AttributeFinalClass' => '类型 (自动)',
-	'Core:AttributeFinalClass+' => '对象的真实类型 (由核心自动创建)',
+	'Core:AttributeFinalClass' => '类 (自动)',
+	'Core:AttributeFinalClass+' => '对象的真实属性 (由核心自动创建)',
 
 	'Core:AttributePassword' => '密码',
 	'Core:AttributePassword+' => '外部设备的密码',
@@ -869,7 +869,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SynchroDataSource/Attribute:name+'                                       => '',
 	'Class:SynchroDataSource/Attribute:description'                                 => '描述',
 	'Class:SynchroDataSource/Attribute:status'                                      => '状态',
-	'Class:SynchroDataSource/Attribute:scope_class'                                 => '目标类型',
+	'Class:SynchroDataSource/Attribute:scope_class'                                 => '目标类',
 	'Class:SynchroDataSource/Attribute:scope_class+'                                => '一个同步数据源仅能填充一个 '.ITOP_APPLICATION_SHORT.' 类型',
 	'Class:SynchroDataSource/Attribute:user_id'                                     => '用户',
 	'Class:SynchroDataSource/Attribute:notify_contact_id'                           => '要通知的联系人',
@@ -1029,7 +1029,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SynchroAttribute/Attribute:update_policy/Value:master_locked' => '已锁定',
 	'Class:SynchroAttribute/Attribute:update_policy/Value:master_unlocked' => '未锁定',
 	'Class:SynchroAttribute/Attribute:update_policy/Value:write_if_empty' => '初始化空值',
-	'Class:SynchroAttribute/Attribute:finalclass'         => '类型',
+	'Class:SynchroAttribute/Attribute:finalclass'         => '类',
 	'Class:SynchroAttExtKey'                              => '同步属性 (外键)',
 	'Class:SynchroAttExtKey/Attribute:reconciliation_attcode' => '复制属性',
 	'Class:SynchroAttLinkSet'                             => '同步属性 (链集)',
