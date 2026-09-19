@@ -90,7 +90,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:TriggerOnAttachmentDownload'                        => '触发器 (对象附件被下载时)',
-	'Class:TriggerOnAttachmentDownload+'                       => '触发器基于指定类型 [或子类型] 对象附件被下载时',
+	'Class:TriggerOnAttachmentDownload+'                       => '触发器基于指定类 [或子类] 对象附件被下载时',
 	'Class:TriggerOnAttachmentCreate'                          => '触发器 (对象附件被创建时)',
 	'Class:TriggerOnAttachmentCreate+'                         => '触发器 (对象附件被创建时)',
 	'Class:TriggerOnAttachmentDelete'                          => '触发器 (对象附件被删除时)',
