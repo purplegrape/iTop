@@ -11,9 +11,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'Relation:dataflows/Description'    => '配置项之间的数据流',
 	'Relation:dataflows/DownStream'     => '出站数据流...',
-	'Relation:dataflows/DownStream+'    => 'Outbound flows map from~~',
+	'Relation:dataflows/DownStream+'    => '出站流量的源头',
 	'Relation:dataflows/UpStream'       => '入站数据流...',
-	'Relation:dataflows/UpStream+'      => 'Inbound flows map to~~',
+	'Relation:dataflows/UpStream+'      => '入站数量的流向',
 
 	'Class:FunctionalCI/Attribute:dataflows' => '数据流',
 	'Class:FunctionalCI/Attribute:dataflows+' => '该对象作为源或目标的数据流',
@@ -24,7 +24,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'DataFlow:moreinfo' => '数据流详情',
 
 	'Class:DataFlow' => '数据流',
-	'Class:DataFlow+' => 'For application flow for example~~',
+	'Class:DataFlow+' => '例如应用流',
 	'Class:DataFlow/ComplementaryName' => '%1$s - %2$s',
 	'Class:DataFlow/Attribute:name' => '名称',
 	'Class:DataFlow/Attribute:name+' => '已传输的数据',
@@ -80,7 +80,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:DataFlowType' => '数据流类型',
 	'Class:DataFlowType+' => '数据流的分类',
 
-	'Class:DataFlowProtocol' => 'Data Flow Protocol',
-	'Class:DataFlowProtocol+' => 'Typology of Data Flow Protocol',
+	'Class:DataFlowProtocol' => '数据流协议',
+	'Class:DataFlowProtocol+' => '数据流协议的分类',
 
 ]);
