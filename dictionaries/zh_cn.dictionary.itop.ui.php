@@ -116,9 +116,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Query/Attribute:name'                      => '名称',
 	'Class:Query/Attribute:name+'                     => '查询的名称',
 	'Class:Query/Attribute:description'               => '描述',
-	'Class:Query/Attribute:description+'              => '请描述此查询 (目的, 用法等等.)',
-	'Class:Query/Attribute:is_template'               => 'OQL 模板',
-	'Class:Query/Attribute:is_template+'              => '可用于通知中的收件人OQL',
+	'Class:Query/Attribute:description+'              => '详细描述此查询 (目的, 用法等等.)',
+	'Class:Query/Attribute:is_template'               => 'OQL 字段模板',
+	'Class:Query/Attribute:is_template+'              => '可用于通知中的收件人 OQL',
 	'Class:Query/Attribute:is_template/Value:yes'     => '是',
 	'Class:Query/Attribute:is_template/Value:no'      => '否',
 	'Class:Query/Attribute:export_count'              => '导出次数',
@@ -217,7 +217,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:URP_Profiles' => '角色',
-	'Class:URP_Profiles+' => '用户角色',
+	'Class:URP_Profiles+' => '用户的角色',
 	'Class:URP_Profiles/Attribute:name' => '名称',
 	'Class:URP_Profiles/Attribute:name+' => '',
 	'Class:URP_Profiles/Attribute:description' => '描述',
