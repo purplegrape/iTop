@@ -746,9 +746,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Audit:ErrorIn_Category'                 => '类别中有错误',
 	'UI:Audit:ErrorIn_Category_Reason'          => 'OQL错误在类别%1$s中: %2$s.',
 	'UI:Audit:AuditErrors'                      => '审计出错',
-	'UI:Audit:Dashboard:ObjectsAudited'         => '对象已审计',
-	'UI:Audit:Dashboard:ObjectsInError'         => '对象出错',
-	'UI:Audit:Dashboard:ObjectsValidated'       => '对象已验证',
+	'UI:Audit:Dashboard:ObjectsAudited'         => '已审计',
+	'UI:Audit:Dashboard:ObjectsInError'         => '出错',
+	'UI:Audit:Dashboard:ObjectsValidated'       => '已验证',
 	'UI:Audit:AuditCategory:Subtitle'           => '%2$s个中有%1$s个错误 - %3$s%%',
 
 	'UI:RunQuery:Title'                 => ITOP_APPLICATION_SHORT.' - OQL 查询评估',
