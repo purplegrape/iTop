@@ -54,7 +54,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'DBAnalyzer-Integrity-OrphanRecord' => '孤立记录位于 `%1$s`, 其应该有副本位于表 `%2$s`',
 	'DBAnalyzer-Integrity-InvalidExtKey' => '无效的外键 %1$s (列: `%2$s.%3$s`)',
-	'DBAnalyzer-Integrity-MissingExtKey' => '外键丢失 %1$s (列: `%2$s.%3$s`)',
+	'DBAnalyzer-Integrity-MissingExtKey' => '外键缺失 %1$s (列: `%2$s.%3$s`)',
 	'DBAnalyzer-Integrity-InvalidValue' => '无效的值 %1$s (列: `%2$s.%3$s`)',
 	'DBAnalyzer-Integrity-UsersWithoutProfile' => '有的账号没有角色',
 	'DBAnalyzer-Integrity-HKInvalid' => '损坏的层级链 `%1$s`',
