@@ -39,7 +39,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'iTopHub:OpenInNewWindow' => '从新窗口打开 iTop Hub',
 	'iTopHub:AutoSubmit' => '不再询问. 下次自动进入 iTop Hub.',
 	'UI:About:RemoteExtensionSource' => 'iTop Hub',
-	'iTopHub:Explanation' => '点击这个按钮, 您将被引导至 iTop Hub.',
+	'iTopHub:Explanation' => '点击这个按钮, 您将会被引导至 iTop Hub.',
 
 	'iTopHub:BackupFreeDiskSpaceIn' => '%1$s 可用磁盘空间位于 %2$s.',
 	'iTopHub:FailedToCheckFreeDiskSpace' => '检查可用磁盘空间失败.',
@@ -70,7 +70,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'iTopHub:DeployBtn' => '部署 !',
 	'iTopHub:DatabaseBackupProgress' => '实例备份...',
 
-	'iTopHub:InstallationEffect:Install' => '版本: %1$s 将被安装.',
+	'iTopHub:InstallationEffect:Install' => '版本: %1$s 将会被安装.',
 	'iTopHub:InstallationEffect:NoChange' => '版本: %1$s 已安装. 保持不变.',
 	'iTopHub:InstallationEffect:Upgrade' => '将从版本 %1$s <b>升级</b>到版本 %2$s.',
 	'iTopHub:InstallationEffect:Downgrade' => '将从版本 %1$s <b>降级</b>到版本 %2$s.',
