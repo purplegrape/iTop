@@ -687,10 +687,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:CSVReport-Row-Issue-DateFormat'         => '日期格式错误',
 	'UI:CSVReport-Row-Issue-ExpectedDateFormat' => '预期格式: %1$s',
 	'UI:CSVReport-Row-Issue-Reconciliation'     => '无法保持一致',
-	'UI:CSVReport-Row-Issue-Ambiguous'          => '不明确的一致要求',
+	'UI:CSVReport-Row-Issue-Ambiguous'          => '模糊的一致性',
 	'UI:CSVReport-Row-Issue-Internal'           => '内部错误: %1$s, %2$s',
-	'UI:CSVReport-Value-Issue-NoValue'          => 'No value',
-	'UI:CSVReport-Row-Issue-NbField'            => 'Not the expected number of columns (found: %1$s, expected: %2$s)',
+	'UI:CSVReport-Value-Issue-NoValue'          => '无值',
+	'UI:CSVReport-Row-Issue-NbField'            => '列数不符合预期 (实际: %1$s, 期望: %2$s)',
 
 	'UI:CSVReport-Icon-Unchanged'         => '保持不变',
 	'UI:CSVReport-Icon-Modified'          => '修改',
