@@ -15,7 +15,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'DataFeatureRemoval:Main:Title' => '扩展管理',
 	'DataFeatureRemoval:Main:SubTitle' => '切换安装在您的 iTop 上的扩展',
-	'DataFeatureRemoval:Failure:Title' => '扩展预删除错误',
+	'DataFeatureRemoval:Failure:Title' => '扩展预删除时报错',
 	'DataFeatureRemoval:Helper:Title' => '分析是否有任何数据或依赖关系阻止您添加/删除扩展.',
 
 	'DataFeatureRemoval:Features:Title' => '扩展',

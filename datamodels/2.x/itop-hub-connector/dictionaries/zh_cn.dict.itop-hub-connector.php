@@ -48,7 +48,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'iTopHub:Landing:Status' => '部署状态',
 	'iTopHub:Landing:Install' => '扩展安装进行中...',
 	'iTopHub:CompiledOK' => '编译成功.',
-	'iTopHub:ConfigurationSafelyReverted' => '安装时发生错误!<br/>系统配置将不会改变.',
+	'iTopHub:ConfigurationSafelyReverted' => '安装时发生报错!<br/>系统配置将不会改变.',
 	'iTopHub:FailAuthent' => '认证失败.',
 
 	'iTopHub:InstalledExtensions' => '本机已安装的扩展',

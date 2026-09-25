@@ -542,7 +542,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Software' => '软件',
-	'Class:Software+' => '软件是软件目录中的基本项目. 通常有一个特定的版本. 在 '.ITOP_APPLICATION_SHORT.' 中, 软件的类别分为: DB服务器、中间件、PC软件、Web服务器和其它软件.',
+	'Class:Software+' => '软件是软件清单的基本项目. 通常有一个特定的版本. 在 '.ITOP_APPLICATION_SHORT.' 中, 软件的类别分为: DB服务器、中间件、PC软件、Web服务器和其它软件.',
 	'Class:Software/ComplementaryName' => '%1$s - %2$s',
 	'Class:Software/Attribute:name' => '名称',
 	'Class:Software/Attribute:name+' => '',
@@ -655,7 +655,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OtherSoftware' => '其它软件',
-	'Class:OtherSoftware+' => '不包含在目录之内的任何类型的软件实例: PC软件, 中间件, DB服务器或 Web服务器.',
+	'Class:OtherSoftware+' => '不包含在清单之内的任何类型的软件实例: PC软件, 中间件, DB服务器或 Web服务器.',
 ]);
 
 //
@@ -1672,6 +1672,6 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:Group+' => '配置组',
 	'Menu:OSVersion' => 'OS 版本',
 	'Menu:OSVersion+' => '',
-	'Menu:Software' => '软件目录',
-	'Menu:Software+' => '软件目录',
+	'Menu:Software' => '软件清单',
+	'Menu:Software+' => '软件清单',
 ]);

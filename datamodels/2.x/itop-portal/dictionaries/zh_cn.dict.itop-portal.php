@@ -33,9 +33,9 @@
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'portal:itop-portal' => '标准门户',
 	'Page:DefaultTitle' => '%1$s - 用户门户',
-	'Brick:Portal:UserProfile:Title' => '我的资料',
+	'Brick:Portal:UserProfile:Title' => '个人资料',
 	'Brick:Portal:NewRequest:Title' => '新建工单',
-	'Brick:Portal:NewRequest:Title+' => '<p>需要帮助?</p><p>选择适当的服务目录, 然后提交工单给我们的支持团队.</p>',
+	'Brick:Portal:NewRequest:Title+' => '<p>需要帮助?</p><p>在服务清单中选择合适的项目, 然后提交工单给我们的支持团队.</p>',
 	'Brick:Portal:OngoingRequests:Title' => '正在处理的工单',
 	'Brick:Portal:OngoingRequests:Title+' => '<p>跟踪正在处理的工单.</p><p>查询进度, 添加评论, 添加附件, 确认解决方案.</p>',
 	'Brick:Portal:OngoingRequests:Tab:OnGoing' => '正在处理',

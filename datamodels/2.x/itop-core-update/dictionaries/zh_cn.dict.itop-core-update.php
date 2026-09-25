@@ -103,7 +103,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'iTopUpdate:Error:BadFileFormat' => '升级包不是 zip 格式',
 	'iTopUpdate:Error:BadFileContent' => '文件不是程序升级包',
 	'iTopUpdate:Error:BadItopProduct' => '升级包与您的系统不兼容',
-	'iTopUpdate:Error:Copy' => '错误, 无法复制 \'%1$s\' 到 \'%2$s\'',
+	'iTopUpdate:Error:Copy' => '报错, 无法复制 \'%1$s\' 到 \'%2$s\'',
 	'iTopUpdate:Error:FileNotFound' => '文件找不到',
 	'iTopUpdate:Error:NoFile' => '没有提供文件',
 	'iTopUpdate:Error:InvalidToken' => '无效的 token',

@@ -35,10 +35,10 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Portal:Button:Delete' => '删除',
 	'Portal:EnvironmentBanner:Title' => '您目前处于<strong>%1$s</strong>模式',
 	'Portal:EnvironmentBanner:GoToProduction' => '回到产品模式',
-	'Error:HTTP:400' => '请求错误',
-	'Error:HTTP:401' => '认证错误',
+	'Error:HTTP:400' => '请求出错',
+	'Error:HTTP:401' => '认证出错',
 	'Error:HTTP:404' => '页面找不到',
-	'Error:HTTP:500' => '啊! 发生了错误.',
+	'Error:HTTP:500' => '啊! 发生了报错.',
 	'Error:HTTP:GetHelp' => '如果问题仍然存在,请联系管理员.',
 	'Error:XHR:Fail' => '无法加载数据, 请联系管理员',
 	'Portal:ErrorUserLoggedOut' => '您已退出,请重新登录.',
@@ -69,15 +69,15 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Portal:Form:Caselog:Entry:Close:Tooltip' => '关闭此条目',
 	'Portal:Form:Close:Warning' => '确定要离开表单吗? 已输入数据会丢失',
-	'Portal:Error:ObjectCannotBeCreated' => '错误: 无法新建对象. 请在再次提交表单前检查相关对象和附件.',
-	'Portal:Error:ObjectCannotBeUpdated' => '错误: 无法更新对象. 请在再次提交表单前检查相关对象和附件.',
+	'Portal:Error:ObjectCannotBeCreated' => '报错: 无法新建对象. 请在再次提交表单前检查相关对象和附件.',
+	'Portal:Error:ObjectCannotBeUpdated' => '报错: 无法更新对象. 请在再次提交表单前检查相关对象和附件.',
 	'Portal:Error:CheckToWriteFailed' => 'Error during validation of field \'%1$s\': %2$s~~',
 ]);
 
 // UserProfile brick
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Brick:Portal:UserProfile:Name' => '用户资料',
-	'Brick:Portal:UserProfile:Navigation:Dropdown:MyProfil' => '我的资料',
+	'Brick:Portal:UserProfile:Navigation:Dropdown:MyProfil' => '个人资料',
 	'Brick:Portal:UserProfile:Navigation:Dropdown:Logout' => '注销',
 	'Brick:Portal:UserProfile:Password:Title' => '密码',
 	'Brick:Portal:UserProfile:Password:ChoosePassword' => '新密码',
