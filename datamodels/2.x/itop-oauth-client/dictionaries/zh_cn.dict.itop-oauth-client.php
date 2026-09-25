@@ -39,7 +39,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OAuthClient' => 'OAuth Mail Access~~',
 	'Class:OAuthClient/Attribute:provider' => '提供商',
 	'Class:OAuthClient/Attribute:provider+' => '',
-	'Class:OAuthClient/Attribute:name' => '登录',
+	'Class:OAuthClient/Attribute:name' => '登录名',
 	'Class:OAuthClient/Attribute:name+' => '通常, 这里填您的邮箱地址',
 	'Class:OAuthClient/Attribute:status' => '状态',
 	'Class:OAuthClient/Attribute:status+' => '创建后, 通过点击 "生成 Access Token" 来启用 OAuth 客户端',
@@ -61,7 +61,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OAuthClient/Attribute:token_expiration+' => '',
 	'Class:OAuthClient/Attribute:redirect_url' => '重定向 url',
 	'Class:OAuthClient/Attribute:redirect_url+' => <<<EOF
-此URL 必须从服务商的 OAuth2 配置中复制
+此 URL 必须从服务商的 OAuth2 配置中复制
 清空输入框以重新计算默认值
 EOF
 ,
@@ -105,14 +105,14 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OAuthClientGoogle' => 'OAuth Mail Access for Google~~',
 	'Class:OAuthClientGoogle/Name' => '%1$s (%2$s)',
-	'Class:OAuthClientGoogle/Attribute:scope' => '范围',
+	'Class:OAuthClientGoogle/Attribute:scope' => '使用范围',
 	'Class:OAuthClientGoogle/Attribute:scope+' => '通常情况下使用默认选择最合适',
 	'Class:OAuthClientGoogle/Attribute:scope/Value:SMTP' => 'SMTP',
 	'Class:OAuthClientGoogle/Attribute:scope/Value:SMTP+' => '',
 	'Class:OAuthClientGoogle/Attribute:scope/Value:IMAP' => 'IMAP',
 	'Class:OAuthClientGoogle/Attribute:scope/Value:IMAP+' => '',
 	'Class:OAuthClientGoogle/Attribute:advanced_scope' => '高级范围',
-	'Class:OAuthClientGoogle/Attribute:advanced_scope+' => '您在此输入的内容将优先于 "范围" 选择并导致其被忽略',
+	'Class:OAuthClientGoogle/Attribute:advanced_scope+' => '您在此输入的内容将优先于 "使用范围" 选择并导致其被忽略',
 	'Class:OAuthClientGoogle/Attribute:used_scope' => '使用范围',
 	'Class:OAuthClientGoogle/Attribute:used_scope+' => '',
 	'Class:OAuthClientGoogle/Attribute:used_scope/Value:simple' => '简单',
