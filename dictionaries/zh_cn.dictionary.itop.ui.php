@@ -21,7 +21,7 @@
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:AuditCategory'                                    => '审计类别',
-	'Class:AuditCategory+'                                   => '审计类别规定了需要被审计的对象的范围.
+	'Class:AuditCategory+'                                   => '审计类别定义了需要被审计的对象的范围.
 它集中了作用于特定范围内对象的所有审计规则',
 	'Class:AuditCategory/Attribute:name'                     => '类别',
 	'Class:AuditCategory/Attribute:name+'                    => '类别简称',
