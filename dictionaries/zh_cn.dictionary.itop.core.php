@@ -642,7 +642,7 @@ You can use in the OQL :this->attribute_code with an attribute code of the objec
 	'Class:ActionEmail/Attribute:language'                 => '语言',
 	'Class:ActionEmail/Attribute:language+'                => '在邮件中 (状态, 重要性, 优先级, 等等) 所使用的占位符 ($xxx$) 的语言',
 	'Class:ActionEmail/Attribute:html_template'            => 'HTML模板',
-	'Class:ActionEmail/Attribute:html_template+'           => '绑定在以下 \'正文\' 属性内容上的可选HTML模板, 用于定制邮件布局 (在模板中, \'正文\' 属性的内容将被占位符 $content$ 替换)',
+	'Class:ActionEmail/Attribute:html_template+'           => '绑定在以下 \'正文\' 属性内容上的可选HTML模板, 用于定制邮件布局 (在模板中, \'正文\' 属性的内容将会被占位符 $content$ 替换)',
 	'Class:ActionEmail/Attribute:ignore_notify'            => '忽略通知标记',
 	'Class:ActionEmail/Attribute:ignore_notify+'           => '如果设置为 \'是\' 则联系人的 \'通知\' 标记将不生效.',
 	'Class:ActionEmail/Attribute:ignore_notify/Value:no'   => '否',
