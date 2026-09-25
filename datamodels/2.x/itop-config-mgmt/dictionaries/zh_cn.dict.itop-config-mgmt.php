@@ -150,7 +150,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PhysicalDevice/Attribute:model_id' => '型号',
 	'Class:PhysicalDevice/Attribute:model_id+' => '',
 	'Class:PhysicalDevice/Attribute:model_end_of_support' => '型号过保日期',
-	'Class:PhysicalDevice/Attribute:model_end_of_support+' => '当硬件型号不再被制造商支持时，如果此信息在型号上有所记录.',
+	'Class:PhysicalDevice/Attribute:model_end_of_support+' => '当硬件型号不再被制造商支持时, 如果此信息在型号上有所记录.',
 	'Class:PhysicalDevice/Attribute:model_name' => '型号名称',
 	'Class:PhysicalDevice/Attribute:model_name+' => '',
 	'Class:PhysicalDevice/Attribute:asset_number' => '资产编号',
@@ -225,7 +225,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Tablet' => '平板',
-	'Class:Tablet+' => '终端用户设备.例如 iPad, Galaxy Note/Tab Nexus, Kindle...',
+	'Class:Tablet+' => '终端用户设备.例如: iPad, Galaxy Note/Tab Nexus, Kindle...',
 ]);
 
 //
@@ -300,7 +300,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:NetworkDevice/Attribute:iosversion_name' => 'IOS 版本名称',
 	'Class:NetworkDevice/Attribute:iosversion_name+' => '',
 	'Class:NetworkDevice/Attribute:ios_end_of_support' => 'IOS 过保日期',
-	'Class:NetworkDevice/Attribute:ios_end_of_support+' => '厂商不再为该 IOS 版本提供修复的时间.',
+	'Class:NetworkDevice/Attribute:ios_end_of_support+' => '厂商不再为此 IOS 版本提供修复的时间.',
 	'Class:NetworkDevice/Attribute:ram' => '内存',
 	'Class:NetworkDevice/Attribute:ram+' => '',
 ]);
@@ -322,7 +322,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Server/Attribute:osversion_name' => 'OS 版本名称',
 	'Class:Server/Attribute:osversion_name+' => '',
 	'Class:Server/Attribute:os_end_of_support' => 'OS 过保日期',
-	'Class:Server/Attribute:os_end_of_support+' => '厂商不再为该 OS 版本提供补丁的日期.',
+	'Class:Server/Attribute:os_end_of_support+' => '厂商不再为此 OS 版本提供补丁的日期.',
 	'Class:Server/Attribute:oslicence_id' => 'OS 许可证',
 	'Class:Server/Attribute:oslicence_id+' => '',
 	'Class:Server/Attribute:oslicence_name' => 'OS 许可证名称',
@@ -389,7 +389,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PC' => 'PC',
-	'Class:PC+' => '可连接的配置项. 个人计算机 (PC) 是一种物理设备，可以是台式机或笔记本电脑，安装了操作系统并设计用于运行软件实例.',
+	'Class:PC+' => '可连接的配置项. 个人计算机 (PC) 是一种物理设备, 可以是台式机或笔记本电脑, 安装了操作系统并设计用于运行软件实例.',
 	'Class:PC/ComplementaryName' => '%1$s - %2$s',
 	'Class:PC/Attribute:osfamily_id' => 'OS 家族',
 	'Class:PC/Attribute:osfamily_id+' => '',
@@ -400,7 +400,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PC/Attribute:osversion_name' => 'OS 版本名称',
 	'Class:PC/Attribute:osversion_name+' => '',
 	'Class:PC/Attribute:os_end_of_support' => 'OS 过保日期',
-	'Class:PC/Attribute:os_end_of_support+' => '厂商不再为该 OS 版本提供补丁的日期.',
+	'Class:PC/Attribute:os_end_of_support+' => '厂商不再为此 OS 版本提供补丁的日期.',
 	'Class:PC/Attribute:cpu' => 'CPU',
 	'Class:PC/Attribute:cpu+' => '',
 	'Class:PC/Attribute:ram' => '内存',
@@ -439,7 +439,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PowerSource' => '电源',
-	'Class:PowerSource+' => '物理电源连接. 用于描述数据中心的任何类型的电源 (主电源入口, 断路器…) ，但不是 PDU.',
+	'Class:PowerSource+' => '物理电源连接. 用于描述数据中心的任何类型的电源 (主电源入口, 断路器…), 但不是 PDU.',
 	'Class:PowerSource/ComplementaryName' => '%1$s - %2$s',
 	'Class:PowerSource/Attribute:pdus_list' => 'PDU',
 	'Class:PowerSource/Attribute:pdus_list+' => '使用此电源的 PDU',
@@ -451,7 +451,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PDU' => 'PDU',
-	'Class:PDU+' => '供电线路. PDU (Power Distribution Unit) 是一种配备了多个输出的电力分配设备，特别是为数据中心内的服务器机架和网络设备机架供电.',
+	'Class:PDU+' => '供电线路. PDU (Power Distribution Unit) 是一种配备了多个输出的电力分配设备, 特别是为数据中心内的服务器机架和网络设备机架供电.',
 	'Class:PDU/ComplementaryName' => '%1$s - %2$s - %3$s - %4$s',
 	'Class:PDU/Attribute:rack_id' => '机架',
 	'Class:PDU/Attribute:rack_id+' => '',
@@ -551,7 +551,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Software/Attribute:version' => '版本',
 	'Class:Software/Attribute:version+' => '',
 	'Class:Software/Attribute:end_of_support' => '过保日期',
-	'Class:Software/Attribute:end_of_support+' => '厂商提供的最后支持日期，此后不再提供此软件版本的补丁.',
+	'Class:Software/Attribute:end_of_support+' => '厂商提供的最后支持日期, 此后不再提供此软件版本的补丁.',
 	'Class:Software/Attribute:documents_list' => '文档',
 	'Class:Software/Attribute:documents_list+' => '此软件相关的文档',
 	'Class:Software/Attribute:logo' => 'Logo',
@@ -694,7 +694,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:WebApplication' => 'Web 应用',
-	'Class:WebApplication+' => '可使用网页浏览器访问的 web 应用实例, 它运行在特定的 Web 服务器实例之上. 例如, 您正在使用的这个iTop.',
+	'Class:WebApplication+' => '可使用网页浏览器访问的 web 应用实例, 它运行在特定的 Web 服务器实例之上. 例如: 您正在使用的这个iTop.',
 	'Class:WebApplication/ComplementaryName' => '%1$s - %2$s',
 	'Class:WebApplication/Attribute:webserver_id' => 'Web服务器',
 	'Class:WebApplication/Attribute:webserver_id+' => '',
@@ -776,7 +776,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualMachine' => '虚拟机',
-	'Class:VirtualMachine+' => '与物理机类似的虚拟设备，它既可以直接托管在虚拟化管理器上，也可以托管在集群上.',
+	'Class:VirtualMachine+' => '与物理机类似的虚拟设备, 它既可以直接托管在虚拟化管理器上, 也可以托管在集群上.',
 	'Class:VirtualMachine/ComplementaryName' => '%1$s - %2$s',
 	'Class:VirtualMachine/Attribute:virtualhost_id' => '虚拟化宿主机',
 	'Class:VirtualMachine/Attribute:virtualhost_id+' => '',
@@ -791,7 +791,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VirtualMachine/Attribute:osversion_name' => '名称',
 	'Class:VirtualMachine/Attribute:osversion_name+' => '',
 	'Class:VirtualMachine/Attribute:os_end_of_support' => 'OS 过保日期',
-	'Class:VirtualMachine/Attribute:os_end_of_support+' => '厂商不再支持该操作系统版本时的日期.',
+	'Class:VirtualMachine/Attribute:os_end_of_support+' => '厂商不再支持此 OS 版本时的日期.',
 	'Class:VirtualMachine/Attribute:oslicence_id' => 'OS 许可证',
 	'Class:VirtualMachine/Attribute:oslicence_id+' => '',
 	'Class:VirtualMachine/Attribute:oslicence_name' => '名称',
@@ -901,7 +901,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Tape' => '磁带',
-	'Class:Tape+' => '磁带(或盒式磁带) 在 '.ITOP_APPLICATION_SHORT.' 中是磁带库的一部分，可移除的存储介质.',
+	'Class:Tape+' => '磁带(或盒式磁带) 在 '.ITOP_APPLICATION_SHORT.' 中是磁带库的一部分, 可移除的存储介质.',
 	'Class:Tape/Attribute:name' => '名称',
 	'Class:Tape/Attribute:name+' => '',
 	'Class:Tape/Attribute:description' => '描述',
@@ -941,7 +941,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Patch' => '补丁',
-	'Class:Patch+' => '抽象类，用于对系统或软件提供的补丁、热修复、安全修复或软件服务包.',
+	'Class:Patch+' => '抽象类, 用于对系统或软件提供的补丁、热修复、安全修复或软件服务包.',
 	'Class:Patch/Attribute:name' => '名称',
 	'Class:Patch/Attribute:name+' => '',
 	'Class:Patch/Attribute:documents_list' => '文档',
@@ -1025,7 +1025,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:OSLicence' => 'OS 许可证',
-	'Class:OSLicence+' => '针对特定操作系统的许可证合同. 该许可证与操作系统相关联 (例如 Windows 2008 R2) 并可以与多个物理机或虚拟机关联.',
+	'Class:OSLicence+' => '针对特定操作系统的许可证合同. 此许可证与操作系统相关联 (例如: Windows 2008 R2) 并可以与多个物理机或虚拟机关联.',
 	'Class:OSLicence/ComplementaryName' => '%1$s - %2$s',
 	'Class:OSLicence/Attribute:osversion_id' => 'OS 版本',
 	'Class:OSLicence/Attribute:osversion_id+' => '',
@@ -1045,7 +1045,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SoftwareLicence' => '软件许可证',
-	'Class:SoftwareLicence+' => '针对特定软件的许可证合同. 该许可证与某个软件相关联 (例如 MS Office 2010) 并可以与该软件的多个实例关联.',
+	'Class:SoftwareLicence+' => '针对特定软件的许可证合同. 该许可证与某个软件相关联 (例如: MS Office 2010) 并可以与该软件的多个实例关联.',
 	'Class:SoftwareLicence/ComplementaryName' => '%1$s - %2$s',
 	'Class:SoftwareLicence/Attribute:software_id' => '软件',
 	'Class:SoftwareLicence/Attribute:software_id+' => '',
@@ -1130,7 +1130,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Model' => '设备型号',
-	'Class:Model+' => '分类. 物理设备型号属性可能的值列表. 每个型号只属于一个品牌，通常适用于一种单一类别的物理设备.',
+	'Class:Model+' => '分类. 物理设备型号属性可能的值列表. 每个型号只属于一个品牌, 通常适用于一种单一类别的物理设备.',
 	'Class:Model/ComplementaryName' => '%1$s - %2$s',
 	'Class:Model/Attribute:brand_id' => '品牌',
 	'Class:Model/Attribute:brand_id+' => '~~',
@@ -1192,7 +1192,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:NetworkDeviceType' => '网络设备类型',
 	'Class:NetworkDeviceType+' => '分类. 网络设备 "类型" 的可能的值 (例如：路由器、交换机、防火墙等).',
 	'Class:NetworkDeviceType/Attribute:logo' => 'Logo',
-	'Class:NetworkDeviceType/Attribute:logo+' => '用于此类型网络设备的图标，当在控制台中显示时 (详情、摘要卡片和影响分析图表)',
+	'Class:NetworkDeviceType/Attribute:logo+' => '用于此类型网络设备的图标, 当在控制台中显示时 (详情、摘要卡片和影响分析图表)',
 	'Class:NetworkDeviceType/Attribute:networkdevicesdevices_list' => '网络设备',
 	'Class:NetworkDeviceType/Attribute:networkdevicesdevices_list+' => '属于此类型的所有网络设备',
 ]);
@@ -1319,7 +1319,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:VLAN' => 'VLAN',
-	'Class:VLAN+' => 'VLAN 即虚拟局域网，用于以逻辑方式对局域网内的网络、子网和物理接口进行分组.',
+	'Class:VLAN+' => 'VLAN 即虚拟局域网, 用于以逻辑方式对局域网内的网络、子网和物理接口进行分组.',
 	'Class:VLAN/Attribute:vlan_tag' => 'VLAN 标签',
 	'Class:VLAN/Attribute:vlan_tag+' => '',
 	'Class:VLAN/Attribute:description' => '描述',
@@ -1395,7 +1395,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:PhysicalInterface' => '物理网卡',
-	'Class:PhysicalInterface+' => '基于物理网络接口的IP接口类型 (例如，以太网卡).',
+	'Class:PhysicalInterface+' => '基于物理网络接口的IP接口类型 (例如: 以太网卡).',
 	'Class:PhysicalInterface/Name' => '%2$s %1$s',
 	'Class:PhysicalInterface/Attribute:connectableci_id' => '设备',
 	'Class:PhysicalInterface/Attribute:connectableci_id+' => '',
@@ -1533,7 +1533,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Group' => '配置组',
-	'Class:Group+' => '配置组旨在为任何项目定义明确的配置项集合. 与应用方案不同，配置组不会受到其组件的影响，也不会影响它的组件. 例如，在进行操作系统迁移时，配置组可以方便地收集"待迁移的服务器". 随着迁移的进行，迁移完成的服务器将从配置组中移除.',
+	'Class:Group+' => '配置组旨在为任何项目定义明确的配置项集合. 与应用方案不同, 配置组不会受到其组件的影响, 也不会影响它的组件. 例如, 在进行操作系统迁移时, 配置组可以方便地收集"待迁移的服务器". 随着迁移的进行, 迁移完成的服务器将从配置组中移除.',
 	'Class:Group/ComplementaryName' => '%1$s - %2$s',
 	'Class:Group/Attribute:name' => '名称',
 	'Class:Group/Attribute:name+' => '',

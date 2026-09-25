@@ -26,7 +26,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Preferences:General:Theme'                                      => '主题',
 	'UI:Preferences:General:Theme:DefaultThemeLabel'                    => '%1$s (默认)',
 	'UI:Favorites:General:ShowSummaryCards'                             => '显示摘要卡片',
-	'UI:Favorites:General:ShowSummaryCards+'                            => '当鼠标悬停在某个对象的超链接上时, 如果该对象支持摘要信息显示, 则会显示此对象的摘要信息',
+	'UI:Favorites:General:ShowSummaryCards+'                            => '当鼠标悬停在某个对象的超链接上时, 如果此对象支持摘要信息显示, 则会显示对应的摘要信息',
 	'UI:Preferences:Lists:Title'                                        => '列表',
 	'UI:Preferences:RichText:Title'                                     => '富文本编辑器',
 	'UI:Preferences:RichText:ToolbarState'                              => '工具栏默认状态',

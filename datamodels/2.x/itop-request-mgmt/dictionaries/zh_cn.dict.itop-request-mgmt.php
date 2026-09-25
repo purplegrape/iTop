@@ -91,7 +91,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:UserRequest/Attribute:request_type/Value:service_request' => '服务需求',
 	'Class:UserRequest/Attribute:request_type/Value:service_request+' => '服务需求',
 	'Class:UserRequest/Attribute:impact' => '影响范围',
-	'Class:UserRequest/Attribute:impact+' => '故障的严重程度，以及受影响的终端用户数量',
+	'Class:UserRequest/Attribute:impact+' => '故障的严重程度, 以及受影响的终端用户数量',
 	'Class:UserRequest/Attribute:impact/Value:1' => '部门',
 	'Class:UserRequest/Attribute:impact/Value:1+' => '',
 	'Class:UserRequest/Attribute:impact/Value:2' => '服务',

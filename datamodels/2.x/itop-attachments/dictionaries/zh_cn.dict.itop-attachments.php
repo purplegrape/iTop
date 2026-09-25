@@ -47,7 +47,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Attachment' => '附件',
-	'Class:Attachment+' => '文件: 链接到单一对象的文本或图片. 它无法被修改，只能被删除. 附件无法在编辑界面之外创建.',
+	'Class:Attachment+' => '文件: 链接到单一对象的文本或图片. 它无法被修改, 只能被删除. 附件无法在编辑界面之外创建.',
 	'Class:Attachment/Attribute:expire' => '过期',
 	'Class:Attachment/Attribute:expire+' => '',
 	'Class:Attachment/Attribute:temp_id' => '临时id',
@@ -96,8 +96,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:TriggerOnAttachmentDelete'                          => '触发器 (对象附件被删除时)',
 	'Class:TriggerOnAttachmentDelete+'                         => '触发器 (对象附件被删除时)',
 	'Class:TriggerOnAttachmentCreate/Attribute:file_in_email'  => '在邮件里添加文件',
-	'Class:TriggerOnAttachmentCreate/Attribute:file_in_email+' => '如果勾选，文件将会在触发邮件操作时自动附加到邮件中',
+	'Class:TriggerOnAttachmentCreate/Attribute:file_in_email+' => '如果勾选, 文件将会在触发邮件操作时自动附加到邮件中',
 	'Class:TriggerOnAttachmentDelete/Attribute:file_in_email'  => '在邮件里添加已删除的文件',
-	'Class:TriggerOnAttachmentDelete/Attribute:file_in_email+' => '如果勾选，已删除的文件将会在触发邮件操作时自动附加到邮件中',
+	'Class:TriggerOnAttachmentDelete/Attribute:file_in_email+' => '如果勾选, 已删除的文件将会在触发邮件操作时自动附加到邮件中',
 	'Class:TriggerOnObject:TriggerClassAttachment/ReadOnlyMessage' => '此触发器不允许用于附件. 请使用特定的触发器',
 ]);

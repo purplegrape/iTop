@@ -302,9 +302,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:CMDBChangeOpSetAttributeScalar' => '属性更改跟踪',
 	'Class:CMDBChangeOpSetAttributeScalar+' => '对象属性更改跟踪',
 	'Class:CMDBChangeOpSetAttributeScalar/Attribute:oldvalue' => '原值',
-	'Class:CMDBChangeOpSetAttributeScalar/Attribute:oldvalue+' => '以前该属性的值',
+	'Class:CMDBChangeOpSetAttributeScalar/Attribute:oldvalue+' => '此属性之前的值',
 	'Class:CMDBChangeOpSetAttributeScalar/Attribute:newvalue' => '新值',
-	'Class:CMDBChangeOpSetAttributeScalar/Attribute:newvalue+' => '属性的新值',
+	'Class:CMDBChangeOpSetAttributeScalar/Attribute:newvalue+' => '此属性的新值',
 ]);
 // Used by CMDBChangeOp... & derived classes
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
@@ -1111,7 +1111,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:appUserPreferences'                       => '用户偏好',
 	'Class:appUserPreferences/Attribute:userid'      => '用户',
 	'Class:appUserPreferences/Attribute:preferences' => '偏好设置',
-	'Core:ExecProcess:Code1'                         => '命令错误或命令执行出错 (例如错误的脚本名称)',
+	'Core:ExecProcess:Code1'                         => '命令错误或命令执行出错 (例如: 错误的脚本名称)',
 	'Core:ExecProcess:Code255'                       => 'PHP 错误 (解析, 或运行时)',
 
 	// Attribute Duration

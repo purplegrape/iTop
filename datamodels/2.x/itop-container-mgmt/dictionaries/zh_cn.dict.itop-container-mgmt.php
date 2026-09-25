@@ -54,7 +54,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ContainerApplication' => '容器化应用程序',
 	'Class:ContainerApplication+' => '部署在容器平台上的应用程序',
 	'Class:ContainerApplication/Attribute:descriptor' => 'Deployment file~~',
-	'Class:ContainerApplication/Attribute:descriptor+' => '用于描述如何在容器平台部署应用程序的文件 (例如, Docker Compose, Helm Chart, 等.)',
+	'Class:ContainerApplication/Attribute:descriptor+' => '用于描述如何在容器平台部署应用程序的文件 (例如: Docker Compose、Helm Chart 等.)',
 	'Class:ContainerApplication/Attribute:containervirtualhost_id' => '容器宿主机',
 	'Class:ContainerApplication/Attribute:containervirtualhost_id+' => '应用程序所运行的容器平台',
 	'Class:ContainerApplication/Attribute:logo' => 'Logo',
@@ -130,7 +130,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ContainerCluster/Attribute:redundancy' => '冗余配置',
 	'Class:ContainerCluster/Attribute:redundancy/disabled' => '当所有主机都在运行时, 集群才是正常的',
 	'Class:ContainerCluster/Attribute:redundancy/count' => '当至少 %1$s 个主机在运行时, 集群才是正常的',
-	'Class:ContainerCluster/Attribute:redundancy/percent' => '当至少 %1$s %% 的在主机运行时，集群才是正常的',
+	'Class:ContainerCluster/Attribute:redundancy/percent' => '当至少 %1$s %% 的在主机运行时, 集群才是正常的',
 	'Class:ContainerCluster/Attribute:containerhosts_list' => '容器宿主机',
 	'Class:ContainerCluster/Attribute:containerhosts_list+' => '此集群上的主机',
 ]);

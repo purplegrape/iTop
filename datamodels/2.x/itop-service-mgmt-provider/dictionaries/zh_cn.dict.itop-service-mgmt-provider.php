@@ -45,7 +45,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI-ServiceManagementMenu-ContractsEndingIn30Days' => '近30天内截止的合同',
 
 	'Menu:ProviderContract' => '供应商合同',
-	'Menu:ProviderContract+' => '为外部公司采购',
+	'Menu:ProviderContract+' => '为外部公司提供什么服务',
 	'Menu:CustomerContract' => '客户合同',
 	'Menu:CustomerContract+' => '谁购买的服务',
 	'Menu:ServiceSubcategory' => '子服务',
@@ -57,7 +57,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:SLT' => 'SLT',
 	'Menu:SLT+' => '服务级别目标',
 	'Menu:DeliveryModel' => '交付模式',
-	'Menu:DeliveryModel+' => '处理工单的团队',
+	'Menu:DeliveryModel+' => '定义处理工单的团队',
 	'Menu:ServiceFamily' => '服务家族',
 	'Menu:ServiceFamily+' => '服务架构的最高层级',
 	'Menu:ServiceCatalog' => '服务目录',
@@ -136,7 +136,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Contract/Attribute:cost_unit' => '计费单位',
 	'Class:Contract/Attribute:cost_unit+' => '',
 	'Class:Contract/Attribute:provider_id' => '供应商',
-	'Class:Contract/Attribute:provider_id+' => '写在合同里的供应商，可不同于实际提供服务的提供商.',
+	'Class:Contract/Attribute:provider_id+' => '写在合同里的供应商, 可不同于实际提供服务的提供商.',
 	'Class:Contract/Attribute:provider_name' => '供应商名称',
 	'Class:Contract/Attribute:provider_name+' => '',
 	'Class:Contract/Attribute:status' => '状态',
@@ -157,7 +157,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:CustomerContract' => '客户合同',
-	'Class:CustomerContract+' => '客户与供应商之间关于服务交付的协议，可选择包含承诺服务级别 (SLA, 窗口时间).',
+	'Class:CustomerContract+' => '客户与供应商之间关于服务交付的协议,可选择包含承诺服务级别 (SLA, 窗口时间).',
 	'Class:CustomerContract/Attribute:services_list' => '服务',
 	'Class:CustomerContract/Attribute:services_list+' => '此合同包含的服务',
 	'Class:CustomerContract/Attribute:functionalcis_list' => '配置项',
@@ -178,7 +178,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ProviderContract/Attribute:sla' => 'SLA',
 	'Class:ProviderContract/Attribute:sla+' => '服务级别协议',
 	'Class:ProviderContract/Attribute:coverage' => '服务时间',
-	'Class:ProviderContract/Attribute:coverage+' => '合同覆盖的服务时间, 例如 24x7, 9x5 等.',
+	'Class:ProviderContract/Attribute:coverage+' => '合同约定的时间覆盖范围, 例如: 24x7, 9x5 等.',
 ]);
 
 //
@@ -256,7 +256,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Service' => '服务',
-	'Class:Service+' => '服务由组织提供，并通过客户合同订阅. 它必须包含至少一个子服务.',
+	'Class:Service+' => '服务由组织提供,并通过客户合同订阅. 它必须包含至少一个子服务.',
 	'Class:Service/ComplementaryName' => '%1$s - %2$s',
 	'Class:Service/Attribute:name' => '名称',
 	'Class:Service/Attribute:name+' => '',
@@ -351,7 +351,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:ServiceSubcategory/Attribute:status/Value:production' => '生产',
 	'Class:ServiceSubcategory/Attribute:status/Value:production+' => '生产',
 	'Class:ServiceSubcategory/Attribute:request_type' => '需求类型',
-	'Class:ServiceSubcategory/Attribute:request_type+' => '定义工单类型(事件或服务需求)，当门户用户选择此服务子类时将创建的工单.',
+	'Class:ServiceSubcategory/Attribute:request_type+' => '定义工单类型(事件或服务需求),当门户用户选择此服务子类时将创建的工单.',
 	'Class:ServiceSubcategory/Attribute:request_type/Value:incident' => '事件',
 	'Class:ServiceSubcategory/Attribute:request_type/Value:incident+' => '事件',
 	'Class:ServiceSubcategory/Attribute:request_type/Value:service_request' => '服务需求',
@@ -366,7 +366,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SLA' => 'SLA',
-	'Class:SLA+' => '服务级别协议 (SLA) 适用于客户订阅的服务，并通过 SLT 进行衡量和考核.',
+	'Class:SLA+' => '服务级别协议 (SLA) 适用于客户订阅的服务,并通过 SLT 进行衡量和考核.',
 	'Class:SLA/Attribute:name' => '名称',
 	'Class:SLA/Attribute:name+' => '',
 	'Class:SLA/Attribute:description' => '描述',
@@ -457,7 +457,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkCustomerContractToService' => '链接 客户合同/服务',
-	'Class:lnkCustomerContractToService+' => '客户合同中的单项条款，指定了提供的服务以及该服务应享有的服务水平（服务级别协议和服务时间窗口）.',
+	'Class:lnkCustomerContractToService+' => '客户合同中的单项条款,指定了提供的服务以及该服务应享有的服务水平（服务级别协议和服务时间窗口）.',
 	'Class:lnkCustomerContractToService/Name' => '%1$s / %2$s',
 	'Class:lnkCustomerContractToService/Attribute:customercontract_id' => '客户合同',
 	'Class:lnkCustomerContractToService/Attribute:customercontract_id+' => '',

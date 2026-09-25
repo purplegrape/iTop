@@ -53,7 +53,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkFunctionalCIToService' => '链接 功能配置项/服务',
-	'Class:lnkFunctionalCIToService+' => '此链接用于表示为交付服务而需要的功能配置项，其故障会影响服务的质量.',
+	'Class:lnkFunctionalCIToService+' => '此链接用于表示为交付服务而需要的功能配置项, 其故障会影响服务的质量.',
 	'Class:lnkFunctionalCIToService/Name' => '%1$s / %2$s',
 	'Class:lnkFunctionalCIToService/Attribute:service_id' => '服务',
 	'Class:lnkFunctionalCIToService/Attribute:service_id+' => '',

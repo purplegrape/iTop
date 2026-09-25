@@ -21,7 +21,7 @@
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Newsroom:iTopNotification:Label' => ITOP_APPLICATION_SHORT,
 	'UI:Newsroom:iTopNotification:ViewAllPage:Title' => '您的 '.ITOP_APPLICATION_SHORT.' 消息',
-	'UI:Newsroom:iTopNotification:ViewAllPage:SubTitle' => '管理您的消息，将它们标记为已读或未读，甚至删除等等.',
+	'UI:Newsroom:iTopNotification:ViewAllPage:SubTitle' => '管理您的消息, 将它们标记为已读或未读,甚至删除等等.',
 	'UI:Newsroom:iTopNotification:ViewAllPage:Read:Label' => '已读',
 	'UI:Newsroom:iTopNotification:ViewAllPage:Unread:Label' => '未读',
 	'UI:Newsroom:iTopNotification:SelectMode:Label' => '请选择模式',

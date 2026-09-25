@@ -114,7 +114,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Contact' => '联系人',
-	'Class:Contact+' => '抽象类. 联系人可以与工单和功能配置项关联，用于不同的目的，例如事件分配和通知.',
+	'Class:Contact+' => '抽象类. 联系人可以与工单和功能配置项关联,用于不同的目的,例如事件分配和通知.',
 	'Class:Contact/ComplementaryName' => '%1$s - %2$s',
 	'Class:Contact/Attribute:name' => '名称',
 	'Class:Contact/Attribute:name+' => '',
@@ -152,8 +152,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Person' => '个体',
-	'Class:Person+' => '一种用于描述自然人的联系人类型。个体可归属于团队。人员可以关联到其他配置项（例如，用于说明应用发生故障时的联络人）。
-其他用途：用户请求的发起者为人员，被指派处理该请求的坐席同样为人员。~~',
+	'Class:Person+' => '一种用于描述自然人的联系人类型. 个体可以归属于某个团队, 也可以关联到其他配置项 (例如, 用于说明应用程序发生故障时的联络人).
+其它用途: 需求的发起者为个体,被指派处理该需求的人同样也为个体.',
 	'Class:Person/ComplementaryName' => '%1$s - %2$s',
 	'Class:Person/Attribute:name' => '姓',
 	'Class:Person/Attribute:name+' => '',
@@ -195,7 +195,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Team' => '团队',
-	'Class:Team+' => '一种联系人类型, 通常用于对人员分组，但不仅限于此。团队会监控分配给他们的工单，并将其指派给一个坐席，通常是该团队的成员.',
+	'Class:Team+' => '一种联系人类型, 通常用于对人员分组,但不仅限于此。团队会监控分配给他们的工单,并将其指派给一个坐席,通常是该团队的成员.',
 	'Class:Team/ComplementaryName' => '%1$s - %2$s',
 	'Class:Team/Attribute:persons_list' => '成员',
 	'Class:Team/Attribute:persons_list+' => '此团队包含的成员',
@@ -216,7 +216,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Document' => '文档',
-	'Class:Document+' => '抽象类. 一个可以在多个对象之间共享的文档，使其能够轻松快速地从所有地方检索.',
+	'Class:Document+' => '抽象类. 一个可以在多个对象之间共享的文档,使其能够轻松快速地从所有地方检索.',
 	'Class:Document/ComplementaryName' => '%1$s - %2$s - %3$s',
 	'Class:Document/Attribute:name' => '名称',
 	'Class:Document/Attribute:name+' => '',
@@ -316,15 +316,15 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:lnkPersonToTeam' => '链接 个体/团队',
-	'Class:lnkPersonToTeam+' => '该链接用于标识某人属于哪个团队.',
+	'Class:lnkPersonToTeam+' => '此链接用于标识某人属于哪个团队.',
 	'Class:lnkPersonToTeam/Name' => '%1$s / %2$s',
 	'Class:lnkPersonToTeam/Name+' => '',
 	'Class:lnkPersonToTeam/Attribute:team_id' => '团队',
-	'Class:lnkPersonToTeam/Attribute:team_id+' => '该个体所属的团队',
+	'Class:lnkPersonToTeam/Attribute:team_id+' => '个体所属的团队',
 	'Class:lnkPersonToTeam/Attribute:team_name' => '团队名称',
 	'Class:lnkPersonToTeam/Attribute:team_name+' => '',
 	'Class:lnkPersonToTeam/Attribute:person_id' => '个体',
-	'Class:lnkPersonToTeam/Attribute:person_id+' => '该团队的成员',
+	'Class:lnkPersonToTeam/Attribute:person_id+' => '团队的成员',
 	'Class:lnkPersonToTeam/Attribute:person_name' => '姓名',
 	'Class:lnkPersonToTeam/Attribute:person_name+' => '',
 	'Class:lnkPersonToTeam/Attribute:role_id' => '角色',

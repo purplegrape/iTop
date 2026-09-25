@@ -153,6 +153,6 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 // Filter brick
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Brick:Portal:Filter:Name' => '预筛选组件',
-	'Brick:Portal:Filter:SearchInput:Placeholder' => '例如. 连接wifi',
+	'Brick:Portal:Filter:SearchInput:Placeholder' => '例如: 连接 wifi',
 	'Brick:Portal:Filter:SearchInput:Submit' => '搜索',
 ]);

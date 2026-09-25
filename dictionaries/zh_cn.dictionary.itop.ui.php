@@ -132,7 +132,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Query/Attribute:usages' => '用法',
 	'Class:Query/Attribute:usages+' => '说明该查询可能的用法.
  - "参考 AI" 标签, 假定描述非常明确且符合 OQL 标准. 它可以作为通过 AI 构建 OQL 查询的范例.
- - "通知" 标签, 表示返回的对象，有且仅有一个类型为 email 的字段.
+ - "通知" 标签, 表示返回的对象,有且仅有一个类型为 email 的字段.
  - "仪表" 标签, 假定 OQL 返回一个单一类型的对象.',
 	'Class:Query/Attribute:usages/Value:export' => '导出',
 	'Class:Query/Attribute:usages/Value:reference' => '参考 AI',
@@ -577,7 +577,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:CountOfResults' => '%1$d个对象',
 	'UI:ChangesLogTitle' => '变更记录 (%1$d):',
 	'UI:EmptyChangesLogTitle' => '变更记录为空',
-	'UI:SearchFor_Class_Objects' => '搜索%1$s',
+	'UI:SearchFor_Class_Objects' => '搜索 %1$s',
 	'UI:OQLQueryBuilderTitle' => 'OQL 查询构建器',
 	'UI:OQLQueryTab' => 'OQL 查询',
 	'UI:SimpleSearchTab' => '简易搜索',
@@ -647,7 +647,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:CSVImport:HeaderFields'               => '字段',
 	'UI:CSVImport:HeaderMappings'             => '映射',
 	'UI:CSVImport:HeaderSearch'               => '搜索?',
-	'UI:CSVImport:AlertIncompleteMapping'     => '请为每个栏选择一个映射.',
+	'UI:CSVImport:AlertIncompleteMapping'     => '请为每个字段选择一个映射.',
 	'UI:CSVImport:AlertMultipleMapping'       => '请确保目标区域仅被映射一次.',
 	'UI:CSVImport:AlertNoSearchCriteria'      => '请选择至少一个搜索条件',
 	'UI:CSVImport:Encoding'                   => '字符编码',
@@ -710,7 +710,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:CSVExport:AdvancedMode'  => '高级模式',
 	'UI:CSVExport:AdvancedMode+' => '高级模式下, 导出将包含额外的列: 对象id, 外键id以及要使一致的属性.',
 	'UI:CSVExport:LostChars'     => '编码问题',
-	'UI:CSVExport:LostChars+'    => '已下载文件将使用编码 %1$s. 系统检测到一些字符与该格式不兼容. 这些字符将会被替换为子集 (例如重读字符将丢失音调), 或者被丢弃. 您可以从浏览器中复制粘贴数据. 或者联系管理员更改字符编码 (参阅参数 \'csv_file_default_charset\').',
+	'UI:CSVExport:LostChars+'    => '已下载文件将使用编码 %1$s. 系统检测到一些字符与该格式不兼容. 这些字符将会被替换为子集 (例如: 重读字符将丢失音调), 或者被丢弃. 您可以从浏览器中复制粘贴数据. 或者联系管理员更改字符编码 (参阅参数 \'csv_file_default_charset\').',
 
 	'UI:Audit:Title' => ITOP_APPLICATION_SHORT.' - CMDB审计',
 
@@ -932,7 +932,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Class_Object_NotUpdated' => '未发现变化, %1$s (%2$s) <strong>没有</strong>被更新.',
 	'UI:Class_Object_Updated' => '%1$s (%2$s) 已更新.',
 	'UI:BulkDeletePageTitle' => ITOP_APPLICATION_SHORT.' - 批量删除',
-	'UI:BulkDeleteTitle' => '请选择要删除的对象:',
+	'UI:BulkDeleteTitle' => '请选择将要删除的对象:',
 	'UI:PageTitle:ObjectCreated' => ITOP_APPLICATION_SHORT.' 对象已创建.',
 	'UI:Title:Object_Of_Class_Created' => '已创建 %2$s - %1$s.',
 	'UI:Apply_Stimulus_On_Object_In_State_ToTarget_State' => '应用 %1$s 在对象: %2$s上, 从 %3$s 状态到目标状态: %4$s.',
@@ -1035,7 +1035,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 <p>
 <i><b>操作</b></i>定义了触发器执行时要运行的动作. 目前仅支持3类动作:
 <ol>
-	<li>发送电子邮件: 此动作同时需要指定发送的邮件所使用的模板, 以及一些其它参数, 例如收件人, 优先级, 等.<br />
+	<li>发送电子邮件: 此动作同时需要指定发送的邮件所使用的模板, 以及一些其它参数, 例如: 收件人、优先级等.<br />
 	这里有一个专用的页面: <a href="../setup/email.test.php" target="_blank">email.test.php</a>可用于测试和调试PHP的邮件配置.</li>
 	<li>发送消息: 在应用程序中通过新闻室直接向用户显示消息（左侧菜单上的铃铛图标）</li>
 	<li>调用外部 webhook: 允许通过发送结构化数据到指定 URL 来与第三方应用集成.</li>
@@ -1202,7 +1202,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:CancelConfirmationMessage' => '您将丢失所有修改. 是否继续?',
 	'UI:AutoApplyConfirmationMessage' => '有些修改尚未生效. 您希望这些更改生效吗?',
 	'UI:Create_Class_InState' => '创建对象%1$s并设置状态: ',
-	'UI:OrderByHint_Values' => '排序: %1$s',
+	'UI:OrderByHint_Values' => '排序方式: %1$s',
 	'UI:Menu:AddToDashboard' => '添加到仪表盘...',
 	'UI:Button:Refresh' => '刷新',
 	'UI:Button:GoPrint' => '打印...',
@@ -1670,7 +1670,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Menu:DataSources'              => '同步数据源',
 	'Menu:DataSources+'             => '用于批量导入外部数据的数据同步功能',
 	'Menu:AuditCategories'          => '审计设置',
-	'Menu:AuditCategories+'         => '定义规则，用于审核 '.ITOP_APPLICATION_SHORT.' 的数据质量',
+	'Menu:AuditCategories+'         => '定义规则,用于审核 '.ITOP_APPLICATION_SHORT.' 的数据质量',
 	'Menu:AuditCategories:Title'    => '审计设置',
 	'Menu:RunQueriesMenu'           => '运行查询',
 	'Menu:RunQueriesMenu+'          => '编写和执行任何 OQL 查询',
