@@ -881,8 +881,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:SynchroDataSource/Attribute:url_application+'                            => '外部程序中对象的超链接, 对应'.ITOP_APPLICATION_SHORT.'的同步对象. 
 可能的占位符: $this->attribute$ 和 $replica->primary_key$.
 该图标展示在'.ITOP_APPLICATION_SHORT.'同步对象的 "锁定" 符号的提示框中',
-	'Class:SynchroDataSource/Attribute:reconciliation_policy'                       => '调和策略',
-	'Class:SynchroDataSource/Attribute:reconciliation_policy+'                      => '"使用属性": 对标记为复制的'.ITOP_APPLICATION_SHORT.'对象匹配复制每一个同步的属性值.
+	'Class:SynchroDataSource/Attribute:reconciliation_policy'                       => '一致性策略',
+	'Class:SynchroDataSource/Attribute:reconciliation_policy+'                      => '"使用属性": 对标记为复制的 '.ITOP_APPLICATION_SHORT.' 对象匹配复制每一个同步的属性值.
 "使用主键": 复制的字段主键应包含'.ITOP_APPLICATION_SHORT.'对象的唯一标识',
 	'Class:SynchroDataSource/Attribute:full_load_periodicity'                       => '全量载荷间隔',
 	'Class:SynchroDataSource/Attribute:full_load_periodicity+'                      => '在此指定的时间间隔内必须进行一次全量的数据重加载',
@@ -946,7 +946,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Core:Synchro:ModifiedLabel'                          => '已修改',
 	'Core:Synchro:UnchangedLabel'                         => '未更改',
 	'Core:Synchro:ReconciledErrorsLabel'                  => '错误',
-	'Core:Synchro:ReconciledLabel'                        => '已调和',
+	'Core:Synchro:ReconciledLabel'                        => '已核对',
 	'Core:Synchro:ReconciledNewLabel'                     => '已创建',
 	'Core:SynchroReconcile:Yes'                           => '是',
 	'Core:SynchroReconcile:No'                            => '否',
