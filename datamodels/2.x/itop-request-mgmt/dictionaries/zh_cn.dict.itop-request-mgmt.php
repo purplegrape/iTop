@@ -145,7 +145,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:UserRequest/Attribute:servicesubcategory_name' => '子服务名称',
 	'Class:UserRequest/Attribute:servicesubcategory_name+' => '',
 	'Class:UserRequest/Attribute:escalation_flag' => '升级标识',
-	'Class:UserRequest/Attribute:escalation_flag+' => '如果设置, 该工单将被添加到 "待升级" 菜单',
+	'Class:UserRequest/Attribute:escalation_flag+' => '如果设置, 该工单将会被添加到 "待升级" 菜单',
 	'Class:UserRequest/Attribute:escalation_flag/Value:no' => '否',
 	'Class:UserRequest/Attribute:escalation_flag/Value:no+' => '',
 	'Class:UserRequest/Attribute:escalation_flag/Value:yes' => '是',
