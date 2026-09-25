@@ -22,7 +22,7 @@
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:AuditCategory'                                    => '审计类别',
 	'Class:AuditCategory+'                                   => '审计类别规定了需要被审计的对象的范围.
-其组合了用于此范围内对象的所有审计规则',
+它集中了作用于特定范围内对象的所有审计规则',
 	'Class:AuditCategory/Attribute:name'                     => '类别',
 	'Class:AuditCategory/Attribute:name+'                    => '类别简称',
 	'Class:AuditCategory/Attribute:description'              => '审计类别描述',
@@ -45,8 +45,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:AuditRule'                                   => '审计规则',
-	'Class:AuditRule+'                                  => '一条审计规则对应审计类别中的一项检查.
-其应用于审计规则定义的对象范围',
+	'Class:AuditRule+'                                  => '一条审计规则通常对应一个审计类别中的一项检查.
+它仅作用于审计规则所定义的对象范围之内',
 	'Class:AuditRule/Attribute:name'                    => '名称',
 	'Class:AuditRule/Attribute:name+'                   => '规则名称',
 	'Class:AuditRule/Attribute:description'             => '描述',
@@ -77,8 +77,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:AuditDomain'                            => '审计域',
-	'Class:AuditDomain+'                           => '审计域用于分组审计规则.
-审计域通常对应负责检查和修复错误的人',
+	'Class:AuditDomain+'                           => '审计域用于对审计规则进行分组.
+审计域通常对应负责检查和修复错误的人或团队',
 	'Class:AuditDomain/Attribute:name'             => '名称',
 	'Class:AuditDomain/Attribute:name+'            => '用于细分负责修复错误或只对审计感兴趣的人',
 	'Class:AuditDomain/Attribute:description'      => '描述',
@@ -526,7 +526,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 
 	'UI:Error:SMTP:UnknownVendor' => 'OAuth SMTP提供者%1$s不存在 (email_transport_smtp.oauth.provider)',
 
-	'UI:GroupBy:Count'              => '个数',
+	'UI:GroupBy:Count'              => '数量',
 	'UI:GroupBy:Count+'             => '项目数',
 	'UI:CountOfObjects'             => '%1$d个对象符合指定的条件.',
 	'UI_CountOfObjectsShort'        => '%1$d个对象.',
@@ -535,8 +535,8 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:HistoryTab'                 => '历史',
 	'UI:NotificationsTab' => '通知',
 	'UI:History:BulkImports' => '历史',
-	'UI:History:BulkImports+' => 'CSV导入列表 (最新导入排在最前)',
-	'UI:History:BulkImportDetails' => '在%1$s执行CSV导入时导致的变化 (由%2$s)',
+	'UI:History:BulkImports+' => 'CSV 导入列表 (最新导入排在最前)',
+	'UI:History:BulkImportDetails' => '在 %1$s 执行 CSV 导入时引起的变化 (由 %2$s)',
 	'UI:History:Date' => '日期',
 	'UI:History:Date+' => '变更日期',
 	'UI:History:User' => '用户',
@@ -1215,9 +1215,9 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'UI:Toggle:SwitchToStandardDashboard' => '切换到标准仪表盘',
 	'UI:Toggle:SwitchToCustomDashboard' => '切换到自定义仪表盘',
 
-	'UI:ConfigureThisList' => '配置列表...',
+	'UI:ConfigureThisList' => '列表配置...',
 	'UI:ListConfigurationTitle' => '列表配置',
-	'UI:ColumnsAndSortOrder' => '列和排序顺序:',
+	'UI:ColumnsAndSortOrder' => '列和排序:',
 	'UI:UseDefaultSettings' => '使用默认配置',
 	'UI:UseSpecificSettings' => '使用下面的配置:',
 	'UI:Display_X_ItemsPerPage_prefix' => '每页显示',
