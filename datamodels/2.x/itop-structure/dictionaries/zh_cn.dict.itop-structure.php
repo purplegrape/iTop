@@ -186,7 +186,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', [
 	'Class:Person/UniquenessRule:employee_number' => '\'$this->org_name$\' 内已经有人占用了这个工号',
 	'Class:Person/UniquenessRule:name+' => '同一组织内的员工姓名必须唯一',
 	'Class:Person/UniquenessRule:name' => '\'$this->org_name$\' 内已经有人叫这个名字',
-	'Class:Person/Error:ChangingOrgDenied' => '无法移动此个体到组织 \'%1$s\' 因为这将终端其用户门户的访问, 其关联的用户没有被授权访问此组织',
+	'Class:Person/Error:ChangingOrgDenied' => '无法移动此个体到组织 \'%1$s\' 因为这将会中断其用户门户的访问, 其关联的用户没有被授权访问此组织',
 ]);
 
 //
